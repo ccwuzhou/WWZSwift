@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WWZSwift"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "A short description of WWZSwift."
 
   s.homepage     = "https://github.com/ccwuzhou/WWZSwift"
@@ -49,7 +49,6 @@ Pod::Spec.new do |s|
   end
   s.subspec 'Swift+WWZ' do |ss|
     ss.source_files = "WWZSwift/Swift+WWZ/*.swift"
-    ss.dependency "CommonCrypto"
   end
 
 end

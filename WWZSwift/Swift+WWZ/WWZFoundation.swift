@@ -15,6 +15,7 @@ extension String {
     /**
      *  MD5加密
      */
+    /*
     var md5 : String {
         
         let str = self.cString(using: String.Encoding.utf8)
@@ -33,7 +34,7 @@ extension String {
         
         return hash
     }
-    
+    */
     /**
      *  得到十六进制字符
      */
