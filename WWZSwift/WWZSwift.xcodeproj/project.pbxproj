@@ -8,18 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B094F26A1E6E8CD900D5380E /* WWZSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = B094F2681E6E8CD900D5380E /* WWZSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B094F27B1E6E8D1400D5380E /* WWZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2721E6E8D1400D5380E /* WWZTableViewCell.swift */; };
-		B094F27C1E6E8D1400D5380E /* WWZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2731E6E8D1400D5380E /* WWZViewController.swift */; };
-		B094F27D1E6E8D1400D5380E /* WWZInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2751E6E8D1400D5380E /* WWZInputView.swift */; };
-		B094F27E1E6E8D1400D5380E /* WWZMenuPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2761E6E8D1400D5380E /* WWZMenuPopover.swift */; };
-		B094F27F1E6E8D1400D5380E /* WWZShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2771E6E8D1400D5380E /* WWZShowView.swift */; };
-		B094F2801E6E8D1400D5380E /* WWZSiriWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2781E6E8D1400D5380E /* WWZSiriWaveView.swift */; };
-		B094F2811E6E8D1400D5380E /* WWZTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2791E6E8D1400D5380E /* WWZTimePickerView.swift */; };
-		B094F2821E6E8D1400D5380E /* WWZTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F27A1E6E8D1400D5380E /* WWZTipView.swift */; };
-		B094F2871E6E8D3000D5380E /* WWZNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2841E6E8D2F00D5380E /* WWZNetworkTool.swift */; };
-		B094F2881E6E8D3000D5380E /* WWZTCPSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2851E6E8D3000D5380E /* WWZTCPSocketClient.swift */; };
-		B094F2891E6E8D3000D5380E /* WWZUDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2861E6E8D3000D5380E /* WWZUDPSocket.swift */; };
-		B094F28B1E6E8D6C00D5380E /* WWZHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F28A1E6E8D6C00D5380E /* WWZHeader.swift */; };
 		B094F2991E6E8DB200D5380E /* CALayer-WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F28D1E6E8DB200D5380E /* CALayer-WWZ.swift */; };
 		B094F29A1E6E8DB200D5380E /* UIBarButtonItem-WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F28E1E6E8DB200D5380E /* UIBarButtonItem-WWZ.swift */; };
 		B094F29B1E6E8DB200D5380E /* UIButton-WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F28F1E6E8DB200D5380E /* UIButton-WWZ.swift */; };
@@ -32,24 +20,23 @@
 		B094F2A21E6E8DB200D5380E /* WWZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2961E6E8DB200D5380E /* WWZButton.swift */; };
 		B094F2A31E6E8DB200D5380E /* WWZFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2971E6E8DB200D5380E /* WWZFoundation.swift */; };
 		B094F2A41E6E8DB200D5380E /* WWZUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2981E6E8DB200D5380E /* WWZUIKit.swift */; };
+		B094F2B21E6E9B1100D5380E /* WWZInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2A71E6E9B1100D5380E /* WWZInputView.swift */; };
+		B094F2B31E6E9B1100D5380E /* WWZMenuPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2A81E6E9B1100D5380E /* WWZMenuPopover.swift */; };
+		B094F2B41E6E9B1100D5380E /* WWZNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2A91E6E9B1100D5380E /* WWZNetworkTool.swift */; };
+		B094F2B51E6E9B1100D5380E /* WWZShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AA1E6E9B1100D5380E /* WWZShowView.swift */; };
+		B094F2B61E6E9B1100D5380E /* WWZSiriWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AB1E6E9B1100D5380E /* WWZSiriWaveView.swift */; };
+		B094F2B71E6E9B1100D5380E /* WWZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AC1E6E9B1100D5380E /* WWZTableViewCell.swift */; };
+		B094F2B81E6E9B1100D5380E /* WWZTCPSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AD1E6E9B1100D5380E /* WWZTCPSocketClient.swift */; };
+		B094F2B91E6E9B1100D5380E /* WWZTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AE1E6E9B1100D5380E /* WWZTimePickerView.swift */; };
+		B094F2BA1E6E9B1100D5380E /* WWZTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AF1E6E9B1100D5380E /* WWZTipView.swift */; };
+		B094F2BB1E6E9B1100D5380E /* WWZUDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2B01E6E9B1100D5380E /* WWZUDPSocket.swift */; };
+		B094F2BC1E6E9B1100D5380E /* WWZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2B11E6E9B1100D5380E /* WWZViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B094F2651E6E8CD900D5380E /* WWZSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WWZSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B094F2681E6E8CD900D5380E /* WWZSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWZSwift.h; sourceTree = "<group>"; };
 		B094F2691E6E8CD900D5380E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B094F2721E6E8D1400D5380E /* WWZTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTableViewCell.swift; sourceTree = "<group>"; };
-		B094F2731E6E8D1400D5380E /* WWZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZViewController.swift; sourceTree = "<group>"; };
-		B094F2751E6E8D1400D5380E /* WWZInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZInputView.swift; sourceTree = "<group>"; };
-		B094F2761E6E8D1400D5380E /* WWZMenuPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZMenuPopover.swift; sourceTree = "<group>"; };
-		B094F2771E6E8D1400D5380E /* WWZShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZShowView.swift; sourceTree = "<group>"; };
-		B094F2781E6E8D1400D5380E /* WWZSiriWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZSiriWaveView.swift; sourceTree = "<group>"; };
-		B094F2791E6E8D1400D5380E /* WWZTimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTimePickerView.swift; sourceTree = "<group>"; };
-		B094F27A1E6E8D1400D5380E /* WWZTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTipView.swift; sourceTree = "<group>"; };
-		B094F2841E6E8D2F00D5380E /* WWZNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZNetworkTool.swift; sourceTree = "<group>"; };
-		B094F2851E6E8D3000D5380E /* WWZTCPSocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTCPSocketClient.swift; sourceTree = "<group>"; };
-		B094F2861E6E8D3000D5380E /* WWZUDPSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZUDPSocket.swift; sourceTree = "<group>"; };
-		B094F28A1E6E8D6C00D5380E /* WWZHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZHeader.swift; sourceTree = "<group>"; };
 		B094F28D1E6E8DB200D5380E /* CALayer-WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer-WWZ.swift"; sourceTree = "<group>"; };
 		B094F28E1E6E8DB200D5380E /* UIBarButtonItem-WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-WWZ.swift"; sourceTree = "<group>"; };
 		B094F28F1E6E8DB200D5380E /* UIButton-WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-WWZ.swift"; sourceTree = "<group>"; };
@@ -62,6 +49,17 @@
 		B094F2961E6E8DB200D5380E /* WWZButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZButton.swift; sourceTree = "<group>"; };
 		B094F2971E6E8DB200D5380E /* WWZFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZFoundation.swift; sourceTree = "<group>"; };
 		B094F2981E6E8DB200D5380E /* WWZUIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZUIKit.swift; sourceTree = "<group>"; };
+		B094F2A71E6E9B1100D5380E /* WWZInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZInputView.swift; sourceTree = "<group>"; };
+		B094F2A81E6E9B1100D5380E /* WWZMenuPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZMenuPopover.swift; sourceTree = "<group>"; };
+		B094F2A91E6E9B1100D5380E /* WWZNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZNetworkTool.swift; sourceTree = "<group>"; };
+		B094F2AA1E6E9B1100D5380E /* WWZShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZShowView.swift; sourceTree = "<group>"; };
+		B094F2AB1E6E9B1100D5380E /* WWZSiriWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZSiriWaveView.swift; sourceTree = "<group>"; };
+		B094F2AC1E6E9B1100D5380E /* WWZTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTableViewCell.swift; sourceTree = "<group>"; };
+		B094F2AD1E6E9B1100D5380E /* WWZTCPSocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTCPSocketClient.swift; sourceTree = "<group>"; };
+		B094F2AE1E6E9B1100D5380E /* WWZTimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTimePickerView.swift; sourceTree = "<group>"; };
+		B094F2AF1E6E9B1100D5380E /* WWZTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTipView.swift; sourceTree = "<group>"; };
+		B094F2B01E6E9B1100D5380E /* WWZUDPSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZUDPSocket.swift; sourceTree = "<group>"; };
+		B094F2B11E6E9B1100D5380E /* WWZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,54 +93,21 @@
 		B094F2671E6E8CD900D5380E /* WWZSwift */ = {
 			isa = PBXGroup;
 			children = (
-				B094F28A1E6E8D6C00D5380E /* WWZHeader.swift */,
-				B094F2831E6E8D2400D5380E /* Model */,
-				B094F2701E6E8D1400D5380E /* Cell */,
-				B094F2711E6E8D1400D5380E /* Controller */,
-				B094F2741E6E8D1400D5380E /* View */,
+				B094F2A71E6E9B1100D5380E /* WWZInputView.swift */,
+				B094F2A81E6E9B1100D5380E /* WWZMenuPopover.swift */,
+				B094F2A91E6E9B1100D5380E /* WWZNetworkTool.swift */,
+				B094F2AA1E6E9B1100D5380E /* WWZShowView.swift */,
+				B094F2AB1E6E9B1100D5380E /* WWZSiriWaveView.swift */,
+				B094F2AC1E6E9B1100D5380E /* WWZTableViewCell.swift */,
+				B094F2AD1E6E9B1100D5380E /* WWZTCPSocketClient.swift */,
+				B094F2AE1E6E9B1100D5380E /* WWZTimePickerView.swift */,
+				B094F2AF1E6E9B1100D5380E /* WWZTipView.swift */,
+				B094F2B01E6E9B1100D5380E /* WWZUDPSocket.swift */,
+				B094F2B11E6E9B1100D5380E /* WWZViewController.swift */,
 				B094F2681E6E8CD900D5380E /* WWZSwift.h */,
 				B094F2691E6E8CD900D5380E /* Info.plist */,
 			);
 			path = WWZSwift;
-			sourceTree = "<group>";
-		};
-		B094F2701E6E8D1400D5380E /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		B094F2711E6E8D1400D5380E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B094F2721E6E8D1400D5380E /* WWZTableViewCell.swift */,
-				B094F2731E6E8D1400D5380E /* WWZViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B094F2741E6E8D1400D5380E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B094F2751E6E8D1400D5380E /* WWZInputView.swift */,
-				B094F2761E6E8D1400D5380E /* WWZMenuPopover.swift */,
-				B094F2771E6E8D1400D5380E /* WWZShowView.swift */,
-				B094F2781E6E8D1400D5380E /* WWZSiriWaveView.swift */,
-				B094F2791E6E8D1400D5380E /* WWZTimePickerView.swift */,
-				B094F27A1E6E8D1400D5380E /* WWZTipView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B094F2831E6E8D2400D5380E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B094F2841E6E8D2F00D5380E /* WWZNetworkTool.swift */,
-				B094F2851E6E8D3000D5380E /* WWZTCPSocketClient.swift */,
-				B094F2861E6E8D3000D5380E /* WWZUDPSocket.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		B094F28C1E6E8DA000D5380E /* Swift+WWZ */ = {
@@ -244,30 +209,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B094F2B51E6E9B1100D5380E /* WWZShowView.swift in Sources */,
 				B094F2A01E6E8DB200D5380E /* UITextField-WWZ.swift in Sources */,
-				B094F2881E6E8D3000D5380E /* WWZTCPSocketClient.swift in Sources */,
-				B094F27D1E6E8D1400D5380E /* WWZInputView.swift in Sources */,
+				B094F2B91E6E9B1100D5380E /* WWZTimePickerView.swift in Sources */,
 				B094F2A11E6E8DB200D5380E /* UIView-WWZ.swift in Sources */,
-				B094F2891E6E8D3000D5380E /* WWZUDPSocket.swift in Sources */,
 				B094F29F1E6E8DB200D5380E /* UILabel-WWZ.swift in Sources */,
+				B094F2B21E6E9B1100D5380E /* WWZInputView.swift in Sources */,
+				B094F2BA1E6E9B1100D5380E /* WWZTipView.swift in Sources */,
+				B094F2B41E6E9B1100D5380E /* WWZNetworkTool.swift in Sources */,
 				B094F29B1E6E8DB200D5380E /* UIButton-WWZ.swift in Sources */,
 				B094F2A41E6E8DB200D5380E /* WWZUIKit.swift in Sources */,
-				B094F2801E6E8D1400D5380E /* WWZSiriWaveView.swift in Sources */,
-				B094F27F1E6E8D1400D5380E /* WWZShowView.swift in Sources */,
 				B094F29E1E6E8DB200D5380E /* UIImage-WWZ.swift in Sources */,
 				B094F2991E6E8DB200D5380E /* CALayer-WWZ.swift in Sources */,
-				B094F2821E6E8D1400D5380E /* WWZTipView.swift in Sources */,
-				B094F2871E6E8D3000D5380E /* WWZNetworkTool.swift in Sources */,
-				B094F28B1E6E8D6C00D5380E /* WWZHeader.swift in Sources */,
 				B094F2A21E6E8DB200D5380E /* WWZButton.swift in Sources */,
+				B094F2BB1E6E9B1100D5380E /* WWZUDPSocket.swift in Sources */,
+				B094F2B31E6E9B1100D5380E /* WWZMenuPopover.swift in Sources */,
 				B094F29D1E6E8DB200D5380E /* UIControl-WWZ.swift in Sources */,
-				B094F27B1E6E8D1400D5380E /* WWZTableViewCell.swift in Sources */,
-				B094F27C1E6E8D1400D5380E /* WWZViewController.swift in Sources */,
+				B094F2B81E6E9B1100D5380E /* WWZTCPSocketClient.swift in Sources */,
+				B094F2BC1E6E9B1100D5380E /* WWZViewController.swift in Sources */,
 				B094F2A31E6E8DB200D5380E /* WWZFoundation.swift in Sources */,
-				B094F27E1E6E8D1400D5380E /* WWZMenuPopover.swift in Sources */,
-				B094F2811E6E8D1400D5380E /* WWZTimePickerView.swift in Sources */,
 				B094F29A1E6E8DB200D5380E /* UIBarButtonItem-WWZ.swift in Sources */,
 				B094F29C1E6E8DB200D5380E /* UICollectionView-WWZ.swift in Sources */,
+				B094F2B71E6E9B1100D5380E /* WWZTableViewCell.swift in Sources */,
+				B094F2B61E6E9B1100D5380E /* WWZSiriWaveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +394,7 @@
 				B094F26F1E6E8CD900D5380E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
