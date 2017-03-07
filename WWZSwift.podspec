@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WWZSwift"
-  s.version      = "1.0.3"
+  s.version      = "1.1.0"
   s.summary      = "A short description of WWZSwift."
 
   s.homepage     = "https://github.com/ccwuzhou/WWZSwift"
@@ -42,13 +42,13 @@ Pod::Spec.new do |s|
   # s.default_subspecs = 'Model'
 
   s.subspec 'WWZSwift' do |ss|
-    ss.source_files = "WWZSwift/WWZSwift/*.swift"
+    ss.source_files = "WWZSwift/*.swift"
     ss.dependency "CocoaAsyncSocket"
     ss.dependency "AFNetworking"
-    ss.dependency "WWZSwift/Swift+WWZ"
+    ss.dependency "Swift+WWZ"
   end
   s.subspec 'Swift+WWZ' do |ss|
-    ss.source_files = "WWZSwift/Swift+WWZ/*.swift"
+    ss.source_files = "Swift+WWZ/*.swift"
   end
 
 end
