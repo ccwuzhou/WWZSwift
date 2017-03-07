@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
     ss.source_files = "WWZSwift/*.swift"
     ss.dependency "CocoaAsyncSocket"
     ss.dependency "AFNetworking"
-    ss.dependency "Swift+WWZ"
+    ss.dependency "WWZSwift/Swift+WWZ"
   end
   s.subspec 'Swift+WWZ' do |ss|
     ss.source_files = "Swift+WWZ/*.swift"

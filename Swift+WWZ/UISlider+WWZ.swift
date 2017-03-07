@@ -1,36 +1,12 @@
 //
-//  UIControl-WWZ.swift
-//  webo_swift
+//  UISlider+WWZ.swift
+//  WWZSwift
 //
-//  Created by wwz on 17/2/25.
+//  Created by wwz on 17/3/7.
 //  Copyright © 2017年 tijio. All rights reserved.
 //
 
 import UIKit
-
-extension UISwitch {
-
-    convenience init(onTintColor: UIColor?, tintColor: UIColor?, thumbTintColor: UIColor?) {
-        
-        self.init()
-        if let onTintColor = onTintColor {
-            self.onTintColor = onTintColor
-        }
-        
-        if let tintColor = tintColor {
-            self.tintColor = tintColor
-        }
-        
-        if let thumbTintColor = thumbTintColor {
-            self.thumbTintColor = thumbTintColor
-        }
-    }
-    
-    public func wwz_setTarget(target: Any?, action: Selector) {
-    
-        self.addTarget(target, action: action, for: .valueChanged)
-    }
-}
 
 extension UISlider {
     
@@ -77,4 +53,3 @@ extension UISlider {
         return image.resizableImage(withCapInsets: UIEdgeInsetsMake(0, image.size.width*0.5, 0, image.size.width*0.5), resizingMode: .stretch)
     }
 }
-

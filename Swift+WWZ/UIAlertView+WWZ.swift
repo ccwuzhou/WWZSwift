@@ -7,23 +7,7 @@
 //
 
 import UIKit
-// MARK: - UIColor
-extension UIColor {
-    
-    open class func colorFromRGBA(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat, _ a: CGFloat) -> UIColor {
-        
-        return self.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
-    }
-    
-    open class func colorFromRGBA(rgba: UInt) -> UIColor {
-        
-        return self.init(red: ((CGFloat)((rgba & 0xFF000000) >> 24))/255.0,
-                         green: ((CGFloat)((rgba & 0xFF0000) >> 16))/255.0,
-                         blue: ((CGFloat)((rgba & 0xFF00) >> 8))/255.0,
-                         alpha: ((CGFloat)(rgba & 0xFF))/255.0)
-    }
-    
-}
+
 
 extension UIAlertView {
     

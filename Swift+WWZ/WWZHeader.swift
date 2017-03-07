@@ -8,6 +8,8 @@
 
 import UIKit
 
+public typealias JSONDictionary = [String: Any]
+
 let APP_WINDOW = UIApplication.shared.keyWindow
 // 屏幕宽度
 let SCREEN_HEIGHT = UIScreen.main.bounds.height
