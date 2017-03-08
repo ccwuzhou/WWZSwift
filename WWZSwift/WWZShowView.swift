@@ -8,32 +8,37 @@
 
 import UIKit
 
-enum WWZShowType {
+enum WWZShowViewAnimateType {
     
-    case none
-    case top
-    case left
-    case right
-    case bottom
+    case alpha
+    case fromTop
+    case fromLeft
+    case fromRight
+    case fromBottom
 }
-
-private let ANIMATION_DURATION : TimeInterval = 0.3
 
 class WWZShowView: UIView {
 
     // MARK: -属性
-    var showType : WWZShowType = .none
+    var animateType : WWZShowViewAnimateType = .alpha
     
+    var animateDuration : TimeInterval = 0.3
+    
+    var backColor : UIColor = UIColor(white: 0, alpha: 0.1)
     // 点击空白区域消失
     var isTapEnabled : Bool = true
     
-    convenience init(frame: CGRect, showType: WWZShowType) {
+    override init(frame: CGRect) {
         
-        self.init(frame: frame)
+        super.init(frame: frame)
         
         self.backgroundColor = UIColor.white
         
-        self.showType = showType
+        self.animateType = .alpha
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: -显示
@@ -50,26 +55,31 @@ class WWZShowView: UIView {
         // 添加到window上
         UIApplication.shared.keyWindow?.addSubview(containButton)
         
-        self.p_originalTransform(type: self.showType)
+        self.p_originalTransform(type: self.animateType)
         
-        UIView.animate(withDuration: ANIMATION_DURATION, animations: {
+        UIView.animate(withDuration: self.animateDuration, animations: {
             
-            self.p_endTransform(type: self.showType)
+            self.p_endTransform(type: self.animateType)
             
         }, completion: completion)
     }
     
     /// 隐藏
-    func wwz_dismiss(){
+    func wwz_dismiss(completion: ((_ finished: Bool)->())?){
         
-        UIView.animate(withDuration: ANIMATION_DURATION, animations: {
+        UIView.animate(withDuration: self.animateDuration, animations: {
             
-            self.p_originalTransform(type: self.showType)
+            self.p_originalTransform(type: self.animateType)
             
             }, completion: {(_ finished: Bool) -> Void in
                 
                 self.superview?.removeFromSuperview()
                 self.removeFromSuperview()
+                
+                if let completion = completion {
+                
+                    completion(finished)
+                }
         })
     }
     
@@ -81,34 +91,34 @@ class WWZShowView: UIView {
 // MARK: -私有方法
 extension WWZShowView {
 
-    fileprivate func p_originalTransform(type: WWZShowType) {
+    fileprivate func p_originalTransform(type: WWZShowViewAnimateType) {
         
         self.superview?.alpha = 0
         
         switch type {
             
-        case .none:
+        case .alpha:
             self.alpha = 0
-        case .top:
+        case .fromTop:
             self.transform = CGAffineTransform(translationX: 0, y: -self.height)
-        case .left:
+        case .fromLeft:
             self.transform = CGAffineTransform(translationX: -self.width, y: 0)
-        case .bottom:
+        case .fromBottom:
             self.transform = CGAffineTransform(translationX: 0, y: self.superview!.height)
-        case .right:
+        case .fromRight:
             self.transform = CGAffineTransform(translationX: self.superview!.width, y: 0)
         }
     }
     
-    fileprivate func p_endTransform(type: WWZShowType) {
+    fileprivate func p_endTransform(type: WWZShowViewAnimateType) {
         
         self.superview?.alpha = 1
         
         switch type {
             
-        case .none:
+        case .alpha:
             self.alpha = 1
-        case .top, .left, .bottom, .right:
+        case .fromTop, .fromLeft, .fromBottom, .fromRight:
             self.transform = CGAffineTransform.identity
         }
     }

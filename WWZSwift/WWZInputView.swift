@@ -114,6 +114,6 @@ extension WWZInputView {
             
             block(self.inputTextField.text ?? "", sender.tag - INPUT_BUTTON_TAG)
         }
-        self.wwz_dismiss()
+        self.wwz_dismiss(completion: nil)
     }
 }

@@ -13,28 +13,12 @@ fileprivate let TIP_BUTTON_TAG = 99
 fileprivate let TIP_TITLE_LABEL_X : CGFloat = 20.0
 fileprivate var TIP_TITLE_LABEL_Y : CGFloat = 20.0
 
-
-
 fileprivate let TIP_BUTTON_HEIGHT : CGFloat = 45.0
-
 
 class WWZTipView: WWZShowView {
     
     // MARK: -私有属性
     fileprivate var block : ((Int)->())?
-    
-    fileprivate var mAttributedString : NSMutableAttributedString?
-    
-    fileprivate lazy var mParagraphStyle : NSMutableParagraphStyle = {
-        
-        let style = NSMutableParagraphStyle()
-        
-        style.firstLineHeadIndent = 0
-        style.alignment = .center
-        style.lineSpacing = 5
-    
-        return style
-    }()
     
     fileprivate lazy var titleLabel : UILabel = {
         
@@ -44,15 +28,6 @@ class WWZTipView: WWZShowView {
     }()
     
     // MARK: -设置方法
-    var titleColor : UIColor = UIColor.black {
-    
-        didSet {
-        
-            self.mAttributedString?.addAttributes([NSForegroundColorAttributeName : titleColor], range: NSRange(location: 0, length: self.mAttributedString!.string.characters.count))
-            self.titleLabel.attributedText = self.mAttributedString
-        }
-    }
-    
     var buttonTitleColor : UIColor = UIColor.black {
     
         didSet {
@@ -81,9 +56,22 @@ class WWZTipView: WWZShowView {
     }
     
     
-    convenience init(title: String, font: UIFont, lineSpace: CGFloat, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ index: Int)->()) {
+    convenience init(attributedText: NSAttributedString, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ index: Int)->()) {
         
-        self.init(frame: CGRect.zero)
+        let screenSize = UIScreen.main.bounds.size
+        var tipViewX : CGFloat = 0;
+        if screenSize.width == 320 {
+            
+            tipViewX = 30
+        }else if screenSize.width == 375 {
+            
+            tipViewX = 45
+        }else{
+            
+            tipViewX = 60
+        }
+
+        self.init(frame: CGRect(x: tipViewX, y: 0, width: screenSize.width - 2*tipViewX, height: 0))
         
         if buttonTitles.count == 0 || buttonTitles.count > 2 {
             return
@@ -94,27 +82,9 @@ class WWZTipView: WWZShowView {
         self.layer.masksToBounds = true
         self.layer.cornerRadius = 15.0
         
-        self.backgroundColor = UIColor.white
-        
-        let screenSize = UIScreen.main.bounds.size
-        
-        if screenSize.width == 320 {
-            
-            self.x = 30
-        }else if screenSize.width == 375 {
-            
-            self.x = 45
-        }else{
-            
-            self.x = 60
-        }
-        
-        self.width = screenSize.width - 2*self.x
-        
         // title label
-        self.p_addTitleLabel(title: title, font: font, lineSpace: lineSpace)
+        self.p_addTitleLabel(attributedText: attributedText)
     
-        
         self.height = 2 * TIP_TITLE_LABEL_Y + self.titleLabel.height + TIP_BUTTON_HEIGHT
         self.y = (screenSize.height-self.height)*0.5
         
@@ -128,13 +98,9 @@ class WWZTipView: WWZShowView {
 
 extension WWZTipView {
     // MARK: -添加label
-    fileprivate func p_addTitleLabel(title: String, font: UIFont, lineSpace: CGFloat) {
+    fileprivate func p_addTitleLabel(attributedText: NSAttributedString) {
     
-        self.mParagraphStyle.lineSpacing = lineSpace
-        
-        self.mAttributedString = NSMutableAttributedString(string: title, attributes: [NSFontAttributeName: font, NSForegroundColorAttributeName: self.titleColor, NSParagraphStyleAttributeName: self.mParagraphStyle])
-        
-        self.titleLabel.attributedText = self.mAttributedString
+        self.titleLabel.attributedText = attributedText
         
         let titleLW = self.width-TIP_TITLE_LABEL_X*2
         
@@ -191,6 +157,6 @@ extension WWZTipView {
             
             block(sender.tag - TIP_BUTTON_TAG)
         }
-        self.wwz_dismiss()
+        self.wwz_dismiss(completion: nil)
     }
 }
