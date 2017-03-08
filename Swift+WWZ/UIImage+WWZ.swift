@@ -165,6 +165,37 @@ extension UIImage {
         
         return newImage
     }
+    class func wwz_launchImage(orientation: UIInterfaceOrientation) -> UIImage?{
+    
+        var viewSize = CGSize.zero
+        var viewOrientation = ""
+        
+        switch orientation {
+        case .portrait, .portraitUpsideDown:
+            viewSize = UIScreen.main.bounds.size
+            viewOrientation = "Portrait"
+        case .landscapeLeft, .landscapeRight:
+            viewSize = CGSize(width: UIScreen.main.bounds.size.height, height: UIScreen.main.bounds.size.width)
+            viewOrientation = "Landscape"
+        default:
+            break
+        }
+        
+        guard let imageDicts = Bundle.main.infoDictionary?["UILaunchImages"] as? [[String : Any]] else { return nil }
+        
+        for imageDict in imageDicts {
+            
+            guard let sizeString = imageDict["UILaunchImageSize"] as? String, let orientationString = imageDict["UILaunchImageOrientation"] as? String, let launchImageString = imageDict["UILaunchImageName"] as? String else { continue }
+            
+            let imageSize = CGSizeFromString(sizeString)
+            
+            if imageSize.equalTo(viewSize) && viewOrientation == orientationString {
+                
+                return UIImage(named: launchImageString)
+            }
+        }
+        return nil
+    }
     
     /// 通过图片Data数据第一个字节 来获取图片扩展名
     class func wwz_contentType(imageData: Data) -> String? {

@@ -24,4 +24,14 @@ extension UIBarButtonItem {
         
         self.init(customView: leftBtn)
     }
+    
+    convenience init(nImageName: String, sImageName: String) {
+        
+        let leftBtn = UIButton()
+        leftBtn.setImage(UIImage(named: nImageName), for: .normal)
+        leftBtn.setImage(UIImage(named: sImageName), for: .selected)
+        leftBtn.sizeToFit()
+        
+        self.init(customView: leftBtn)
+    }
 }

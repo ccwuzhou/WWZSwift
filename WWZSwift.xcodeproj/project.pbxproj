@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		61E2EE4868129C4FBD4AF3A1 /* Pods_WWZSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB66A0F66827586D656DE14 /* Pods_WWZSwift.framework */; };
+		B0206DFB1E6F9C9C0005256A /* UINavigationBar+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0206DFA1E6F9C9C0005256A /* UINavigationBar+WWZ.swift */; };
+		B0206DFD1E6FA6260005256A /* UIImageView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0206DFC1E6FA6260005256A /* UIImageView+WWZ.swift */; };
+		B0206DFF1E6FA73B0005256A /* UITableView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0206DFE1E6FA73B0005256A /* UITableView+WWZ.swift */; };
 		B04DFF6A1E6EA92000B1DED7 /* WWZHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DFF691E6EA92000B1DED7 /* WWZHeader.swift */; };
 		B04DFF6C1E6EA9FB00B1DED7 /* UISlider+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DFF6B1E6EA9FB00B1DED7 /* UISlider+WWZ.swift */; };
 		B04DFF6E1E6EAA9400B1DED7 /* UIColor+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DFF6D1E6EAA9400B1DED7 /* UIColor+WWZ.swift */; };
@@ -43,6 +46,9 @@
 		4BB66A0F66827586D656DE14 /* Pods_WWZSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWZSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55ABDB633606BA91373DB9B2 /* Pods-WWZSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWZSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWZSwift/Pods-WWZSwift.release.xcconfig"; sourceTree = "<group>"; };
 		723D6B77C1372740562EE166 /* Pods-WWZSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWZSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWZSwift/Pods-WWZSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		B0206DFA1E6F9C9C0005256A /* UINavigationBar+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+WWZ.swift"; sourceTree = "<group>"; };
+		B0206DFC1E6FA6260005256A /* UIImageView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WWZ.swift"; sourceTree = "<group>"; };
+		B0206DFE1E6FA73B0005256A /* UITableView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+WWZ.swift"; sourceTree = "<group>"; };
 		B04DFF691E6EA92000B1DED7 /* WWZHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZHeader.swift; sourceTree = "<group>"; };
 		B04DFF6B1E6EA9FB00B1DED7 /* UISlider+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+WWZ.swift"; sourceTree = "<group>"; };
 		B04DFF6D1E6EAA9400B1DED7 /* UIColor+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+WWZ.swift"; sourceTree = "<group>"; };
@@ -152,13 +158,16 @@
 				B094F2951E6E8DB200D5380E /* UIView+WWZ.swift */,
 				B094F28F1E6E8DB200D5380E /* UIButton+WWZ.swift */,
 				B094F2931E6E8DB200D5380E /* UILabel+WWZ.swift */,
+				B04DFF6D1E6EAA9400B1DED7 /* UIColor+WWZ.swift */,
+				B094F2921E6E8DB200D5380E /* UIImage+WWZ.swift */,
 				B094F2911E6E8DB200D5380E /* UISwitch+WWZ.swift */,
 				B04DFF6B1E6EA9FB00B1DED7 /* UISlider+WWZ.swift */,
 				B094F28D1E6E8DB200D5380E /* CALayer+WWZ.swift */,
-				B094F2921E6E8DB200D5380E /* UIImage+WWZ.swift */,
-				B04DFF6D1E6EAA9400B1DED7 /* UIColor+WWZ.swift */,
 				B094F2941E6E8DB200D5380E /* UITextField+WWZ.swift */,
 				B094F28E1E6E8DB200D5380E /* UIBarButtonItem+WWZ.swift */,
+				B0206DFA1E6F9C9C0005256A /* UINavigationBar+WWZ.swift */,
+				B0206DFC1E6FA6260005256A /* UIImageView+WWZ.swift */,
+				B0206DFE1E6FA73B0005256A /* UITableView+WWZ.swift */,
 				B094F2901E6E8DB200D5380E /* UICollectionView+WWZ.swift */,
 				B094F2981E6E8DB200D5380E /* UIAlertView+WWZ.swift */,
 				B04DFF711E6EAAE100B1DED7 /* String+WWZ.swift */,
@@ -290,8 +299,11 @@
 				B094F2B91E6E9B1100D5380E /* WWZTimePickerView.swift in Sources */,
 				B094F2A11E6E8DB200D5380E /* UIView+WWZ.swift in Sources */,
 				B094F29F1E6E8DB200D5380E /* UILabel+WWZ.swift in Sources */,
+				B0206DFF1E6FA73B0005256A /* UITableView+WWZ.swift in Sources */,
 				B094F2B21E6E9B1100D5380E /* WWZInputView.swift in Sources */,
 				B094F2BA1E6E9B1100D5380E /* WWZTipView.swift in Sources */,
+				B0206DFD1E6FA6260005256A /* UIImageView+WWZ.swift in Sources */,
+				B0206DFB1E6F9C9C0005256A /* UINavigationBar+WWZ.swift in Sources */,
 				B094F2B41E6E9B1100D5380E /* WWZNetworkTool.swift in Sources */,
 				B094F29B1E6E8DB200D5380E /* UIButton+WWZ.swift in Sources */,
 				B094F2A41E6E8DB200D5380E /* UIAlertView+WWZ.swift in Sources */,
