@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WWZSwift"
-  s.version      = "1.2.0"
+  s.version      = "1.2.1"
   s.summary      = "A short description of WWZSwift."
 
   s.homepage     = "https://github.com/ccwuzhou/WWZSwift"
@@ -31,24 +31,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/ccwuzhou/WWZSwift.git", :tag => "#{s.version}"}
-
-  # s.public_header_files  = "WWZSwift/WWZSwift.h"
-
-  # s.source_files = "WWZSwift/WWZSwift.h"
-
   s.requires_arc = true
-
   s.framework  = "UIKit"
-  # s.default_subspecs = 'Model'
-
-  s.subspec 'WWZSwift' do |ss|
-    ss.source_files = "WWZSwift/*.swift"
-    ss.dependency "CocoaAsyncSocket"
-    ss.dependency "AFNetworking"
-    ss.dependency "WWZSwift/Swift+WWZ"
-  end
-  s.subspec 'Swift+WWZ' do |ss|
-    ss.source_files = "Swift+WWZ/*.swift"
-  end
+  s.source_files = "Source/*.swift"
+  s.dependency "CocoaAsyncSocket"
+  s.dependency "AFNetworking"
 
 end

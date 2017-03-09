@@ -8,78 +8,79 @@
 
 /* Begin PBXBuildFile section */
 		61E2EE4868129C4FBD4AF3A1 /* Pods_WWZSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB66A0F66827586D656DE14 /* Pods_WWZSwift.framework */; };
-		B0206DFB1E6F9C9C0005256A /* UINavigationBar+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0206DFA1E6F9C9C0005256A /* UINavigationBar+WWZ.swift */; };
-		B0206DFD1E6FA6260005256A /* UIImageView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0206DFC1E6FA6260005256A /* UIImageView+WWZ.swift */; };
-		B0206DFF1E6FA73B0005256A /* UITableView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0206DFE1E6FA73B0005256A /* UITableView+WWZ.swift */; };
-		B04DFF6A1E6EA92000B1DED7 /* WWZHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DFF691E6EA92000B1DED7 /* WWZHeader.swift */; };
-		B04DFF6C1E6EA9FB00B1DED7 /* UISlider+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DFF6B1E6EA9FB00B1DED7 /* UISlider+WWZ.swift */; };
-		B04DFF6E1E6EAA9400B1DED7 /* UIColor+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DFF6D1E6EAA9400B1DED7 /* UIColor+WWZ.swift */; };
-		B04DFF701E6EAAC500B1DED7 /* WWZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DFF6F1E6EAAC500B1DED7 /* WWZButton.swift */; };
-		B04DFF721E6EAAE100B1DED7 /* String+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DFF711E6EAAE100B1DED7 /* String+WWZ.swift */; };
-		B04DFF741E6EAAFF00B1DED7 /* Date+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04DFF731E6EAAFF00B1DED7 /* Date+WWZ.swift */; };
-		B094F26A1E6E8CD900D5380E /* WWZSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = B094F2681E6E8CD900D5380E /* WWZSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B094F2991E6E8DB200D5380E /* CALayer+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F28D1E6E8DB200D5380E /* CALayer+WWZ.swift */; };
-		B094F29A1E6E8DB200D5380E /* UIBarButtonItem+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F28E1E6E8DB200D5380E /* UIBarButtonItem+WWZ.swift */; };
-		B094F29B1E6E8DB200D5380E /* UIButton+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F28F1E6E8DB200D5380E /* UIButton+WWZ.swift */; };
-		B094F29C1E6E8DB200D5380E /* UICollectionView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2901E6E8DB200D5380E /* UICollectionView+WWZ.swift */; };
-		B094F29D1E6E8DB200D5380E /* UISwitch+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2911E6E8DB200D5380E /* UISwitch+WWZ.swift */; };
-		B094F29E1E6E8DB200D5380E /* UIImage+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2921E6E8DB200D5380E /* UIImage+WWZ.swift */; };
-		B094F29F1E6E8DB200D5380E /* UILabel+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2931E6E8DB200D5380E /* UILabel+WWZ.swift */; };
-		B094F2A01E6E8DB200D5380E /* UITextField+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2941E6E8DB200D5380E /* UITextField+WWZ.swift */; };
-		B094F2A11E6E8DB200D5380E /* UIView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2951E6E8DB200D5380E /* UIView+WWZ.swift */; };
-		B094F2A31E6E8DB200D5380E /* NotificationCenter+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2971E6E8DB200D5380E /* NotificationCenter+WWZ.swift */; };
-		B094F2A41E6E8DB200D5380E /* UIAlertView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2981E6E8DB200D5380E /* UIAlertView+WWZ.swift */; };
-		B094F2B21E6E9B1100D5380E /* WWZInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2A71E6E9B1100D5380E /* WWZInputView.swift */; };
-		B094F2B31E6E9B1100D5380E /* WWZMenuPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2A81E6E9B1100D5380E /* WWZMenuPopover.swift */; };
-		B094F2B41E6E9B1100D5380E /* WWZNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2A91E6E9B1100D5380E /* WWZNetworkTool.swift */; };
-		B094F2B51E6E9B1100D5380E /* WWZShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AA1E6E9B1100D5380E /* WWZShowView.swift */; };
-		B094F2B61E6E9B1100D5380E /* WWZSiriWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AB1E6E9B1100D5380E /* WWZSiriWaveView.swift */; };
-		B094F2B71E6E9B1100D5380E /* WWZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AC1E6E9B1100D5380E /* WWZTableViewCell.swift */; };
-		B094F2B81E6E9B1100D5380E /* WWZTCPSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AD1E6E9B1100D5380E /* WWZTCPSocketClient.swift */; };
-		B094F2B91E6E9B1100D5380E /* WWZTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AE1E6E9B1100D5380E /* WWZTimePickerView.swift */; };
-		B094F2BA1E6E9B1100D5380E /* WWZTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2AF1E6E9B1100D5380E /* WWZTipView.swift */; };
-		B094F2BB1E6E9B1100D5380E /* WWZUDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2B01E6E9B1100D5380E /* WWZUDPSocket.swift */; };
-		B094F2BC1E6E9B1100D5380E /* WWZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094F2B11E6E9B1100D5380E /* WWZViewController.swift */; };
+		B0A75B211E714B820020CE71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0A75B131E714B820020CE71 /* Info.plist */; };
+		B0A75B221E714B820020CE71 /* WWZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B141E714B820020CE71 /* WWZButton.swift */; };
+		B0A75B231E714B820020CE71 /* WWZInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B151E714B820020CE71 /* WWZInputView.swift */; };
+		B0A75B241E714B820020CE71 /* WWZMenuPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B161E714B820020CE71 /* WWZMenuPopover.swift */; };
+		B0A75B251E714B820020CE71 /* WWZNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B171E714B820020CE71 /* WWZNetworkTool.swift */; };
+		B0A75B261E714B820020CE71 /* WWZShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B181E714B820020CE71 /* WWZShowView.swift */; };
+		B0A75B271E714B820020CE71 /* WWZSiriWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B191E714B820020CE71 /* WWZSiriWaveView.swift */; };
+		B0A75B281E714B820020CE71 /* WWZSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A75B1A1E714B820020CE71 /* WWZSwift.h */; };
+		B0A75B291E714B820020CE71 /* WWZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1B1E714B820020CE71 /* WWZTableViewCell.swift */; };
+		B0A75B2A1E714B820020CE71 /* WWZTCPSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1C1E714B820020CE71 /* WWZTCPSocketClient.swift */; };
+		B0A75B2B1E714B820020CE71 /* WWZTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1D1E714B820020CE71 /* WWZTimePickerView.swift */; };
+		B0A75B2C1E714B820020CE71 /* WWZTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1E1E714B820020CE71 /* WWZTipView.swift */; };
+		B0A75B2D1E714B820020CE71 /* WWZUDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1F1E714B820020CE71 /* WWZUDPSocket.swift */; };
+		B0A75B2E1E714B820020CE71 /* WWZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B201E714B820020CE71 /* WWZViewController.swift */; };
+		B0A75B421E714BBC0020CE71 /* CALayer+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B2F1E714BBB0020CE71 /* CALayer+WWZ.swift */; };
+		B0A75B431E714BBC0020CE71 /* Date+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B301E714BBB0020CE71 /* Date+WWZ.swift */; };
+		B0A75B441E714BBC0020CE71 /* NotificationCenter+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B311E714BBB0020CE71 /* NotificationCenter+WWZ.swift */; };
+		B0A75B451E714BBC0020CE71 /* String+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B321E714BBC0020CE71 /* String+WWZ.swift */; };
+		B0A75B461E714BBC0020CE71 /* UIAlertView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B331E714BBC0020CE71 /* UIAlertView+WWZ.swift */; };
+		B0A75B471E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B341E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift */; };
+		B0A75B481E714BBC0020CE71 /* UIButton+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B351E714BBC0020CE71 /* UIButton+WWZ.swift */; };
+		B0A75B491E714BBC0020CE71 /* UICollectionView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B361E714BBC0020CE71 /* UICollectionView+WWZ.swift */; };
+		B0A75B4A1E714BBC0020CE71 /* UIColor+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B371E714BBC0020CE71 /* UIColor+WWZ.swift */; };
+		B0A75B4B1E714BBC0020CE71 /* UIImage+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B381E714BBC0020CE71 /* UIImage+WWZ.swift */; };
+		B0A75B4C1E714BBC0020CE71 /* UIImageView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B391E714BBC0020CE71 /* UIImageView+WWZ.swift */; };
+		B0A75B4D1E714BBC0020CE71 /* UILabel+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3A1E714BBC0020CE71 /* UILabel+WWZ.swift */; };
+		B0A75B4E1E714BBC0020CE71 /* UINavigationBar+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3B1E714BBC0020CE71 /* UINavigationBar+WWZ.swift */; };
+		B0A75B4F1E714BBC0020CE71 /* UISlider+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3C1E714BBC0020CE71 /* UISlider+WWZ.swift */; };
+		B0A75B501E714BBC0020CE71 /* UISwitch+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3D1E714BBC0020CE71 /* UISwitch+WWZ.swift */; };
+		B0A75B511E714BBC0020CE71 /* UITableView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3E1E714BBC0020CE71 /* UITableView+WWZ.swift */; };
+		B0A75B521E714BBC0020CE71 /* UITextField+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3F1E714BBC0020CE71 /* UITextField+WWZ.swift */; };
+		B0A75B531E714BBC0020CE71 /* UIView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B401E714BBC0020CE71 /* UIView+WWZ.swift */; };
+		B0A75B541E714BBC0020CE71 /* WWZHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B411E714BBC0020CE71 /* WWZHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4BB66A0F66827586D656DE14 /* Pods_WWZSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWZSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55ABDB633606BA91373DB9B2 /* Pods-WWZSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWZSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWZSwift/Pods-WWZSwift.release.xcconfig"; sourceTree = "<group>"; };
 		723D6B77C1372740562EE166 /* Pods-WWZSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWZSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWZSwift/Pods-WWZSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		B0206DFA1E6F9C9C0005256A /* UINavigationBar+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+WWZ.swift"; sourceTree = "<group>"; };
-		B0206DFC1E6FA6260005256A /* UIImageView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WWZ.swift"; sourceTree = "<group>"; };
-		B0206DFE1E6FA73B0005256A /* UITableView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+WWZ.swift"; sourceTree = "<group>"; };
-		B04DFF691E6EA92000B1DED7 /* WWZHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZHeader.swift; sourceTree = "<group>"; };
-		B04DFF6B1E6EA9FB00B1DED7 /* UISlider+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+WWZ.swift"; sourceTree = "<group>"; };
-		B04DFF6D1E6EAA9400B1DED7 /* UIColor+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+WWZ.swift"; sourceTree = "<group>"; };
-		B04DFF6F1E6EAAC500B1DED7 /* WWZButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZButton.swift; sourceTree = "<group>"; };
-		B04DFF711E6EAAE100B1DED7 /* String+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WWZ.swift"; sourceTree = "<group>"; };
-		B04DFF731E6EAAFF00B1DED7 /* Date+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WWZ.swift"; sourceTree = "<group>"; };
 		B094F2651E6E8CD900D5380E /* WWZSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WWZSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B094F2681E6E8CD900D5380E /* WWZSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWZSwift.h; sourceTree = "<group>"; };
-		B094F2691E6E8CD900D5380E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B094F28D1E6E8DB200D5380E /* CALayer+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+WWZ.swift"; sourceTree = "<group>"; };
-		B094F28E1E6E8DB200D5380E /* UIBarButtonItem+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+WWZ.swift"; sourceTree = "<group>"; };
-		B094F28F1E6E8DB200D5380E /* UIButton+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+WWZ.swift"; sourceTree = "<group>"; };
-		B094F2901E6E8DB200D5380E /* UICollectionView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+WWZ.swift"; sourceTree = "<group>"; };
-		B094F2911E6E8DB200D5380E /* UISwitch+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+WWZ.swift"; sourceTree = "<group>"; };
-		B094F2921E6E8DB200D5380E /* UIImage+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+WWZ.swift"; sourceTree = "<group>"; };
-		B094F2931E6E8DB200D5380E /* UILabel+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+WWZ.swift"; sourceTree = "<group>"; };
-		B094F2941E6E8DB200D5380E /* UITextField+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+WWZ.swift"; sourceTree = "<group>"; };
-		B094F2951E6E8DB200D5380E /* UIView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+WWZ.swift"; sourceTree = "<group>"; };
-		B094F2971E6E8DB200D5380E /* NotificationCenter+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+WWZ.swift"; sourceTree = "<group>"; };
-		B094F2981E6E8DB200D5380E /* UIAlertView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertView+WWZ.swift"; sourceTree = "<group>"; };
-		B094F2A71E6E9B1100D5380E /* WWZInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZInputView.swift; sourceTree = "<group>"; };
-		B094F2A81E6E9B1100D5380E /* WWZMenuPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZMenuPopover.swift; sourceTree = "<group>"; };
-		B094F2A91E6E9B1100D5380E /* WWZNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZNetworkTool.swift; sourceTree = "<group>"; };
-		B094F2AA1E6E9B1100D5380E /* WWZShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZShowView.swift; sourceTree = "<group>"; };
-		B094F2AB1E6E9B1100D5380E /* WWZSiriWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZSiriWaveView.swift; sourceTree = "<group>"; };
-		B094F2AC1E6E9B1100D5380E /* WWZTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTableViewCell.swift; sourceTree = "<group>"; };
-		B094F2AD1E6E9B1100D5380E /* WWZTCPSocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTCPSocketClient.swift; sourceTree = "<group>"; };
-		B094F2AE1E6E9B1100D5380E /* WWZTimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTimePickerView.swift; sourceTree = "<group>"; };
-		B094F2AF1E6E9B1100D5380E /* WWZTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTipView.swift; sourceTree = "<group>"; };
-		B094F2B01E6E9B1100D5380E /* WWZUDPSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZUDPSocket.swift; sourceTree = "<group>"; };
-		B094F2B11E6E9B1100D5380E /* WWZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZViewController.swift; sourceTree = "<group>"; };
+		B0A75B131E714B820020CE71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
+		B0A75B141E714B820020CE71 /* WWZButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZButton.swift; sourceTree = "<group>"; };
+		B0A75B151E714B820020CE71 /* WWZInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZInputView.swift; sourceTree = "<group>"; };
+		B0A75B161E714B820020CE71 /* WWZMenuPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZMenuPopover.swift; sourceTree = "<group>"; };
+		B0A75B171E714B820020CE71 /* WWZNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZNetworkTool.swift; sourceTree = "<group>"; };
+		B0A75B181E714B820020CE71 /* WWZShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZShowView.swift; sourceTree = "<group>"; };
+		B0A75B191E714B820020CE71 /* WWZSiriWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZSiriWaveView.swift; sourceTree = "<group>"; };
+		B0A75B1A1E714B820020CE71 /* WWZSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWZSwift.h; sourceTree = "<group>"; };
+		B0A75B1B1E714B820020CE71 /* WWZTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTableViewCell.swift; sourceTree = "<group>"; };
+		B0A75B1C1E714B820020CE71 /* WWZTCPSocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTCPSocketClient.swift; sourceTree = "<group>"; };
+		B0A75B1D1E714B820020CE71 /* WWZTimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTimePickerView.swift; sourceTree = "<group>"; };
+		B0A75B1E1E714B820020CE71 /* WWZTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTipView.swift; sourceTree = "<group>"; };
+		B0A75B1F1E714B820020CE71 /* WWZUDPSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZUDPSocket.swift; sourceTree = "<group>"; };
+		B0A75B201E714B820020CE71 /* WWZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZViewController.swift; sourceTree = "<group>"; };
+		B0A75B2F1E714BBB0020CE71 /* CALayer+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B301E714BBB0020CE71 /* Date+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B311E714BBB0020CE71 /* NotificationCenter+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B321E714BBC0020CE71 /* String+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B331E714BBC0020CE71 /* UIAlertView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertView+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B341E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B351E714BBC0020CE71 /* UIButton+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B361E714BBC0020CE71 /* UICollectionView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B371E714BBC0020CE71 /* UIColor+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B381E714BBC0020CE71 /* UIImage+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B391E714BBC0020CE71 /* UIImageView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B3A1E714BBC0020CE71 /* UILabel+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B3B1E714BBC0020CE71 /* UINavigationBar+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B3C1E714BBC0020CE71 /* UISlider+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B3D1E714BBC0020CE71 /* UISwitch+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B3E1E714BBC0020CE71 /* UITableView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B3F1E714BBC0020CE71 /* UITextField+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B401E714BBC0020CE71 /* UIView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+WWZ.swift"; sourceTree = "<group>"; };
+		B0A75B411E714BBC0020CE71 /* WWZHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +115,10 @@
 		B094F25B1E6E8CD900D5380E = {
 			isa = PBXGroup;
 			children = (
-				B094F28C1E6E8DA000D5380E /* Swift+WWZ */,
-				B094F2671E6E8CD900D5380E /* WWZSwift */,
+				B0A75B121E714B820020CE71 /* Source */,
 				B094F2661E6E8CD900D5380E /* Products */,
 				AA8BD1D62ED8F4C94D8C4365 /* Pods */,
+				B0A75B551E714C030020CE71 /* Supporting Files */,
 				10D4335721CDDD5D6AA4C560 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -130,51 +131,75 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B094F2671E6E8CD900D5380E /* WWZSwift */ = {
+		B0A75B121E714B820020CE71 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				B094F2B11E6E9B1100D5380E /* WWZViewController.swift */,
-				B094F2AA1E6E9B1100D5380E /* WWZShowView.swift */,
-				B094F2AF1E6E9B1100D5380E /* WWZTipView.swift */,
-				B094F2A71E6E9B1100D5380E /* WWZInputView.swift */,
-				B094F2A81E6E9B1100D5380E /* WWZMenuPopover.swift */,
-				B094F2AB1E6E9B1100D5380E /* WWZSiriWaveView.swift */,
-				B094F2AE1E6E9B1100D5380E /* WWZTimePickerView.swift */,
-				B04DFF6F1E6EAAC500B1DED7 /* WWZButton.swift */,
-				B094F2AC1E6E9B1100D5380E /* WWZTableViewCell.swift */,
-				B094F2AD1E6E9B1100D5380E /* WWZTCPSocketClient.swift */,
-				B094F2B01E6E9B1100D5380E /* WWZUDPSocket.swift */,
-				B094F2A91E6E9B1100D5380E /* WWZNetworkTool.swift */,
-				B094F2681E6E8CD900D5380E /* WWZSwift.h */,
-				B094F2691E6E8CD900D5380E /* Info.plist */,
+				B0A75B1A1E714B820020CE71 /* WWZSwift.h */,
+				B0A75B411E714BBC0020CE71 /* WWZHeader.swift */,
+				B0A75B561E714C210020CE71 /* Extensions */,
+				B0A75B571E714C350020CE71 /* Views */,
+				B0A75B581E714C5C0020CE71 /* Tools */,
 			);
-			path = WWZSwift;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		B094F28C1E6E8DA000D5380E /* Swift+WWZ */ = {
+		B0A75B551E714C030020CE71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B04DFF691E6EA92000B1DED7 /* WWZHeader.swift */,
-				B094F2951E6E8DB200D5380E /* UIView+WWZ.swift */,
-				B094F28F1E6E8DB200D5380E /* UIButton+WWZ.swift */,
-				B094F2931E6E8DB200D5380E /* UILabel+WWZ.swift */,
-				B04DFF6D1E6EAA9400B1DED7 /* UIColor+WWZ.swift */,
-				B094F2921E6E8DB200D5380E /* UIImage+WWZ.swift */,
-				B094F2911E6E8DB200D5380E /* UISwitch+WWZ.swift */,
-				B04DFF6B1E6EA9FB00B1DED7 /* UISlider+WWZ.swift */,
-				B094F28D1E6E8DB200D5380E /* CALayer+WWZ.swift */,
-				B094F2941E6E8DB200D5380E /* UITextField+WWZ.swift */,
-				B094F28E1E6E8DB200D5380E /* UIBarButtonItem+WWZ.swift */,
-				B0206DFA1E6F9C9C0005256A /* UINavigationBar+WWZ.swift */,
-				B0206DFC1E6FA6260005256A /* UIImageView+WWZ.swift */,
-				B0206DFE1E6FA73B0005256A /* UITableView+WWZ.swift */,
-				B094F2901E6E8DB200D5380E /* UICollectionView+WWZ.swift */,
-				B094F2981E6E8DB200D5380E /* UIAlertView+WWZ.swift */,
-				B04DFF711E6EAAE100B1DED7 /* String+WWZ.swift */,
-				B04DFF731E6EAAFF00B1DED7 /* Date+WWZ.swift */,
-				B094F2971E6E8DB200D5380E /* NotificationCenter+WWZ.swift */,
+				B0A75B131E714B820020CE71 /* Info.plist */,
 			);
-			path = "Swift+WWZ";
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0A75B561E714C210020CE71 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B0A75B2F1E714BBB0020CE71 /* CALayer+WWZ.swift */,
+				B0A75B301E714BBB0020CE71 /* Date+WWZ.swift */,
+				B0A75B311E714BBB0020CE71 /* NotificationCenter+WWZ.swift */,
+				B0A75B321E714BBC0020CE71 /* String+WWZ.swift */,
+				B0A75B331E714BBC0020CE71 /* UIAlertView+WWZ.swift */,
+				B0A75B341E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift */,
+				B0A75B351E714BBC0020CE71 /* UIButton+WWZ.swift */,
+				B0A75B361E714BBC0020CE71 /* UICollectionView+WWZ.swift */,
+				B0A75B371E714BBC0020CE71 /* UIColor+WWZ.swift */,
+				B0A75B381E714BBC0020CE71 /* UIImage+WWZ.swift */,
+				B0A75B391E714BBC0020CE71 /* UIImageView+WWZ.swift */,
+				B0A75B3A1E714BBC0020CE71 /* UILabel+WWZ.swift */,
+				B0A75B3B1E714BBC0020CE71 /* UINavigationBar+WWZ.swift */,
+				B0A75B3C1E714BBC0020CE71 /* UISlider+WWZ.swift */,
+				B0A75B3D1E714BBC0020CE71 /* UISwitch+WWZ.swift */,
+				B0A75B3E1E714BBC0020CE71 /* UITableView+WWZ.swift */,
+				B0A75B3F1E714BBC0020CE71 /* UITextField+WWZ.swift */,
+				B0A75B401E714BBC0020CE71 /* UIView+WWZ.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B0A75B571E714C350020CE71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0A75B141E714B820020CE71 /* WWZButton.swift */,
+				B0A75B151E714B820020CE71 /* WWZInputView.swift */,
+				B0A75B161E714B820020CE71 /* WWZMenuPopover.swift */,
+				B0A75B181E714B820020CE71 /* WWZShowView.swift */,
+				B0A75B191E714B820020CE71 /* WWZSiriWaveView.swift */,
+				B0A75B1B1E714B820020CE71 /* WWZTableViewCell.swift */,
+				B0A75B1D1E714B820020CE71 /* WWZTimePickerView.swift */,
+				B0A75B1E1E714B820020CE71 /* WWZTipView.swift */,
+				B0A75B201E714B820020CE71 /* WWZViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B0A75B581E714C5C0020CE71 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B0A75B171E714B820020CE71 /* WWZNetworkTool.swift */,
+				B0A75B1C1E714B820020CE71 /* WWZTCPSocketClient.swift */,
+				B0A75B1F1E714B820020CE71 /* WWZUDPSocket.swift */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +209,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B094F26A1E6E8CD900D5380E /* WWZSwift.h in Headers */,
+				B0A75B281E714B820020CE71 /* WWZSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A75B211E714B820020CE71 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,37 +318,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B04DFF6E1E6EAA9400B1DED7 /* UIColor+WWZ.swift in Sources */,
-				B094F2B51E6E9B1100D5380E /* WWZShowView.swift in Sources */,
-				B04DFF741E6EAAFF00B1DED7 /* Date+WWZ.swift in Sources */,
-				B094F2A01E6E8DB200D5380E /* UITextField+WWZ.swift in Sources */,
-				B094F2B91E6E9B1100D5380E /* WWZTimePickerView.swift in Sources */,
-				B094F2A11E6E8DB200D5380E /* UIView+WWZ.swift in Sources */,
-				B094F29F1E6E8DB200D5380E /* UILabel+WWZ.swift in Sources */,
-				B0206DFF1E6FA73B0005256A /* UITableView+WWZ.swift in Sources */,
-				B094F2B21E6E9B1100D5380E /* WWZInputView.swift in Sources */,
-				B094F2BA1E6E9B1100D5380E /* WWZTipView.swift in Sources */,
-				B0206DFD1E6FA6260005256A /* UIImageView+WWZ.swift in Sources */,
-				B0206DFB1E6F9C9C0005256A /* UINavigationBar+WWZ.swift in Sources */,
-				B094F2B41E6E9B1100D5380E /* WWZNetworkTool.swift in Sources */,
-				B094F29B1E6E8DB200D5380E /* UIButton+WWZ.swift in Sources */,
-				B094F2A41E6E8DB200D5380E /* UIAlertView+WWZ.swift in Sources */,
-				B094F29E1E6E8DB200D5380E /* UIImage+WWZ.swift in Sources */,
-				B094F2991E6E8DB200D5380E /* CALayer+WWZ.swift in Sources */,
-				B094F2BB1E6E9B1100D5380E /* WWZUDPSocket.swift in Sources */,
-				B094F2B31E6E9B1100D5380E /* WWZMenuPopover.swift in Sources */,
-				B094F29D1E6E8DB200D5380E /* UISwitch+WWZ.swift in Sources */,
-				B094F2B81E6E9B1100D5380E /* WWZTCPSocketClient.swift in Sources */,
-				B094F2BC1E6E9B1100D5380E /* WWZViewController.swift in Sources */,
-				B094F2A31E6E8DB200D5380E /* NotificationCenter+WWZ.swift in Sources */,
-				B04DFF6A1E6EA92000B1DED7 /* WWZHeader.swift in Sources */,
-				B094F29A1E6E8DB200D5380E /* UIBarButtonItem+WWZ.swift in Sources */,
-				B094F29C1E6E8DB200D5380E /* UICollectionView+WWZ.swift in Sources */,
-				B04DFF701E6EAAC500B1DED7 /* WWZButton.swift in Sources */,
-				B094F2B71E6E9B1100D5380E /* WWZTableViewCell.swift in Sources */,
-				B04DFF721E6EAAE100B1DED7 /* String+WWZ.swift in Sources */,
-				B094F2B61E6E9B1100D5380E /* WWZSiriWaveView.swift in Sources */,
-				B04DFF6C1E6EA9FB00B1DED7 /* UISlider+WWZ.swift in Sources */,
+				B0A75B421E714BBC0020CE71 /* CALayer+WWZ.swift in Sources */,
+				B0A75B451E714BBC0020CE71 /* String+WWZ.swift in Sources */,
+				B0A75B4C1E714BBC0020CE71 /* UIImageView+WWZ.swift in Sources */,
+				B0A75B531E714BBC0020CE71 /* UIView+WWZ.swift in Sources */,
+				B0A75B221E714B820020CE71 /* WWZButton.swift in Sources */,
+				B0A75B471E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift in Sources */,
+				B0A75B521E714BBC0020CE71 /* UITextField+WWZ.swift in Sources */,
+				B0A75B461E714BBC0020CE71 /* UIAlertView+WWZ.swift in Sources */,
+				B0A75B4B1E714BBC0020CE71 /* UIImage+WWZ.swift in Sources */,
+				B0A75B2B1E714B820020CE71 /* WWZTimePickerView.swift in Sources */,
+				B0A75B241E714B820020CE71 /* WWZMenuPopover.swift in Sources */,
+				B0A75B261E714B820020CE71 /* WWZShowView.swift in Sources */,
+				B0A75B291E714B820020CE71 /* WWZTableViewCell.swift in Sources */,
+				B0A75B481E714BBC0020CE71 /* UIButton+WWZ.swift in Sources */,
+				B0A75B2C1E714B820020CE71 /* WWZTipView.swift in Sources */,
+				B0A75B4E1E714BBC0020CE71 /* UINavigationBar+WWZ.swift in Sources */,
+				B0A75B4F1E714BBC0020CE71 /* UISlider+WWZ.swift in Sources */,
+				B0A75B251E714B820020CE71 /* WWZNetworkTool.swift in Sources */,
+				B0A75B491E714BBC0020CE71 /* UICollectionView+WWZ.swift in Sources */,
+				B0A75B441E714BBC0020CE71 /* NotificationCenter+WWZ.swift in Sources */,
+				B0A75B2D1E714B820020CE71 /* WWZUDPSocket.swift in Sources */,
+				B0A75B4A1E714BBC0020CE71 /* UIColor+WWZ.swift in Sources */,
+				B0A75B4D1E714BBC0020CE71 /* UILabel+WWZ.swift in Sources */,
+				B0A75B501E714BBC0020CE71 /* UISwitch+WWZ.swift in Sources */,
+				B0A75B541E714BBC0020CE71 /* WWZHeader.swift in Sources */,
+				B0A75B231E714B820020CE71 /* WWZInputView.swift in Sources */,
+				B0A75B431E714BBC0020CE71 /* Date+WWZ.swift in Sources */,
+				B0A75B2E1E714B820020CE71 /* WWZViewController.swift in Sources */,
+				B0A75B511E714BBC0020CE71 /* UITableView+WWZ.swift in Sources */,
+				B0A75B271E714B820020CE71 /* WWZSiriWaveView.swift in Sources */,
+				B0A75B2A1E714B820020CE71 /* WWZTCPSocketClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 723D6B77C1372740562EE166 /* Pods-WWZSwift.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J46LC7KBX4;
@@ -453,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55ABDB633606BA91373DB9B2 /* Pods-WWZSwift.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J46LC7KBX4;
