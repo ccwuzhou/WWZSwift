@@ -99,6 +99,17 @@ public extension String {
         }
     }
     
+    public func stringArray() -> [String] {
+        
+        var dataArray = [String]()
+        
+        for item in self.characters {
+            
+            dataArray.append("\(item)")
+        }
+        return dataArray
+    }
+    
     // MARK: -下标扩展
     /// 获取单
     public subscript(n: Int) -> Character?{

@@ -67,7 +67,7 @@ open class WWZMenuPopover: UIView {
     public var menuAttributes : WWZMenuAttributes = WWZMenuAttributes()
     
     // 锚点相对于uiscreen的坐标
-    public var anchorPoint : CGPoint = CGPoint(x: SCREEN_WIDTH-39*0.5-(SCREEN_WIDTH == 414.0 ? 10.0 : 5.0), y: 64.0) {
+    public var anchorPoint : CGPoint = CGPoint(x: WWZ_SCREEN_WIDTH-39*0.5-(WWZ_SCREEN_WIDTH == 414.0 ? 10.0 : 5.0), y: 64.0) {
     
         didSet{
         

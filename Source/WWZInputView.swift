@@ -29,10 +29,10 @@ open class WWZInputView: WWZShowView {
     
     public convenience init(title: String, text: String?, placeHolder: String?, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ inputText: String,_ index: Int)->()) {
         
-        let inputViewW : CGFloat = isPad ? 425 : SCREEN_WIDTH * 250.0/320.0
-        let inputViewH : CGFloat = isPad ? 183 : 150
+        let inputViewW : CGFloat = WWZ_IsPad ? 425 : WWZ_SCREEN_WIDTH * 250.0/320.0
+        let inputViewH : CGFloat = WWZ_IsPad ? 183 : 150
         
-        self.init(frame: CGRect(x: (SCREEN_WIDTH-inputViewW)*0.5, y: SCREEN_HEIGHT*0.25, width: inputViewW, height: inputViewH))
+        self.init(frame: CGRect(x: (WWZ_SCREEN_WIDTH-inputViewW)*0.5, y: WWZ_SCREEN_HEIGHT*0.25, width: inputViewW, height: inputViewH))
         
         guard buttonTitles.count != 2 else {
             
@@ -44,7 +44,7 @@ open class WWZInputView: WWZShowView {
         
         self.layer.wwz_setCorner(radius: 15)
         
-        let spaceY : CGFloat = isPad ? 20 : 15
+        let spaceY : CGFloat = WWZ_IsPad ? 20 : 15
         
         // title label
         let titleLabel = UILabel(text: title, font: UIFont.boldSystemFont(ofSize: 20), tColor: UIColor.black, alignment: .center, numberOfLines: 1)

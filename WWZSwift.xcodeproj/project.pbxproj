@@ -151,24 +151,24 @@
 		B0A75B561E714C210020CE71 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B0A75B2F1E714BBB0020CE71 /* CALayer+WWZ.swift */,
+				B0A75B321E714BBC0020CE71 /* String+WWZ.swift */,
 				B0A75B301E714BBB0020CE71 /* Date+WWZ.swift */,
 				B0A75B311E714BBB0020CE71 /* NotificationCenter+WWZ.swift */,
-				B0A75B321E714BBC0020CE71 /* String+WWZ.swift */,
-				B0A75B331E714BBC0020CE71 /* UIAlertView+WWZ.swift */,
-				B0A75B341E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift */,
+				B0A75B401E714BBC0020CE71 /* UIView+WWZ.swift */,
 				B0A75B351E714BBC0020CE71 /* UIButton+WWZ.swift */,
-				B0A75B361E714BBC0020CE71 /* UICollectionView+WWZ.swift */,
+				B0A75B3A1E714BBC0020CE71 /* UILabel+WWZ.swift */,
 				B0A75B371E714BBC0020CE71 /* UIColor+WWZ.swift */,
 				B0A75B381E714BBC0020CE71 /* UIImage+WWZ.swift */,
-				B0A75B391E714BBC0020CE71 /* UIImageView+WWZ.swift */,
-				B0A75B3A1E714BBC0020CE71 /* UILabel+WWZ.swift */,
-				B0A75B3B1E714BBC0020CE71 /* UINavigationBar+WWZ.swift */,
 				B0A75B3C1E714BBC0020CE71 /* UISlider+WWZ.swift */,
 				B0A75B3D1E714BBC0020CE71 /* UISwitch+WWZ.swift */,
+				B0A75B2F1E714BBB0020CE71 /* CALayer+WWZ.swift */,
+				B0A75B391E714BBC0020CE71 /* UIImageView+WWZ.swift */,
+				B0A75B3B1E714BBC0020CE71 /* UINavigationBar+WWZ.swift */,
+				B0A75B341E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift */,
 				B0A75B3E1E714BBC0020CE71 /* UITableView+WWZ.swift */,
+				B0A75B361E714BBC0020CE71 /* UICollectionView+WWZ.swift */,
 				B0A75B3F1E714BBC0020CE71 /* UITextField+WWZ.swift */,
-				B0A75B401E714BBC0020CE71 /* UIView+WWZ.swift */,
+				B0A75B331E714BBC0020CE71 /* UIAlertView+WWZ.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
