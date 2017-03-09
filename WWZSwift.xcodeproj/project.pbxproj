@@ -15,7 +15,6 @@
 		B0A75B251E714B820020CE71 /* WWZNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B171E714B820020CE71 /* WWZNetworkTool.swift */; };
 		B0A75B261E714B820020CE71 /* WWZShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B181E714B820020CE71 /* WWZShowView.swift */; };
 		B0A75B271E714B820020CE71 /* WWZSiriWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B191E714B820020CE71 /* WWZSiriWaveView.swift */; };
-		B0A75B281E714B820020CE71 /* WWZSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A75B1A1E714B820020CE71 /* WWZSwift.h */; };
 		B0A75B291E714B820020CE71 /* WWZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1B1E714B820020CE71 /* WWZTableViewCell.swift */; };
 		B0A75B2A1E714B820020CE71 /* WWZTCPSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1C1E714B820020CE71 /* WWZTCPSocketClient.swift */; };
 		B0A75B2B1E714B820020CE71 /* WWZTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1D1E714B820020CE71 /* WWZTimePickerView.swift */; };
@@ -55,7 +54,6 @@
 		B0A75B171E714B820020CE71 /* WWZNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZNetworkTool.swift; sourceTree = "<group>"; };
 		B0A75B181E714B820020CE71 /* WWZShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZShowView.swift; sourceTree = "<group>"; };
 		B0A75B191E714B820020CE71 /* WWZSiriWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZSiriWaveView.swift; sourceTree = "<group>"; };
-		B0A75B1A1E714B820020CE71 /* WWZSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWZSwift.h; sourceTree = "<group>"; };
 		B0A75B1B1E714B820020CE71 /* WWZTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTableViewCell.swift; sourceTree = "<group>"; };
 		B0A75B1C1E714B820020CE71 /* WWZTCPSocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTCPSocketClient.swift; sourceTree = "<group>"; };
 		B0A75B1D1E714B820020CE71 /* WWZTimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTimePickerView.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 		B0A75B121E714B820020CE71 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				B0A75B1A1E714B820020CE71 /* WWZSwift.h */,
 				B0A75B411E714BBC0020CE71 /* WWZHeader.swift */,
 				B0A75B561E714C210020CE71 /* Extensions */,
 				B0A75B571E714C350020CE71 /* Views */,
@@ -209,7 +206,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0A75B281E714B820020CE71 /* WWZSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,18 +454,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 723D6B77C1372740562EE166 /* Pods-WWZSwift.debug.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J46LC7KBX4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WWZSwift/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tijio.WWZSwift;
+				PRODUCT_BUNDLE_PACKAGE_TYPE = FMWK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -480,18 +477,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55ABDB633606BA91373DB9B2 /* Pods-WWZSwift.release.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J46LC7KBX4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WWZSwift/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.tijio.WWZSwift;
+				PRODUCT_BUNDLE_PACKAGE_TYPE = FMWK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
