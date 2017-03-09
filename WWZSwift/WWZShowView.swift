@@ -21,9 +21,9 @@ class WWZShowView: UIView {
 
     // MARK: -属性
     var animateType : WWZShowViewAnimateType = .alpha
-    
+    // 动画时间，default is 0.3s
     var animateDuration : TimeInterval = 0.3
-    
+    // 空白区域背景颜色
     var backColor : UIColor = UIColor(white: 0, alpha: 0.1)
     // 点击空白区域消失
     var isTapEnabled : Bool = true

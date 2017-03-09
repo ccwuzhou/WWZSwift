@@ -10,8 +10,6 @@ import UIKit
 
 fileprivate let TIP_LINE_COLOR = UIColor.colorFromRGBA(204, 204, 204, 1)
 fileprivate let TIP_BUTTON_TAG = 99
-fileprivate let TIP_TITLE_LABEL_X : CGFloat = 20.0
-fileprivate var TIP_TITLE_LABEL_Y : CGFloat = 20.0
 
 fileprivate let TIP_BUTTON_HEIGHT : CGFloat = 45.0
 
@@ -55,7 +53,6 @@ class WWZTipView: WWZShowView {
         }
     }
     
-    
     convenience init(attributedText: NSAttributedString, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ index: Int)->()) {
         
         let screenSize = UIScreen.main.bounds.size
@@ -85,7 +82,7 @@ class WWZTipView: WWZShowView {
         // title label
         self.p_addTitleLabel(attributedText: attributedText)
     
-        self.height = 2 * TIP_TITLE_LABEL_Y + self.titleLabel.height + TIP_BUTTON_HEIGHT
+        self.height = 2 * self.titleLabel.y + self.titleLabel.height + TIP_BUTTON_HEIGHT
         self.y = (screenSize.height-self.height)*0.5
         
         // buttons
@@ -102,14 +99,15 @@ extension WWZTipView {
     
         self.titleLabel.attributedText = attributedText
         
-        let titleLW = self.width-TIP_TITLE_LABEL_X*2
+        let titleLabelXY : CGFloat = 20.0
+        self.titleLabel.x = titleLabelXY;
         
-        let titleLH = self.titleLabel.textRect(forBounds: CGRect(x: 0.0, y: 0.0, width: titleLW, height: 500), limitedToNumberOfLines: 0).size.height
+        self.titleLabel.width = self.width-titleLabelXY*2
         
-        TIP_TITLE_LABEL_Y = titleLH < 30 ? TIP_TITLE_LABEL_Y + 2.5 : TIP_TITLE_LABEL_Y;
+        self.titleLabel.height = self.titleLabel.textRect(forBounds: CGRect(x: 0.0, y: 0.0, width: self.titleLabel.width, height: 500), limitedToNumberOfLines: 0).size.height
         
-        self.titleLabel.frame = CGRect(x: TIP_TITLE_LABEL_X, y: TIP_TITLE_LABEL_Y, width: titleLW, height: titleLH)
-
+        self.titleLabel.y = self.titleLabel.height < 30 ? titleLabelXY + 2.5 : titleLabelXY;
+    
         self.addSubview(self.titleLabel)
         
     }

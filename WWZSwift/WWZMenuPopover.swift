@@ -8,25 +8,31 @@
 
 import UIKit
 
-private let MENU_ANIMATION_DURATION : TimeInterval = 0.3
-
-private let MENU_CORNER_RADIUS : CGFloat = 5.0
+struct WWZMenuAttributes {
+    
+    var textColor : UIColor = UIColor.black
+    var textFont : UIFont = UIFont.systemFont(ofSize: 14)
+    var lineColor : UIColor = UIColor.colorFromRGBA(217, 217, 217, 1)
+    var selectedBackgroundColor : UIColor = UIColor.colorFromRGBA(217, 217, 217, 1)
+}
 
 protocol WWZMenuPopoverDelegate : NSObjectProtocol {
     
     func menuPopover(menuPopover: WWZMenuPopover, didSelectedItemAtIndex index: Int)
 }
 
-class WWZMenuCell: WWZTableViewCell {
+fileprivate class WWZMenuCell: WWZTableViewCell {
     
-    override init(style: WWZTableViewCellStyle, reuseIdentifier: String?) {
+    // cell 相关属性
+    var menuAttributes : WWZMenuAttributes = WWZMenuAttributes() {
+    
+        didSet {
         
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        self.textLabel?.font = UIFont.systemFont(ofSize: 14)
-        self.textLabel?.textColor = UIColor.black
-        self.lineView.backgroundColor = UIColor.colorFromRGBA(0, 0, 0, 0.2)
-        self.selectedBackgroundView?.backgroundColor = UIColor.colorFromRGBA(217, 217, 217, 1)
+            self.textLabel?.font = menuAttributes.textFont
+            self.textLabel?.textColor = menuAttributes.textColor
+            self.lineView.backgroundColor = menuAttributes.lineColor
+            self.selectedBackgroundView?.backgroundColor = menuAttributes.selectedBackgroundColor
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -43,10 +49,25 @@ class WWZMenuCell: WWZTableViewCell {
 class WWZMenuPopover: UIView {
 
     // MARK: -属性
+    // 代理
     var menuDelegate : WWZMenuPopoverDelegate?
     
+    // 动画时间
+    var animateDuration : TimeInterval = 0.3
+    
+    // 圆角
+    var cornerRadius : CGFloat = 5.0 {
+    
+        didSet {
+        
+            self.tableView.layer.wwz_setCorner(radius: cornerRadius)
+        }
+    }
+    
+    var menuAttributes : WWZMenuAttributes = WWZMenuAttributes()
+    
     // 锚点相对于uiscreen的坐标
-    var anchorPoint : CGPoint = CGPoint.zero {
+    var anchorPoint : CGPoint = CGPoint(x: SCREEN_WIDTH-39*0.5-(SCREEN_WIDTH == 414.0 ? 10.0 : 5.0), y: 64.0) {
     
         didSet{
         
@@ -79,7 +100,7 @@ class WWZMenuPopover: UIView {
     }
     
     // MARK: -私有属性
-    private lazy var tableView: UITableView = {
+    fileprivate lazy var tableView: UITableView = {
     
         let tableV = UITableView(frame: CGRect(x: 0, y: self.pointerFrame.maxY, width: self.width, height: self.height-self.pointerFrame.maxY))
         tableV.dataSource = self
@@ -87,7 +108,7 @@ class WWZMenuPopover: UIView {
         tableV.separatorStyle = .none
         tableV.isScrollEnabled = false
         tableV.backgroundColor = self.anchorColor
-        tableV.layer.wwz_setCorner(radius: 5.0)
+        tableV.layer.wwz_setCorner(radius: self.cornerRadius)
         return tableV
     }()
     
@@ -97,7 +118,7 @@ class WWZMenuPopover: UIView {
     fileprivate var imageNames: [String]?
     // 单个cell尺寸
     fileprivate var cellSize : CGSize = CGSize.zero
-    
+    // 最后显示位置中心
     fileprivate var finalCenter: CGPoint = CGPoint.zero
     
     
@@ -113,9 +134,6 @@ class WWZMenuPopover: UIView {
         
         // 初始设置
         self.p_setup()
-        
-        // 添加tableView
-        self.addSubview(self.tableView)
     }
 }
 
@@ -129,7 +147,9 @@ extension WWZMenuPopover : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = WWZTableViewCell.wwz_cell(tableView: tableView, style: .none)
+        let cell = WWZMenuCell.wwz_cell(tableView: tableView, style: .none) as! WWZMenuCell
+        
+        cell.menuAttributes = self.menuAttributes
         
         cell.textLabel?.text = self.titles[indexPath.row]
         
@@ -165,15 +185,16 @@ extension WWZMenuPopover {
         
         let pointerSize = CGSize(width: 18.0, height: 10.0)
         
-        self.anchorPoint = CGPoint(x: SCREEN_WIDTH-39*0.5-(SCREEN_WIDTH == 414.0 ? 10.0 : 5.0), y: 64.0)
-        
-        self.pointerFrame = CGRect(origin: CGPoint(x: self.width-pointerSize.width-MENU_CORNER_RADIUS*2, y: 0), size: pointerSize)
+        self.pointerFrame = CGRect(origin: CGPoint(x: self.width-pointerSize.width-self.cornerRadius*2, y: 0), size: pointerSize)
         
         // 完善self尺寸
         self.x = self.anchorPoint.x - self.pointerFrame.size.width*0.5 - self.pointerFrame.origin.x
         self.y = self.anchorPoint.y
         self.height = self.cellSize.height * CGFloat(self.titles.count) + self.pointerFrame.size.height
         self.finalCenter = self.center
+        
+        // 添加tableView
+        self.addSubview(self.tableView)
     }
     
     func wwz_show() {
@@ -190,7 +211,7 @@ extension WWZMenuPopover {
         
         button.alpha = 0
         
-        UIView.animate(withDuration: MENU_ANIMATION_DURATION) { 
+        UIView.animate(withDuration: self.animateDuration) {
             
             self.transform = CGAffineTransform.identity
             
@@ -202,7 +223,7 @@ extension WWZMenuPopover {
     
     func wwz_dismiss() {
         
-        UIView.animate(withDuration: MENU_ANIMATION_DURATION, animations: { 
+        UIView.animate(withDuration: self.animateDuration, animations: {
             self.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
             self.center = self.anchorPoint
             self.superview?.alpha = 0.0

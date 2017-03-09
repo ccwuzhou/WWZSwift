@@ -32,26 +32,20 @@ class WWZTCPSocketClient: NSObject {
     // MARK: -属性
     public var delegate : WWZTCPSocketClientDelegate?
     
-    public var endKey : String? {
+    // 读取结束符
+    public var endKeyString : String? {
     
         didSet {
             
-            self.endKeyData = self.endKey?.data(using: .utf8)
+            self.endKeyData = endKeyString?.data(using: .utf8)
         }
     }
-    
-    fileprivate var endKeyData : Data?
+    // 读取结束符
+    public var endKeyData : Data?
     
     // MARK: -懒加载属性
-    fileprivate lazy var socket : GCDAsyncSocket = GCDAsyncSocket(delegate: self, delegateQueue: DispatchQueue(label: "wwz"))
+    fileprivate lazy var socket : GCDAsyncSocket = GCDAsyncSocket(delegate: self, delegateQueue: DispatchQueue(label: "WWZTCPSocketClient"))
 
-    // MARK: -构造方法
-    init(delegate: WWZTCPSocketClientDelegate, endKey: String?) {
-        super.init()
-        self.delegate = delegate
-        self.endKey = endKey
-    }
-    
     // MARK: -公有方法
     /// 连接到服务器
     public func connect(host: String, onPort: UInt16) {
@@ -166,37 +160,52 @@ extension WWZTCPSocketClient {
         }
         var readData = data
         
+        // 去掉结束符
         if let endKeyData = self.endKeyData {
+            
+            if data.count <= endKeyData.count {
+                self.p_continueToRead()
+                
+                return
+            }
             
             readData = (readData as NSData).subdata(with: NSRange(location: 0, length: data.count-endKeyData.count))
         }
         
-        guard String(data: readData, encoding: .utf8) != nil else {
+        // Data转String失败
+        guard let resultString = String(data: readData, encoding: .utf8) else {
             
-            DispatchQueue.main.async {
+            if let delegate = self.delegate {
                 
-                guard let delegate = self.delegate else {
+                DispatchQueue.main.async {
                     
-                    return
+                    delegate.socket(self, didRead: readData)
                 }
-                delegate.socket(self, didRead: readData)
             }
             
             self.p_continueToRead()
             
             return
         }
+        // json解析失败
+        guard let result = try? JSONSerialization.jsonObject(with: readData, options: .mutableContainers) else {
         
-        let result = try? JSONSerialization.jsonObject(with: readData, options: .mutableContainers)
+            if let delegate = self.delegate {
+                
+                DispatchQueue.main.async {
+                    
+                    delegate.socket(self, didRead: resultString)
+                }
+            }
+            self.p_continueToRead()
+            
+            return;
+        }
         
-        if let result = result {
+        if let delegate = self.delegate {
             
             DispatchQueue.main.async {
                 
-                guard let delegate = self.delegate else {
-                    
-                    return
-                }
                 delegate.socket(self, didRead: result)
             }
         }
@@ -252,10 +261,11 @@ class WWZTCPSocketRequest: NSObject {
     
     let NOTI_PREFIX = "wwz"
     
+    // 请求超时时间
+    var requestTimeout : TimeInterval = 10.0
+    
     fileprivate var APP_PARAM = "wwz"
     fileprivate var CO_PARAM = "wwz"
-    
-    private var REQUEST_TIMEOUT : TimeInterval = 10.0
     
     private var tcpSocket : WWZTCPSocketClient?
     
@@ -263,7 +273,6 @@ class WWZTCPSocketRequest: NSObject {
     
     fileprivate var mSuccessBlockDict = [String: (Any)->()]()
     fileprivate var mFailureBlockDict = [String: (Error)->()]()
-    
     
     // 单例
     static let shareInstance : WWZTCPSocketRequest = WWZTCPSocketRequest()
@@ -273,12 +282,6 @@ class WWZTCPSocketRequest: NSObject {
         self.tcpSocket = socket
         self.APP_PARAM = app_param ?? "wwz"
         self.CO_PARAM = co_param ?? "wwz"
-    }
-    
-    // 设置请求超时时间
-    func setRequestTimeout(timeout: TimeInterval) {
-    
-        self.REQUEST_TIMEOUT = timeout
     }
     
     // socket请求
@@ -328,7 +331,7 @@ class WWZTCPSocketRequest: NSObject {
         socket.sendToServer(data: data)
         
         // 超时处理
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + REQUEST_TIMEOUT) { 
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() +  self.requestTimeout) {
             
             if self.mFailureBlockDict[noti_name] == nil { return }
             
