@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
     /**
      *  MD5加密
@@ -36,7 +36,7 @@ extension String {
     /**
      *  得到十六进制字符
      */
-    var wwz_sixteenthTypeString : String {
+    public var wwz_sixteenthTypeString : String {
         
         if let intValue = Int(self) {
             
@@ -47,7 +47,7 @@ extension String {
         }
     }
     
-    var wwz_tenTypeValue : Int {
+    public var wwz_tenTypeValue : Int {
         
         let str = self.uppercased()
         var number = 0
@@ -66,7 +66,7 @@ extension String {
     /**
      *  NSDocumentDirectory 中文件路径
      */
-    static func wwz_filePath(fileName: String) -> String {
+    public static func wwz_filePath(fileName: String) -> String {
         
         let documentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         
@@ -79,7 +79,7 @@ extension String {
      *
      *  @return 指定长度字符串，不足前面补0
      */
-    func wwz_fixedString(length: Int) -> String {
+    public func wwz_fixedString(length: Int) -> String {
         
         let strLength = self.characters.count
         
@@ -101,7 +101,7 @@ extension String {
     
     // MARK: -下标扩展
     /// 获取单
-    subscript(n: Int) -> Character?{
+    public subscript(n: Int) -> Character?{
         
         guard n < self.characters.count, n >= 0 else {
             
@@ -114,7 +114,7 @@ extension String {
     }
     
     // 从0开始的close range
-    subscript (range: CountableClosedRange<Int>) -> String{
+    public subscript (range: CountableClosedRange<Int>) -> String{
         
         get {
             if range.lowerBound >= self.characters.count { return "" }

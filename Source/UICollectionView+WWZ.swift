@@ -8,10 +8,10 @@
 
 import UIKit
 
-extension UICollectionViewFlowLayout {
+public extension UICollectionViewFlowLayout {
 
     /// 固定item count
-    convenience init(viewSize: CGSize, sectionInset: UIEdgeInsets, itemCount: Int, lineSpace: CGFloat, itemSpace: CGFloat, scrollDirection: UICollectionViewScrollDirection) {
+    public convenience init(viewSize: CGSize, sectionInset: UIEdgeInsets, itemCount: Int, lineSpace: CGFloat, itemSpace: CGFloat, scrollDirection: UICollectionViewScrollDirection) {
         
         self.init()
         
@@ -37,7 +37,7 @@ extension UICollectionViewFlowLayout {
     }
     
     ///固定itemSize
-    convenience init(sectionInset: UIEdgeInsets, itemSize: CGSize, lineSpace: CGFloat, itemSpace: CGFloat, scrollDirection: UICollectionViewScrollDirection) {
+    public convenience init(sectionInset: UIEdgeInsets, itemSize: CGSize, lineSpace: CGFloat, itemSpace: CGFloat, scrollDirection: UICollectionViewScrollDirection) {
         
         self.init()
         

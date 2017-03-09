@@ -9,10 +9,10 @@
 import UIKit
 
 // MARK: -
-extension UIImage {
+public extension UIImage {
 
     /// 图片不透明区渲染
-    func wwz_imageMask(maskColor: UIColor) -> UIImage? {
+    public func wwz_imageMask(maskColor: UIColor) -> UIImage? {
         
         guard let cgImage = self.cgImage else { return nil }
         
@@ -39,10 +39,10 @@ extension UIImage {
     }
 }
 
-extension UIImage {
+public extension UIImage {
 
     /// 从bundle中获取图片，imageName 需带后缀
-    convenience init?(imageName: String) {
+    public convenience init?(imageName: String) {
 
         let filePath = Bundle.main.path(forResource: imageName, ofType: nil)
         
@@ -50,7 +50,7 @@ extension UIImage {
     }
     
     // 圆形图片
-    class func wwz_circleImage(imageName: String, borderWidth: CGFloat, borderColor: UIColor) -> UIImage? {
+    public class func wwz_circleImage(imageName: String, borderWidth: CGFloat, borderColor: UIColor) -> UIImage? {
         
         // 需要裁剪的图片
         guard let image = UIImage(named: imageName) else { return nil}
@@ -87,7 +87,7 @@ extension UIImage {
     }
     
     /// 背景转换成图片
-    class func wwz_backgroundImage(size: CGSize) -> UIImage? {
+    public class func wwz_backgroundImage(size: CGSize) -> UIImage? {
     
         let center = CGPoint(x: size.width*0.5, y: size.height*0.5)
         
@@ -118,10 +118,10 @@ extension UIImage {
 }
 
 
-extension UIImage {
+public extension UIImage {
     
     /// 得到纯色图片
-    class func wwz_image(color: UIColor, size: CGSize, alpha: CGFloat) -> UIImage? {
+    public class func wwz_image(color: UIColor, size: CGSize, alpha: CGFloat) -> UIImage? {
         
         let rect = CGRect(origin: CGPoint.zero, size: size)
         
@@ -141,7 +141,7 @@ extension UIImage {
     }
     
     /// 虚线图片
-    class func wwz_dashImage(size: CGSize, color: UIColor) -> UIImage? {
+    public class func wwz_dashImage(size: CGSize, color: UIColor) -> UIImage? {
     
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         
@@ -165,7 +165,7 @@ extension UIImage {
         
         return newImage
     }
-    class func wwz_launchImage(orientation: UIInterfaceOrientation) -> UIImage?{
+    public class func wwz_launchImage(orientation: UIInterfaceOrientation) -> UIImage?{
     
         var viewSize = CGSize.zero
         var viewOrientation = ""
@@ -198,7 +198,7 @@ extension UIImage {
     }
     
     /// 通过图片Data数据第一个字节 来获取图片扩展名
-    class func wwz_contentType(imageData: Data) -> String? {
+    public class func wwz_contentType(imageData: Data) -> String? {
         
         var c : __uint8_t = 0
         
@@ -230,7 +230,7 @@ extension UIImage {
     }
     
     /// 由二维码生成图片
-    class func wwz_image(qrcode: String, size: CGSize) -> UIImage? {
+    public class func wwz_image(qrcode: String, size: CGSize) -> UIImage? {
         
         guard let filter = CIFilter(name: "CIQRCodeGenerator") else { return nil }
         filter.setDefaults()
@@ -245,7 +245,7 @@ extension UIImage {
     }
     
     /// 将CIImage转换成UIImage
-    class func wwz_image(ciimage: CIImage, size: CGSize) -> UIImage? {
+    public class func wwz_image(ciimage: CIImage, size: CGSize) -> UIImage? {
         
         let integralRect = ciimage.extent.integral
         let scale : CGFloat = min(size.width / integralRect.width, size.height / integralRect.height)
@@ -272,7 +272,7 @@ extension UIImage {
     }
     
     /// 从图片中获取url
-    class func wwz_imageUrlString(image: UIImage?) -> String? {
+    public class func wwz_imageUrlString(image: UIImage?) -> String? {
         
         guard let cgImage = image?.cgImage else { return nil }
         
@@ -290,17 +290,17 @@ extension UIImage {
 }
 
 
-extension UIImage {
+public extension UIImage {
 
     /// 压缩图片
-    func wwz_compressedImage(maxFileSize: Int) -> UIImage? {
+    public func wwz_compressedImage(maxFileSize: Int) -> UIImage? {
     
         guard let imageData = self.wwz_compressedData(maxFlieSize: maxFileSize) else { return nil }
         
         return UIImage(data: imageData)
     }
     
-    func wwz_compressedData(maxFlieSize: Int) -> Data? {
+    public func wwz_compressedData(maxFlieSize: Int) -> Data? {
         
         var compression : CGFloat = 0.9
         let maxCompression : CGFloat = 0.01

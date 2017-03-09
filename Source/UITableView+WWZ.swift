@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
 
-    convenience init(frame: CGRect, dataSource: UITableViewDataSource?, delegate: UITableViewDelegate?) {
+    public convenience init(frame: CGRect, dataSource: UITableViewDataSource?, delegate: UITableViewDelegate?) {
         
         self.init(frame: frame)
         self.dataSource = dataSource

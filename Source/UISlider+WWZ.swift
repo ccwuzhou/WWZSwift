@@ -8,15 +8,15 @@
 
 import UIKit
 
-extension UISlider {
+public extension UISlider {
     
     // MARK: -实现左右切片slider
-    convenience init(frame: CGRect, minImageName: String, maxImageName: String, thumbImageName: String) {
+    public convenience init(frame: CGRect, minImageName: String, maxImageName: String, thumbImageName: String) {
         
         self.init(frame: frame, minTrackImage: UIImage(named: minImageName), maxTrackImage: UIImage(named: maxImageName), thumbImage: UIImage(named: thumbImageName))
     }
     // MARK: -实现左右切片slider
-    convenience init(frame: CGRect, minTrackImage: UIImage?, maxTrackImage: UIImage?, thumbImage: UIImage?) {
+    public convenience init(frame: CGRect, minTrackImage: UIImage?, maxTrackImage: UIImage?, thumbImage: UIImage?) {
         
         self.init(frame: frame)
         

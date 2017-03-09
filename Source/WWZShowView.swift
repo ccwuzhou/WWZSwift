@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum WWZShowViewAnimateType {
+public enum WWZShowViewAnimateType {
     
     case alpha
     case fromTop
@@ -17,16 +17,16 @@ enum WWZShowViewAnimateType {
     case fromBottom
 }
 
-class WWZShowView: UIView {
+open class WWZShowView: UIView {
 
     // MARK: -属性
-    var animateType : WWZShowViewAnimateType = .alpha
+    public var animateType : WWZShowViewAnimateType = .alpha
     // 动画时间，default is 0.3s
-    var animateDuration : TimeInterval = 0.3
+    public var animateDuration : TimeInterval = 0.3
     // 空白区域背景颜色
-    var backColor : UIColor = UIColor(white: 0, alpha: 0.1)
+    public var backColor : UIColor = UIColor(white: 0, alpha: 0.1)
     // 点击空白区域消失
-    var isTapEnabled : Bool = true
+    public var isTapEnabled : Bool = true
     
     override init(frame: CGRect) {
         
@@ -37,12 +37,12 @@ class WWZShowView: UIView {
         self.animateType = .alpha
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     // MARK: -显示
-    func wwz_show(completion: ((_ finished: Bool)->())?) {
+    public func wwz_show(completion: ((_ finished: Bool)->())?) {
         
         let containButton = UIButton(frame: UIScreen.main.bounds)
         containButton.backgroundColor = UIColor.colorFromRGBA(0, 0, 0, 0.1)
@@ -65,7 +65,7 @@ class WWZShowView: UIView {
     }
     
     /// 隐藏
-    func wwz_dismiss(completion: ((_ finished: Bool)->())?){
+    public func wwz_dismiss(completion: ((_ finished: Bool)->())?){
         
         UIView.animate(withDuration: self.animateDuration, animations: {
             

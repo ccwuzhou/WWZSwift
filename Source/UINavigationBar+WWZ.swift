@@ -8,14 +8,14 @@
 
 import UIKit
 
-extension UINavigationBar {
+public extension UINavigationBar {
 
-    func wwz_setTitle(color: UIColor, font: UIFont) {
+    public func wwz_setTitle(color: UIColor, font: UIFont) {
         
         self.titleTextAttributes = [NSForegroundColorAttributeName:color,NSFontAttributeName:font]
     }
     
-    func wwz_noShadowImage() {
+    public func wwz_noShadowImage() {
         
         guard self.responds(to: #selector(UINavigationBar.setBackgroundImage(_:for:barMetrics:))) else { return }
         

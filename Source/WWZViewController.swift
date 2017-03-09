@@ -8,9 +8,9 @@
 
 import UIKit
 
-class WWZViewController: UIViewController {
+open class WWZViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.white
@@ -19,17 +19,17 @@ class WWZViewController: UIViewController {
     }
 
     
-    override var shouldAutorotate: Bool{
+    override open var shouldAutorotate: Bool{
     
         return false
     }
     
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask{
     
         return UIInterfaceOrientationMask.portrait
     }
     
-    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation{
+    override open var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation{
     
         return UIInterfaceOrientation.portrait
     }

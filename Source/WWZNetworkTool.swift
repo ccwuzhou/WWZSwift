@@ -9,14 +9,14 @@
 import UIKit
 import AFNetworking
 
-enum WWZRequestType: String {
+public enum WWZRequestType: String {
     case GET = "GET"
     case POST = "POST"
 }
 
-class WWZNetworkTool: AFHTTPSessionManager {
+open class WWZNetworkTool: AFHTTPSessionManager {
 
-    static let shareInstance : WWZNetworkTool = {
+    public static let shareInstance : WWZNetworkTool = {
     
         let tools = WWZNetworkTool()
         tools.responseSerializer.acceptableContentTypes?.insert("text/html")

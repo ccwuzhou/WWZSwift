@@ -13,7 +13,7 @@ fileprivate let INPUT_LINE_COLOR = UIColor.colorFromRGBA(204, 204, 204, 1)
 fileprivate let INPUT_BUTTON_TAG = 99
 fileprivate let INPUT_BUTTON_HEIGHT : CGFloat = 45.0
 
-class WWZInputView: WWZShowView {
+open class WWZInputView: WWZShowView {
 
     // MARK: -私有属性
     fileprivate var block : ((String, Int)->())?
@@ -27,7 +27,7 @@ class WWZInputView: WWZShowView {
         return textField
     }()
     
-    convenience init(title: String, text: String?, placeHolder: String?, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ inputText: String,_ index: Int)->()) {
+    public convenience init(title: String, text: String?, placeHolder: String?, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ inputText: String,_ index: Int)->()) {
         
         let inputViewW : CGFloat = isPad ? 425 : SCREEN_WIDTH * 250.0/320.0
         let inputViewH : CGFloat = isPad ? 183 : 150
@@ -65,7 +65,7 @@ class WWZInputView: WWZShowView {
 
 extension WWZInputView : UITextFieldDelegate{
 
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         textField.resignFirstResponder()
         

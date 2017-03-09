@@ -9,12 +9,12 @@
 import UIKit
 import CocoaAsyncSocket
 
-protocol WWZUDPSocketDelegate : NSObjectProtocol {
+public protocol WWZUDPSocketDelegate : NSObjectProtocol {
     
     func udpSocket(udpSocket: WWZUDPSocket, didReceiveData: Data, fromHost: String)
 }
 
-class WWZUDPSocket: NSObject {
+open class WWZUDPSocket: NSObject {
 
     private lazy var udpSocket : GCDAsyncUdpSocket = {
     
@@ -24,10 +24,10 @@ class WWZUDPSocket: NSObject {
         return socket
     }()
     
-    var delegate : WWZUDPSocketDelegate?
+    public var delegate : WWZUDPSocketDelegate?
     
     // 开始监听
-    func startListen(port: UInt16) {
+    public func startListen(port: UInt16) {
         
         try? self.udpSocket.bind(toPort: port)
         
@@ -38,13 +38,13 @@ class WWZUDPSocket: NSObject {
     
     
     // 广播数据
-    func broadCastMessage(message: String, toPort: UInt16) {
+    public func broadCastMessage(message: String, toPort: UInt16) {
     
         self.send(message: message, toHost: "255.255.255.255", port: toPort)
     }
     
     // 发送数据
-    func send(message: String, toHost host: String, port: UInt16){
+    public func send(message: String, toHost host: String, port: UInt16){
     
         guard let data = message.data(using: .utf8) else {return}
         
@@ -52,12 +52,12 @@ class WWZUDPSocket: NSObject {
     }
     
     // 发送数据
-    func send(data: Data, toHost host: String, port: UInt16) {
+    public func send(data: Data, toHost host: String, port: UInt16) {
     
         self.udpSocket.send(data, toHost: host, port: port, withTimeout: -1, tag: 0)
     }
     
-    func close() {
+    public func close() {
     
         self.udpSocket.close()
     }
@@ -65,7 +65,7 @@ class WWZUDPSocket: NSObject {
 
 extension WWZUDPSocket : GCDAsyncUdpSocketDelegate {
 
-    func udpSocket(_ sock: GCDAsyncUdpSocket, didReceive data: Data, fromAddress address: Data, withFilterContext filterContext: Any?) {
+    public func udpSocket(_ sock: GCDAsyncUdpSocket, didReceive data: Data, fromAddress address: Data, withFilterContext filterContext: Any?) {
         
         guard let host = GCDAsyncUdpSocket.host(fromAddress: address) else { return }
         

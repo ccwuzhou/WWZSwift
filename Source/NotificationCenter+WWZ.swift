@@ -8,18 +8,18 @@
 
 import Foundation
 
-extension NotificationCenter {
+public extension NotificationCenter {
     
-    static func wwz_addObserver(_ observer: Any, selector: Selector, name: String) {
+    public static func wwz_addObserver(_ observer: Any, selector: Selector, name: String) {
         
         self.default.addObserver(observer, selector: selector, name: NSNotification.Name(name), object: nil)
     }
-    static func wwz_post(name: String, object: Any?){
+    public static func wwz_post(name: String, object: Any?){
         
         self.default.post(name: NSNotification.Name(name), object: object)
     }
     
-    static func wwz_post(name: String, object: Any?, userInfo:[AnyHashable : Any]?){
+    public static func wwz_post(name: String, object: Any?, userInfo:[AnyHashable : Any]?){
         
         self.default.post(name: NSNotification.Name(name), object: object, userInfo: userInfo)
     }

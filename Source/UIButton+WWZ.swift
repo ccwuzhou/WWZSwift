@@ -8,36 +8,36 @@
 
 import UIKit
 
-extension UIButton {
+public extension UIButton {
     
     /**
      设置title
      */
-    func wwz_setTitle(nTitle: String?) {
+    public func wwz_setTitle(nTitle: String?) {
         self.setTitle(nTitle, for: .normal)
     }
-    func wwz_setTitle(nTitle: String?, sTitle: String?) {
+    public func wwz_setTitle(nTitle: String?, sTitle: String?) {
         self.setTitle(nTitle, for: .normal)
         self.setTitle(sTitle, for: .selected)
     }
     /**
      设置title color
      */
-    func wwz_setTitleColor(nColor: UIColor?) {
+    public func wwz_setTitleColor(nColor: UIColor?) {
         self.setTitleColor(nColor, for: .normal)
     }
-    func wwz_setTitleColor(sColor: UIColor?) {
+    public func wwz_setTitleColor(sColor: UIColor?) {
         self.setTitleColor(sColor, for: .selected)
     }
-    func wwz_setTitleColor(nColor: UIColor?, hColor: UIColor?) {
+    public func wwz_setTitleColor(nColor: UIColor?, hColor: UIColor?) {
         self.setTitleColor(nColor, for: .normal)
         self.setTitleColor(hColor, for: .highlighted)
     }
-    func wwz_setTitleColor(nColor: UIColor?, sColor: UIColor?) {
+    public func wwz_setTitleColor(nColor: UIColor?, sColor: UIColor?) {
         self.setTitleColor(nColor, for: .normal)
         self.setTitleColor(sColor, for: .selected)
     }
-    func wwz_setTitleColor(nColor: UIColor?, hColor: UIColor?, sColor: UIColor?) {
+    public func wwz_setTitleColor(nColor: UIColor?, hColor: UIColor?, sColor: UIColor?) {
         self.setTitleColor(nColor, for: .normal)
         self.setTitleColor(hColor, for: .highlighted)
         self.setTitleColor(sColor, for: .selected)
@@ -90,36 +90,36 @@ extension UIButton {
         self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, inset);
     }
     // MARK: -只有图标
-    convenience init(nImageName: String?) {
+    public convenience init(nImageName: String?) {
         
         self.init(nImageName: nImageName, hImageName: nil, sImageName: nil);
     }
-    convenience init(nImageName: String?, hImageName: String?) {
+    public convenience init(nImageName: String?, hImageName: String?) {
 
         self.init(nImageName: nImageName, hImageName: hImageName, sImageName: nil);
     }
-    convenience init(nImageName: String?, sImageName: String?) {
+    public convenience init(nImageName: String?, sImageName: String?) {
         
         self.init(nImageName: nImageName, hImageName: nil, sImageName: sImageName);
     }
-    convenience init(nImageName: String?, hImageName: String?, sImageName: String?) {
+    public convenience init(nImageName: String?, hImageName: String?, sImageName: String?) {
         
         self.init(nImageName: nImageName, hImageName: hImageName, sImageName: sImageName, nBImageName: nil, hBImageName: nil, sBImageName: nil)
     }
     // MARK: -图标与背景图标
-    convenience init(nImageName: String?, nBImageName: String?) {
+    public convenience init(nImageName: String?, nBImageName: String?) {
         
         self.init(nImageName: nImageName, hImageName: nil, sImageName: nil, nBImageName: nBImageName, hBImageName: nil, sBImageName: nil)
     }
-    convenience init(nImageName: String?, hImageName: String?, nBImageName: String?, hBImageName: String?) {
+    public convenience init(nImageName: String?, hImageName: String?, nBImageName: String?, hBImageName: String?) {
         
          self.init(nImageName: nImageName, hImageName: hImageName, sImageName: nil, nBImageName: nBImageName, hBImageName: hBImageName, sBImageName: nil)
     }
-    convenience init(nImageName: String?, sImageName: String?, nBImageName: String?, sBImageName: String?) {
+    public convenience init(nImageName: String?, sImageName: String?, nBImageName: String?, sBImageName: String?) {
         
         self.init(nImageName: nImageName, hImageName: nil, sImageName: sImageName, nBImageName: nBImageName, hBImageName: nil, sBImageName: sBImageName)
     }
-    convenience init(nImageName: String?, hImageName: String?, sImageName: String?, nBImageName: String?, hBImageName: String?, sBImageName: String?) {
+    public convenience init(nImageName: String?, hImageName: String?, sImageName: String?, nBImageName: String?, hBImageName: String?, sBImageName: String?) {
         
         self.init()
 
@@ -150,17 +150,17 @@ extension UIButton {
     }
     
     // MARK: -文字(正常)
-    convenience init(frame: CGRect, nTitle: String?, titleFont: UIFont!, nColor: UIColor?) {
+    public convenience init(frame: CGRect, nTitle: String?, titleFont: UIFont!, nColor: UIColor?) {
     
         self.init(frame: frame, nTitle: nTitle, sTitle: nil, titleFont: titleFont, nColor: nColor, sColor: nil, nImageName: nil, sImageName: nil)
     }
     // MARK: -文字(正常与选中)
-    convenience init(frame: CGRect, nTitle: String?, sTitle: String?, titleFont: UIFont!, nColor: UIColor?, sColor: UIColor?) {
+    public convenience init(frame: CGRect, nTitle: String?, sTitle: String?, titleFont: UIFont!, nColor: UIColor?, sColor: UIColor?) {
         
         self.init(frame: frame, nTitle: nTitle, sTitle: sTitle, titleFont: titleFont, nColor: nColor, sColor: sColor, nImageName: nil, sImageName: nil)
     }
     // MARK: -图标与文字
-    convenience init(frame: CGRect, nTitle: String?, sTitle: String?, titleFont: UIFont!, nColor: UIColor?, sColor: UIColor?, nImageName: String?, sImageName: String?) {
+    public convenience init(frame: CGRect, nTitle: String?, sTitle: String?, titleFont: UIFont!, nColor: UIColor?, sColor: UIColor?, nImageName: String?, sImageName: String?) {
         
         self.init()
         

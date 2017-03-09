@@ -8,14 +8,14 @@
 
 import UIKit
 
-extension UIImageView {
+public extension UIImageView {
 
-    convenience init(imageName: String, contentMode: UIViewContentMode) {
+    public convenience init(imageName: String, contentMode: UIViewContentMode) {
         
         self.init(frame: CGRect.zero, imageName: imageName, contentMode: contentMode)
     }
     
-    convenience init(frame: CGRect, imageName: String, contentMode: UIViewContentMode) {
+    public convenience init(frame: CGRect, imageName: String, contentMode: UIViewContentMode) {
         
         self.init(image: UIImage(named: imageName))
         

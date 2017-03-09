@@ -8,17 +8,17 @@
 
 import UIKit
 
-extension UILabel {
+public extension UILabel {
 
     // MARK: -自适应尺寸label
-    convenience init(text: String?, font: UIFont!, tColor: UIColor!, alignment: NSTextAlignment, numberOfLines: Int) {
+    public convenience init(text: String?, font: UIFont!, tColor: UIColor!, alignment: NSTextAlignment, numberOfLines: Int) {
     
         self.init(frame: CGRect.zero, text: text, font: font, tColor: tColor, alignment: alignment, numberOfLines: numberOfLines)
         
         self.sizeToFit()
     }
     // MARK: -给定frame的label
-    convenience init(frame: CGRect, text: String?, font: UIFont!, tColor: UIColor!, alignment: NSTextAlignment, numberOfLines: Int) {
+    public convenience init(frame: CGRect, text: String?, font: UIFont!, tColor: UIColor!, alignment: NSTextAlignment, numberOfLines: Int) {
         
         self.init(frame: frame)
         

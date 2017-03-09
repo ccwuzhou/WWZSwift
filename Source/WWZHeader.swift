@@ -10,25 +10,25 @@ import UIKit
 
 public typealias JSONDictionary = [String: Any]
 
-let APP_WINDOW = UIApplication.shared.keyWindow
+public let APP_WINDOW = UIApplication.shared.keyWindow
 // 屏幕宽度
-let SCREEN_HEIGHT = UIScreen.main.bounds.height
+public let SCREEN_HEIGHT = UIScreen.main.bounds.height
 // 屏幕高度
-let SCREEN_WIDTH = UIScreen.main.bounds.width
+public let SCREEN_WIDTH = UIScreen.main.bounds.width
 
-let NAVBAR_HEIGHT : CGFloat = 64.0
+public let NAVBAR_HEIGHT : CGFloat = 64.0
 
-let TABBAR_HEIGHT : CGFloat = 49.0
+public let TABBAR_HEIGHT : CGFloat = 49.0
 
-let CELL_IDENTIFIER = "CELL_IDENTIFIER"
+public let CELL_IDENTIFIER = "CELL_IDENTIFIER"
 
 // 系统
-let SYSTEM_VERSION = UIDevice.current.systemVersion
+public let SYSTEM_VERSION = UIDevice.current.systemVersion
 
-let isIOS7Later = SYSTEM_VERSION.compare("7.0") != ComparisonResult.orderedAscending
-let isIOS8Later = SYSTEM_VERSION.compare("8.0") != ComparisonResult.orderedAscending
-let isIOS9Later = SYSTEM_VERSION.compare("9.0") != ComparisonResult.orderedAscending
-let isIOS10Later = SYSTEM_VERSION.compare("10.0") != ComparisonResult.orderedAscending
+public let isIOS7Later = SYSTEM_VERSION.compare("7.0") != ComparisonResult.orderedAscending
+public let isIOS8Later = SYSTEM_VERSION.compare("8.0") != ComparisonResult.orderedAscending
+public let isIOS9Later = SYSTEM_VERSION.compare("9.0") != ComparisonResult.orderedAscending
+public let isIOS10Later = SYSTEM_VERSION.compare("10.0") != ComparisonResult.orderedAscending
 
 // 型号
 let isIPhone35Inch = UIScreen.main.currentMode?.size.equalTo(CGSize(width: 640, height: 960))

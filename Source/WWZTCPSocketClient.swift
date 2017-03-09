@@ -15,7 +15,7 @@ private let WRITE_TIME_OUT : TimeInterval = -1
 private let WRITE_TAG : Int = 1
 private let READ_TAG : Int = 0
 
-protocol WWZTCPSocketClientDelegate {
+public protocol WWZTCPSocketClientDelegate {
     
     /// 连接成功回调
     func socket(_ socket: WWZTCPSocketClient, didConnectToHost host: String, port: UInt16)
@@ -27,7 +27,7 @@ protocol WWZTCPSocketClientDelegate {
     func socket(_ sock: WWZTCPSocketClient, didDisconnectWithError err: Error?)
 }
 
-class WWZTCPSocketClient: NSObject {
+open class WWZTCPSocketClient: NSObject {
 
     // MARK: -属性
     public var delegate : WWZTCPSocketClientDelegate?
@@ -104,7 +104,7 @@ class WWZTCPSocketClient: NSObject {
 extension WWZTCPSocketClient : GCDAsyncSocketDelegate {
     
     /// 连接成功
-    func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
+    public func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
         WWZLog("+++connect to server success")
         
         DispatchQueue.main.async {
@@ -119,18 +119,18 @@ extension WWZTCPSocketClient : GCDAsyncSocketDelegate {
         self.p_continueToRead()
     }
     /// 写成功
-    func socket(_ sock: GCDAsyncSocket, didWriteDataWithTag tag: Int) {
+    public func socket(_ sock: GCDAsyncSocket, didWriteDataWithTag tag: Int) {
         
         // 写成功后开始读数据
         self.p_continueToRead()
     }
     /// 收到数据
-    func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
+    public func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
         
         self.p_handleReadData(data: data)
     }
     /// 断开连接
-    func socketDidDisconnect(_ sock: GCDAsyncSocket, withError err: Error?) {
+    public func socketDidDisconnect(_ sock: GCDAsyncSocket, withError err: Error?) {
         
         WWZLog("+++socket disconnect+++");
         
@@ -257,12 +257,12 @@ extension WWZTCPSocketClient {
 }
 
 
-class WWZTCPSocketRequest: NSObject {
+open class WWZTCPSocketRequest: NSObject {
     
-    let NOTI_PREFIX = "wwz"
+    public let NOTI_PREFIX = "wwz"
     
     // 请求超时时间
-    var requestTimeout : TimeInterval = 10.0
+    public var requestTimeout : TimeInterval = 10.0
     
     fileprivate var APP_PARAM = "wwz"
     fileprivate var CO_PARAM = "wwz"
@@ -275,9 +275,9 @@ class WWZTCPSocketRequest: NSObject {
     fileprivate var mFailureBlockDict = [String: (Error)->()]()
     
     // 单例
-    static let shareInstance : WWZTCPSocketRequest = WWZTCPSocketRequest()
+    public static let shareInstance : WWZTCPSocketRequest = WWZTCPSocketRequest()
     
-    func setSocket(socket: WWZTCPSocketClient, app_param: String?, co_param: String?) {
+    public func setSocket(socket: WWZTCPSocketClient, app_param: String?, co_param: String?) {
         
         self.tcpSocket = socket
         self.APP_PARAM = app_param ?? "wwz"
@@ -285,32 +285,32 @@ class WWZTCPSocketRequest: NSObject {
     }
     
     // socket请求
-    func request(api: String, parameters: Any, success: ((_ result: Any)->())?, failure: ((_ error: Error)->())?){
+    public func request(api: String, parameters: Any, success: ((_ result: Any)->())?, failure: ((_ error: Error)->())?){
         
         guard let socket = self.tcpSocket else { return }
         
         self.request(socket: socket, api: api, parameters: parameters, success: success, failure: failure)
     }
     
-    func request(socket: WWZTCPSocketClient, api: String, parameters: Any, success: ((_ result: Any)->())?, failure: ((_ error: Error)->())?){
+    public func request(socket: WWZTCPSocketClient, api: String, parameters: Any, success: ((_ result: Any)->())?, failure: ((_ error: Error)->())?){
     
         guard let message = self.p_formatCmd(api: api, parameters: parameters) else { return }
         
         self.request(socket: socket, api: api, message: message, success: success, failure: failure)
     }
-    func request(api: String, message: String, success: ((_ result: Any)->())?, failure: ((_ error: Error)->())?){
+    public func request(api: String, message: String, success: ((_ result: Any)->())?, failure: ((_ error: Error)->())?){
     
         guard let socket = self.tcpSocket else { return }
         
         self.request(socket: socket, api: api, message: message, success: success, failure: failure)
     }
-    func request(socket: WWZTCPSocketClient, api: String, message: String, success: ((_ result: Any)->())?, failure: ((_ error: Error)->())?){
+    public func request(socket: WWZTCPSocketClient, api: String, message: String, success: ((_ result: Any)->())?, failure: ((_ error: Error)->())?){
    
         guard let data = (message as NSString).replacingOccurrences(of: "'", with: "").data(using: .utf8) else { return }
         
         self.request(socket: socket, api: api, data: data, success: success, failure: failure)
     }
-    func request(socket: WWZTCPSocketClient, api: String, data: Data, success: ((_ result: Any)->())?, failure: ((_ error: Error)->())?){
+    public func request(socket: WWZTCPSocketClient, api: String, data: Data, success: ((_ result: Any)->())?, failure: ((_ error: Error)->())?){
     
         let noti_name = NOTI_PREFIX + "_" + api
         if success != nil {

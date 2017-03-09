@@ -8,14 +8,14 @@
 
 import UIKit
 
-extension UIBarButtonItem {
+public extension UIBarButtonItem {
 
-    convenience init(imageName: String) {
+    public convenience init(imageName: String) {
         
         self.init(nImageName: imageName, hImageName: imageName + "_highlighted")
     }
     
-    convenience init(nImageName: String, hImageName: String) {
+    public convenience init(nImageName: String, hImageName: String) {
         
         let leftBtn = UIButton()
         leftBtn.setImage(UIImage(named: nImageName), for: .normal)
@@ -25,7 +25,7 @@ extension UIBarButtonItem {
         self.init(customView: leftBtn)
     }
     
-    convenience init(nImageName: String, sImageName: String) {
+    public convenience init(nImageName: String, sImageName: String) {
         
         let leftBtn = UIButton()
         leftBtn.setImage(UIImage(named: nImageName), for: .normal)

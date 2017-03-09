@@ -8,11 +8,11 @@
 
 import UIKit
 
-class WWZButton: UIButton {
+open class WWZButton: UIButton {
 
     public var spaceY : CGFloat = 0.0;
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         
         super.layoutSubviews()
         

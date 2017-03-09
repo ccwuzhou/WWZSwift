@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum WWZTableViewCellStyle : Int {
+public enum WWZTableViewCellStyle : Int {
     case none = 0
     case subTitle = 1
     case rightTitle = 2
@@ -17,12 +17,12 @@ enum WWZTableViewCellStyle : Int {
     case subAndSwitch = 5
 }
 
-protocol WWZTableViewCellDelegate: NSObjectProtocol {
+public protocol WWZTableViewCellDelegate: NSObjectProtocol {
     
     func tableViewCell(cell: WWZTableViewCell, didChangedSwitch isOn: Bool)
 }
 
-class WWZTableViewCell: UITableViewCell {
+open class WWZTableViewCell: UITableViewCell {
 
     // MARK: -属性
     public var tableViewCellDelegate : WWZTableViewCellDelegate?
@@ -65,7 +65,7 @@ class WWZTableViewCell: UITableViewCell {
         return cell as! WWZTableViewCell
     }
     
-    init(style: WWZTableViewCellStyle, reuseIdentifier: String?) {
+    public init(style: WWZTableViewCellStyle, reuseIdentifier: String?) {
         
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
         
@@ -76,13 +76,13 @@ class WWZTableViewCell: UITableViewCell {
         self.p_addSwitchView(style: style)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
 
     // MARK: -布局
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         
         super.layoutSubviews()
         

@@ -13,7 +13,7 @@ fileprivate let TIP_BUTTON_TAG = 99
 
 fileprivate let TIP_BUTTON_HEIGHT : CGFloat = 45.0
 
-class WWZTipView: WWZShowView {
+open class WWZTipView: WWZShowView {
     
     // MARK: -私有属性
     fileprivate var block : ((Int)->())?
@@ -26,7 +26,7 @@ class WWZTipView: WWZShowView {
     }()
     
     // MARK: -设置方法
-    var buttonTitleColor : UIColor = UIColor.black {
+    public var buttonTitleColor : UIColor = UIColor.black {
     
         didSet {
         
@@ -39,7 +39,7 @@ class WWZTipView: WWZShowView {
             }
         }
     }
-    var buttonTitleFont : UIFont = UIFont.systemFont(ofSize: 16) {
+    public var buttonTitleFont : UIFont = UIFont.systemFont(ofSize: 16) {
         
         didSet {
             
@@ -53,7 +53,7 @@ class WWZTipView: WWZShowView {
         }
     }
     
-    convenience init(attributedText: NSAttributedString, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ index: Int)->()) {
+    public convenience init(attributedText: NSAttributedString, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ index: Int)->()) {
         
         let screenSize = UIScreen.main.bounds.size
         var tipViewX : CGFloat = 0;

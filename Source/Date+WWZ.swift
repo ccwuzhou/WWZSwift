@@ -8,16 +8,16 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     
-    static func wwz_stringFromDate(date: Date, dateFormat: String!) -> String {
+    public static func wwz_stringFromDate(date: Date, dateFormat: String!) -> String {
         
         let formatter = DateFormatter()
         formatter.dateFormat = dateFormat
         return formatter.string(from: date)
     }
     
-    static func wwz_timeStamp() -> String {
+    public static func wwz_timeStamp() -> String {
         
         return "\(Int(Date().timeIntervalSince1970))"
     }

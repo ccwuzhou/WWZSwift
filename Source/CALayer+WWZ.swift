@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension CALayer {
+public extension CALayer {
 
     // MARK: -设置圆角半径
     public func wwz_setCorner(radius: CGFloat){

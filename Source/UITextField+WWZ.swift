@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UITextField {
+public extension UITextField {
 
-    convenience init(frame: CGRect, placeholder: String?, font: UIFont?) {
+    public convenience init(frame: CGRect, placeholder: String?, font: UIFont?) {
         
         self.init(frame: frame)
         

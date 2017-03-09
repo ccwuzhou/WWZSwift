@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UISwitch {
+public extension UISwitch {
 
-    convenience init(onTintColor: UIColor?, tintColor: UIColor?, thumbTintColor: UIColor?) {
+    public convenience init(onTintColor: UIColor?, tintColor: UIColor?, thumbTintColor: UIColor?) {
         
         self.init()
         if let onTintColor = onTintColor {

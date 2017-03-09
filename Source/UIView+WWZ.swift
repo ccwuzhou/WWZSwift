@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
 
-    var x : CGFloat {
+    public var x : CGFloat {
         set{
             self.frame.origin.x = newValue;
         }
@@ -19,7 +19,7 @@ extension UIView {
         }
     }
     
-    var y : CGFloat {
+    public var y : CGFloat {
         set{
             self.frame.origin.y = newValue;
         }
@@ -28,7 +28,7 @@ extension UIView {
         }
     }
     
-    var right : CGFloat {
+    public var right : CGFloat {
         set{
             self.frame.origin.x = newValue - self.frame.size.width;
         }
@@ -37,7 +37,7 @@ extension UIView {
         }
     }
     
-    var bottom : CGFloat {
+    public var bottom : CGFloat {
         set{
             self.frame.origin.y = newValue - self.frame.size.height;
         }
@@ -46,7 +46,7 @@ extension UIView {
         }
     }
     
-    var origin : CGPoint {
+    public var origin : CGPoint {
         set{
             self.frame.origin = newValue;
         }
@@ -55,7 +55,7 @@ extension UIView {
         }
     }
     
-    var size : CGSize {
+    public var size : CGSize {
         set{
             self.frame.size = newValue;
         }
@@ -64,7 +64,7 @@ extension UIView {
         }
     }
     
-    var width : CGFloat {
+    public var width : CGFloat {
         set{
             self.frame.size.width = newValue;
         }
@@ -73,7 +73,7 @@ extension UIView {
         }
     }
     
-    var height : CGFloat {
+    public var height : CGFloat {
         set{
             self.frame.size.height = newValue;
         }
@@ -82,7 +82,7 @@ extension UIView {
         }
     }
     
-    var centerX : CGFloat {
+    public var centerX : CGFloat {
         set{
             self.center.x = newValue;
         }
@@ -91,7 +91,7 @@ extension UIView {
         }
     }
     
-    var centerY : CGFloat {
+    public var centerY : CGFloat {
         set{
             self.center.y = newValue;
         }
@@ -150,9 +150,9 @@ extension UIView {
     }
 }
 
-extension UIView {
+public extension UIView {
 
-    convenience init(frame: CGRect, backgroundColor: UIColor?) {
+    public convenience init(frame: CGRect, backgroundColor: UIColor?) {
         
         self.init(frame: frame)
         
