@@ -135,6 +135,18 @@ open class WWZMenuPopover: UIView {
         // 初始设置
         self.p_setup()
     }
+    
+    override open func draw(_ rect: CGRect) {
+        
+        let bezierPath = UIBezierPath()
+        bezierPath.move(to: CGPoint(x: self.pointerFrame.maxX, y: self.pointerFrame.maxY))
+        bezierPath.addLine(to: CGPoint(x: self.pointerFrame.origin.x, y: self.pointerFrame.maxY))
+        bezierPath.addLine(to: CGPoint(x: self.pointerFrame.midX, y: self.pointerFrame.origin.y))
+        bezierPath.addLine(to: CGPoint(x: self.pointerFrame.maxX, y: self.pointerFrame.maxY))
+        
+        self.anchorColor.set()
+        bezierPath.fill()
+    }
 }
 
 // MARK: -代理
@@ -233,17 +245,5 @@ public extension WWZMenuPopover {
                 self.superview?.removeFromSuperview()
                 self.removeFromSuperview()
         }
-    }
-    
-    override open func draw(_ rect: CGRect) {
-        
-        let bezierPath = UIBezierPath()
-        bezierPath.move(to: CGPoint(x: self.pointerFrame.maxX, y: self.pointerFrame.maxY))
-        bezierPath.addLine(to: CGPoint(x: self.pointerFrame.origin.x, y: self.pointerFrame.maxY))
-        bezierPath.addLine(to: CGPoint(x: self.pointerFrame.midX, y: self.pointerFrame.origin.y))
-        bezierPath.addLine(to: CGPoint(x: self.pointerFrame.maxX, y: self.pointerFrame.maxY))
-        
-        self.anchorColor.set()
-        bezierPath.fill()
     }
 }

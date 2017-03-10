@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+/*
 extension UIAlertView {
     
     // MARK: -代理类
@@ -66,3 +66,4 @@ extension UIAlertView {
         alert.show()
     }
 }
+ */
