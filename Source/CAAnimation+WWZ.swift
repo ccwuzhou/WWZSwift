@@ -37,7 +37,7 @@ public extension CABasicAnimation {
             self.fromValue = fromValue
         }
   
-        self.toValue = fromValue
+        self.toValue = toValue
         self.duration = duration
         
         self.autoreverses = autoreverses
