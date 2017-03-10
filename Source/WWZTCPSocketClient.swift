@@ -259,7 +259,7 @@ extension WWZTCPSocketClient {
 
 open class WWZTCPSocketRequest: NSObject {
     
-    public let NOTI_PREFIX = "wwz"
+    public let noti_prefix = "wwz"
     
     // 请求超时时间
     public var requestTimeout : TimeInterval = 10.0
@@ -413,7 +413,10 @@ extension WWZTCPSocketRequest {
         
         guard let jsonData = try? JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted) else { return nil}
         
-        guard let param = String(data: jsonData, encoding: .utf8) else { return nil}
+        guard var param = String(data: jsonData, encoding: .utf8) else { return nil}
+        
+        param = param.replacingOccurrences(of: "\n", with: "").replacingOccurrences(of: "  \"", with: "\"").replacingOccurrences(of: " : ", with: ":")
+        
         return String(format: "{\"app\":\"%@\",\"co\":\"%@\",\"api\":\"%@\",\"data\":%@}\n", self.APP_PARAM, self.CO_PARAM, api, param)
     }
 
