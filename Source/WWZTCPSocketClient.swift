@@ -259,7 +259,7 @@ extension WWZTCPSocketClient {
 
 open class WWZTCPSocketRequest: NSObject {
     
-    public let noti_prefix = "wwz"
+    public static let noti_prefix = "wwz"
     
     // 请求超时时间
     public var requestTimeout : TimeInterval = 10.0
@@ -312,7 +312,7 @@ open class WWZTCPSocketRequest: NSObject {
     }
     public func request(socket: WWZTCPSocketClient, api: String, data: Data, success: ((_ result: Any)->())?, failure: ((_ error: Error)->())?){
     
-        let noti_name = NOTI_PREFIX + "_" + api
+        let noti_name = WWZTCPSocketRequest.noti_prefix + "_" + api
         if success != nil {
             self.mSuccessBlockDict[noti_name] = success
         }
@@ -357,9 +357,9 @@ extension WWZTCPSocketRequest {
         
         guard let userInfo = noti.userInfo, noti.userInfo!.count > 0 else { return }
         
-        guard let key = userInfo.first?.key else { return }
+        guard let key = userInfo.first?.key as? String else { return }
         
-        guard let retcode = key as? Int else { return }
+        guard let retcode = Int(key) else { return }
         
         if retcode == 0 || retcode == 100 {
             
@@ -419,8 +419,6 @@ extension WWZTCPSocketRequest {
         
         return String(format: "{\"app\":\"%@\",\"co\":\"%@\",\"api\":\"%@\",\"data\":%@}\n", self.APP_PARAM, self.CO_PARAM, api, param)
     }
-
-    
 }
 
 
