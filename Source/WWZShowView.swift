@@ -82,11 +82,6 @@ open class WWZShowView: UIView {
                 }
         })
     }
-    
-    
-//    deinit {
-//        WWZLog("")
-//    }
 }
 // MARK: -私有方法
 extension WWZShowView {

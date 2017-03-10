@@ -40,7 +40,8 @@ public let WWZ_IsPhone = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone
 
 public let WWZ_IsPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad
 
-// 打印
+// 打印，复制到项目中
+/*
 public func WWZLog<T>(_ message: T,file: String = #file, function: String = #function, line: Int = #line){
     
     #if DEBUG
@@ -49,3 +50,4 @@ public func WWZLog<T>(_ message: T,file: String = #file, function: String = #fun
         
     #endif
 }
+ */

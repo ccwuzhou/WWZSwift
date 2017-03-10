@@ -88,9 +88,7 @@ open class WWZTipView: WWZShowView {
         // buttons
         self.p_addBottomButtons(buttonTitles: buttonTitles)
     }
-    deinit {
-        WWZLog("deinit")
-    }
+
 }
 
 extension WWZTipView {

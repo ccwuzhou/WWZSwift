@@ -45,4 +45,30 @@ open class WWZNetworkTool: AFHTTPSessionManager {
             self.post(urlString, parameters: parameters, progress: nil, success: successCallBack, failure: failureCallBack)
         }
     }
+    
+    // MARK: -监听网络状态
+    public class func wwz_networkReachability(notReachable: (()->())?, reachable: (()->())?) {
+        
+        AFNetworkReachabilityManager.shared().setReachabilityStatusChange { (status) in
+            
+            switch status {
+                
+            case .unknown, .notReachable:
+                print("没有网络")
+                if let notReachable = notReachable {
+                    
+                    notReachable()
+                }
+            case .reachableViaWWAN, .reachableViaWiFi:
+                print("有网络")
+                
+                if let reachable = reachable {
+                    
+                    reachable()
+                }
+            }
+        }
+        
+        AFNetworkReachabilityManager.shared().startMonitoring()
+    }
 }

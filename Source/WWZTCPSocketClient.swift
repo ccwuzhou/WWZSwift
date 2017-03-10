@@ -53,13 +53,13 @@ open class WWZTCPSocketClient: NSObject {
         self.disconnect()
         
         guard let host = self.p_convertedHost(host: host) else {
-            WWZLog("host converted fail")
+            print("host converted fail")
             return
         }
         
         if (try? self.socket.connect(toHost: host, onPort: onPort, withTimeout: CONNECT_TIME_OUT)) == nil {
             
-            WWZLog("connect fail")
+            print("connect fail")
         }
     }
     /// 断开连接
@@ -67,7 +67,7 @@ open class WWZTCPSocketClient: NSObject {
         
         if self.socket.isConnected {
             
-            WWZLog("disconnect socket")
+            print("disconnect socket")
             
             self.socket.disconnect()
         }
@@ -105,7 +105,7 @@ extension WWZTCPSocketClient : GCDAsyncSocketDelegate {
     
     /// 连接成功
     public func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
-        WWZLog("+++connect to server success")
+        print("+++connect to server success")
         
         DispatchQueue.main.async {
             
@@ -132,7 +132,7 @@ extension WWZTCPSocketClient : GCDAsyncSocketDelegate {
     /// 断开连接
     public func socketDidDisconnect(_ sock: GCDAsyncSocket, withError err: Error?) {
         
-        WWZLog("+++socket disconnect+++");
+        print("+++socket disconnect+++");
         
         DispatchQueue.main.async {
             
