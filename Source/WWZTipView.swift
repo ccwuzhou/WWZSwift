@@ -53,7 +53,7 @@ open class WWZTipView: WWZShowView {
         }
     }
     
-    public convenience init(attributedText: NSAttributedString, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ index: Int)->()) {
+    public init(attributedText: NSAttributedString, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ index: Int)->()) {
         
         let screenSize = UIScreen.main.bounds.size
         var tipViewX : CGFloat = 0;
@@ -68,7 +68,7 @@ open class WWZTipView: WWZShowView {
             tipViewX = 60
         }
 
-        self.init(frame: CGRect(x: tipViewX, y: 0, width: screenSize.width - 2*tipViewX, height: 0))
+        super.init(frame: CGRect(x: tipViewX, y: 0, width: screenSize.width - 2*tipViewX, height: 0))
         
         if buttonTitles.count == 0 || buttonTitles.count > 2 {
             return
@@ -87,6 +87,10 @@ open class WWZTipView: WWZShowView {
         
         // buttons
         self.p_addBottomButtons(buttonTitles: buttonTitles)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
 }

@@ -40,14 +40,38 @@ public let WWZ_IsPhone = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone
 
 public let WWZ_IsPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad
 
-// 打印，复制到项目中
-/*
+// 打印
+public var WWZ_DEBUG_ENABLED = false
+
 public func WWZLog<T>(_ message: T,file: String = #file, function: String = #function, line: Int = #line){
     
-    #if DEBUG
+    guard WWZ_DEBUG_ENABLED else {
+        return
+    }
     
-        print("\(Date.wwz_stringFromDate(date: Date(), dateFormat: "yyyy-MM-dd HH:mm:ss.SSS")) \((file as NSString).lastPathComponent)【\(function)】\(message)")
-        
-    #endif
+    print("\(Date.wwz_stringFromDate(date: Date(), dateFormat: "yyyy-MM-dd HH:mm:ss.SSS")) \((file as NSString).lastPathComponent)【\(function)】\(message)")
 }
- */
+
+public func WWZ_MAIN_ASYNC(after deadline: TimeInterval, execute: @escaping ()->()) {
+
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+deadline, execute: execute)
+}
+
+
+public func WWZ_BACK_ASYNC(execute: @escaping ()->()) {
+    
+    DispatchQueue.global().async(execute: execute)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

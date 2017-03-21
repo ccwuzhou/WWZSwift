@@ -7,12 +7,13 @@
 //
 
 import UIKit
-//import WWZSwift
+import WWZSwift
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        WWZ_DEBUG_ENABLED = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +24,8 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-    
+        WWZLog("")
+        
     }
 }
 

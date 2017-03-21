@@ -12,6 +12,7 @@
 		B05CAB6D1E7227D90030A965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05CAB6B1E7227D90030A965 /* Main.storyboard */; };
 		B05CAB6F1E7227D90030A965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05CAB6E1E7227D90030A965 /* Assets.xcassets */; };
 		B05CAB721E7227D90030A965 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05CAB701E7227D90030A965 /* LaunchScreen.storyboard */; };
+		B0CDE4611E7780CD004E3E25 /* WWZArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CDE4601E7780CD004E3E25 /* WWZArchiver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		B05CAB6E1E7227D90030A965 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B05CAB711E7227D90030A965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B05CAB731E7227D90030A965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0CDE4601E7780CD004E3E25 /* WWZArchiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZArchiver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				B05CAB671E7227D90030A965 /* AppDelegate.swift */,
 				B05CAB691E7227D90030A965 /* ViewController.swift */,
+				B0CDE4601E7780CD004E3E25 /* WWZArchiver.swift */,
 				B05CAB6B1E7227D90030A965 /* Main.storyboard */,
 				B05CAB6E1E7227D90030A965 /* Assets.xcassets */,
 				B05CAB701E7227D90030A965 /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 			files = (
 				B05CAB6A1E7227D90030A965 /* ViewController.swift in Sources */,
 				B05CAB681E7227D90030A965 /* AppDelegate.swift in Sources */,
+				B0CDE4611E7780CD004E3E25 /* WWZArchiver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

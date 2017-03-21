@@ -60,12 +60,12 @@ open class WWZTableViewCell: UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: reuseID)
         
         if cell == nil {
-            cell = WWZTableViewCell(style: style, reuseIdentifier: reuseID)
+            cell = self.init(style: style, reuseIdentifier: reuseID)
         }
         return cell as! WWZTableViewCell
     }
     
-    public init(style: WWZTableViewCellStyle, reuseIdentifier: String?) {
+    public required init(style: WWZTableViewCellStyle, reuseIdentifier: String?) {
         
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
         

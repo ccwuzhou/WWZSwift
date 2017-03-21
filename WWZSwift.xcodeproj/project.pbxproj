@@ -13,14 +13,11 @@
 		B0A75B221E714B820020CE71 /* WWZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B141E714B820020CE71 /* WWZButton.swift */; };
 		B0A75B231E714B820020CE71 /* WWZInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B151E714B820020CE71 /* WWZInputView.swift */; };
 		B0A75B241E714B820020CE71 /* WWZMenuPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B161E714B820020CE71 /* WWZMenuPopover.swift */; };
-		B0A75B251E714B820020CE71 /* WWZNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B171E714B820020CE71 /* WWZNetworkTool.swift */; };
 		B0A75B261E714B820020CE71 /* WWZShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B181E714B820020CE71 /* WWZShowView.swift */; };
 		B0A75B271E714B820020CE71 /* WWZSiriWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B191E714B820020CE71 /* WWZSiriWaveView.swift */; };
 		B0A75B291E714B820020CE71 /* WWZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1B1E714B820020CE71 /* WWZTableViewCell.swift */; };
-		B0A75B2A1E714B820020CE71 /* WWZTCPSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1C1E714B820020CE71 /* WWZTCPSocketClient.swift */; };
 		B0A75B2B1E714B820020CE71 /* WWZTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1D1E714B820020CE71 /* WWZTimePickerView.swift */; };
 		B0A75B2C1E714B820020CE71 /* WWZTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1E1E714B820020CE71 /* WWZTipView.swift */; };
-		B0A75B2D1E714B820020CE71 /* WWZUDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1F1E714B820020CE71 /* WWZUDPSocket.swift */; };
 		B0A75B2E1E714B820020CE71 /* WWZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B201E714B820020CE71 /* WWZViewController.swift */; };
 		B0A75B421E714BBC0020CE71 /* CALayer+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B2F1E714BBB0020CE71 /* CALayer+WWZ.swift */; };
 		B0A75B431E714BBC0020CE71 /* Date+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B301E714BBB0020CE71 /* Date+WWZ.swift */; };
@@ -41,31 +38,23 @@
 		B0A75B521E714BBC0020CE71 /* UITextField+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3F1E714BBC0020CE71 /* UITextField+WWZ.swift */; };
 		B0A75B531E714BBC0020CE71 /* UIView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B401E714BBC0020CE71 /* UIView+WWZ.swift */; };
 		B0A75B541E714BBC0020CE71 /* WWZHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B411E714BBC0020CE71 /* WWZHeader.swift */; };
-		B0A75B621E718B1C0020CE71 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B611E718B1C0020CE71 /* test.swift */; };
 		B0B3A1AB1E728C1300FBE255 /* CAAnimation+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B3A1AA1E728C1300FBE255 /* CAAnimation+WWZ.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4BB66A0F66827586D656DE14 /* Pods_WWZSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWZSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55ABDB633606BA91373DB9B2 /* Pods-WWZSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWZSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWZSwift/Pods-WWZSwift.release.xcconfig"; sourceTree = "<group>"; };
-		723D6B77C1372740562EE166 /* Pods-WWZSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWZSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWZSwift/Pods-WWZSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B05CAB791E7228C60030A965 /* UIAlertController+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+WWZ.swift"; sourceTree = "<group>"; };
-		B05CAB871E722C930030A965 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../Library/Developer/Xcode/DerivedData/WWZSwift-fzqgmozybptxieetffybbvyujpbe/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
-		B05CAB891E722C960030A965 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "../../../Library/Developer/Xcode/DerivedData/WWZSwift-fzqgmozybptxieetffybbvyujpbe/Build/Products/Debug-iphoneos/CocoaAsyncSocket/CocoaAsyncSocket.framework"; sourceTree = "<group>"; };
 		B05CABB21E7251600030A965 /* WWZCaptureTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZCaptureTool.swift; sourceTree = "<group>"; };
 		B094F2651E6E8CD900D5380E /* WWZSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WWZSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A75B131E714B820020CE71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
 		B0A75B141E714B820020CE71 /* WWZButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZButton.swift; sourceTree = "<group>"; };
 		B0A75B151E714B820020CE71 /* WWZInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZInputView.swift; sourceTree = "<group>"; };
 		B0A75B161E714B820020CE71 /* WWZMenuPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZMenuPopover.swift; sourceTree = "<group>"; };
-		B0A75B171E714B820020CE71 /* WWZNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZNetworkTool.swift; sourceTree = "<group>"; };
 		B0A75B181E714B820020CE71 /* WWZShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZShowView.swift; sourceTree = "<group>"; };
 		B0A75B191E714B820020CE71 /* WWZSiriWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZSiriWaveView.swift; sourceTree = "<group>"; };
 		B0A75B1B1E714B820020CE71 /* WWZTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTableViewCell.swift; sourceTree = "<group>"; };
-		B0A75B1C1E714B820020CE71 /* WWZTCPSocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTCPSocketClient.swift; sourceTree = "<group>"; };
 		B0A75B1D1E714B820020CE71 /* WWZTimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTimePickerView.swift; sourceTree = "<group>"; };
 		B0A75B1E1E714B820020CE71 /* WWZTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTipView.swift; sourceTree = "<group>"; };
-		B0A75B1F1E714B820020CE71 /* WWZUDPSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZUDPSocket.swift; sourceTree = "<group>"; };
 		B0A75B201E714B820020CE71 /* WWZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZViewController.swift; sourceTree = "<group>"; };
 		B0A75B2F1E714BBB0020CE71 /* CALayer+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+WWZ.swift"; sourceTree = "<group>"; };
 		B0A75B301E714BBB0020CE71 /* Date+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WWZ.swift"; sourceTree = "<group>"; };
@@ -86,9 +75,6 @@
 		B0A75B3F1E714BBC0020CE71 /* UITextField+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+WWZ.swift"; sourceTree = "<group>"; };
 		B0A75B401E714BBC0020CE71 /* UIView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+WWZ.swift"; sourceTree = "<group>"; };
 		B0A75B411E714BBC0020CE71 /* WWZHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZHeader.swift; sourceTree = "<group>"; };
-		B0A75B5F1E718B1B0020CE71 /* test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0A75B611E718B1C0020CE71 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
-		B0A75B631E718B1C0020CE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B3A1AA1E728C1300FBE255 /* CAAnimation+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+WWZ.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,42 +87,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0A75B5C1E718B1B0020CE71 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		10D4335721CDDD5D6AA4C560 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B05CAB891E722C960030A965 /* CocoaAsyncSocket.framework */,
-				B05CAB871E722C930030A965 /* AFNetworking.framework */,
 				4BB66A0F66827586D656DE14 /* Pods_WWZSwift.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AA8BD1D62ED8F4C94D8C4365 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				723D6B77C1372740562EE166 /* Pods-WWZSwift.debug.xcconfig */,
-				55ABDB633606BA91373DB9B2 /* Pods-WWZSwift.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		B094F25B1E6E8CD900D5380E = {
 			isa = PBXGroup;
 			children = (
 				B0A75B121E714B820020CE71 /* Source */,
-				B0A75B601E718B1C0020CE71 /* test */,
 				B094F2661E6E8CD900D5380E /* Products */,
-				AA8BD1D62ED8F4C94D8C4365 /* Pods */,
 				B0A75B551E714C030020CE71 /* Supporting Files */,
 				10D4335721CDDD5D6AA4C560 /* Frameworks */,
 			);
@@ -146,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				B094F2651E6E8CD900D5380E /* WWZSwift.framework */,
-				B0A75B5F1E718B1B0020CE71 /* test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,21 +181,9 @@
 		B0A75B581E714C5C0020CE71 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				B0A75B171E714B820020CE71 /* WWZNetworkTool.swift */,
-				B0A75B1C1E714B820020CE71 /* WWZTCPSocketClient.swift */,
-				B0A75B1F1E714B820020CE71 /* WWZUDPSocket.swift */,
 				B05CABB21E7251600030A965 /* WWZCaptureTool.swift */,
 			);
 			name = Tools;
-			sourceTree = "<group>";
-		};
-		B0A75B601E718B1C0020CE71 /* test */ = {
-			isa = PBXGroup;
-			children = (
-				B0A75B611E718B1C0020CE71 /* test.swift */,
-				B0A75B631E718B1C0020CE71 /* Info.plist */,
-			);
-			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,12 +203,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B094F26D1E6E8CD900D5380E /* Build configuration list for PBXNativeTarget "WWZSwift" */;
 			buildPhases = (
-				822B02D0054A485BBE88C799 /* [CP] Check Pods Manifest.lock */,
 				B094F2601E6E8CD900D5380E /* Sources */,
 				B094F2611E6E8CD900D5380E /* Frameworks */,
 				B094F2621E6E8CD900D5380E /* Headers */,
 				B094F2631E6E8CD900D5380E /* Resources */,
-				35E1B2E515354ADED7E438D2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,23 +216,6 @@
 			productName = WWZSwift;
 			productReference = B094F2651E6E8CD900D5380E /* WWZSwift.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		B0A75B5E1E718B1B0020CE71 /* test */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B0A75B661E718B1C0020CE71 /* Build configuration list for PBXNativeTarget "test" */;
-			buildPhases = (
-				B0A75B5B1E718B1B0020CE71 /* Sources */,
-				B0A75B5C1E718B1B0020CE71 /* Frameworks */,
-				B0A75B5D1E718B1B0020CE71 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = test;
-			productName = test;
-			productReference = B0A75B5F1E718B1B0020CE71 /* test.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -294,11 +228,6 @@
 				ORGANIZATIONNAME = tijio;
 				TargetAttributes = {
 					B094F2641E6E8CD900D5380E = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = J46LC7KBX4;
-						ProvisioningStyle = Automatic;
-					};
-					B0A75B5E1E718B1B0020CE71 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = J46LC7KBX4;
 						ProvisioningStyle = Automatic;
@@ -318,7 +247,6 @@
 			projectRoot = "";
 			targets = (
 				B094F2641E6E8CD900D5380E /* WWZSwift */,
-				B0A75B5E1E718B1B0020CE71 /* test */,
 			);
 		};
 /* End PBXProject section */
@@ -331,47 +259,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0A75B5D1E718B1B0020CE71 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		35E1B2E515354ADED7E438D2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWZSwift/Pods-WWZSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		822B02D0054A485BBE88C799 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B094F2601E6E8CD900D5380E /* Sources */ = {
@@ -398,10 +286,8 @@
 				B0A75B2C1E714B820020CE71 /* WWZTipView.swift in Sources */,
 				B0A75B4E1E714BBC0020CE71 /* UINavigationBar+WWZ.swift in Sources */,
 				B0A75B4F1E714BBC0020CE71 /* UISlider+WWZ.swift in Sources */,
-				B0A75B251E714B820020CE71 /* WWZNetworkTool.swift in Sources */,
 				B0A75B491E714BBC0020CE71 /* UICollectionView+WWZ.swift in Sources */,
 				B0A75B441E714BBC0020CE71 /* NotificationCenter+WWZ.swift in Sources */,
-				B0A75B2D1E714B820020CE71 /* WWZUDPSocket.swift in Sources */,
 				B0A75B4A1E714BBC0020CE71 /* UIColor+WWZ.swift in Sources */,
 				B0A75B4D1E714BBC0020CE71 /* UILabel+WWZ.swift in Sources */,
 				B0A75B501E714BBC0020CE71 /* UISwitch+WWZ.swift in Sources */,
@@ -411,15 +297,6 @@
 				B0A75B2E1E714B820020CE71 /* WWZViewController.swift in Sources */,
 				B0A75B511E714BBC0020CE71 /* UITableView+WWZ.swift in Sources */,
 				B0A75B271E714B820020CE71 /* WWZSiriWaveView.swift in Sources */,
-				B0A75B2A1E714B820020CE71 /* WWZTCPSocketClient.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0A75B5B1E718B1B0020CE71 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B0A75B621E718B1C0020CE71 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +404,6 @@
 		};
 		B094F26E1E6E8CD900D5380E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 723D6B77C1372740562EE166 /* Pods-WWZSwift.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -550,7 +426,6 @@
 		};
 		B094F26F1E6E8CD900D5380E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55ABDB633606BA91373DB9B2 /* Pods-WWZSwift.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -567,30 +442,6 @@
 				PRODUCT_BUNDLE_PACKAGE_TYPE = FMWK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		B0A75B641E718B1C0020CE71 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = J46LC7KBX4;
-				INFOPLIST_FILE = test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.tijio.test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		B0A75B651E718B1C0020CE71 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = J46LC7KBX4;
-				INFOPLIST_FILE = test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.tijio.test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -612,15 +463,6 @@
 			buildConfigurations = (
 				B094F26E1E6E8CD900D5380E /* Debug */,
 				B094F26F1E6E8CD900D5380E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B0A75B661E718B1C0020CE71 /* Build configuration list for PBXNativeTarget "test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B0A75B641E718B1C0020CE71 /* Debug */,
-				B0A75B651E718B1C0020CE71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

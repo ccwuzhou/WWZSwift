@@ -27,12 +27,12 @@ open class WWZInputView: WWZShowView {
         return textField
     }()
     
-    public convenience init(title: String, text: String?, placeHolder: String?, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ inputText: String,_ index: Int)->()) {
+    public init(title: String, text: String?, placeHolder: String?, buttonTitles: [String], clickButtonAtIndex block: @escaping (_ inputText: String,_ index: Int)->()) {
         
         let inputViewW : CGFloat = WWZ_IsPad ? 425 : WWZ_SCREEN_WIDTH * 250.0/320.0
         let inputViewH : CGFloat = WWZ_IsPad ? 183 : 150
         
-        self.init(frame: CGRect(x: (WWZ_SCREEN_WIDTH-inputViewW)*0.5, y: WWZ_SCREEN_HEIGHT*0.25, width: inputViewW, height: inputViewH))
+        super.init(frame: CGRect(x: (WWZ_SCREEN_WIDTH-inputViewW)*0.5, y: WWZ_SCREEN_HEIGHT*0.25, width: inputViewW, height: inputViewH))
         
         guard buttonTitles.count != 2 else {
             
@@ -60,6 +60,10 @@ open class WWZInputView: WWZShowView {
         
         // buttons
         self.p_addBottomButtons(buttonTitles: buttonTitles)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 

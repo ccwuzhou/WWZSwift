@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WWZSwift"
-  s.version      = "1.2.9"
+  s.version      = "1.3.0"
   s.summary      = "A short description of WWZSwift."
 
   s.homepage     = "https://github.com/ccwuzhou/WWZSwift"
@@ -34,7 +34,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.framework  = "UIKit"
   s.source_files = "Source/*.swift"
-  s.dependency "CocoaAsyncSocket"
-  s.dependency "AFNetworking"
 
 end

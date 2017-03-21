@@ -39,6 +39,10 @@ fileprivate class WWZMenuCell: WWZTableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    public required init(style: WWZTableViewCellStyle, reuseIdentifier: String?) {
+        fatalError("init(style:reuseIdentifier:) has not been implemented")
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -122,9 +126,9 @@ open class WWZMenuPopover: UIView {
     fileprivate var finalCenter: CGPoint = CGPoint.zero
     
     
-    public convenience init(cellSize: CGSize, titles: [String], imageNames: [String]?) {
+    public init(cellSize: CGSize, titles: [String], imageNames: [String]?) {
         
-        self.init(frame: CGRect(origin: CGPoint.zero, size: cellSize))
+        super.init(frame: CGRect(origin: CGPoint.zero, size: cellSize))
         
         self.cellSize = cellSize
         
@@ -134,6 +138,10 @@ open class WWZMenuPopover: UIView {
         
         // 初始设置
         self.p_setup()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override open func draw(_ rect: CGRect) {
