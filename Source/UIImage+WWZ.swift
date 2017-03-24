@@ -121,7 +121,7 @@ public extension UIImage {
 public extension UIImage {
     
     /// 得到纯色图片
-    public class func wwz_image(color: UIColor, size: CGSize, alpha: CGFloat) -> UIImage? {
+    public class func wwz_image(color: UIColor, size: CGSize) -> UIImage? {
         
         let rect = CGRect(origin: CGPoint.zero, size: size)
         
@@ -129,7 +129,6 @@ public extension UIImage {
         
         let context = UIGraphicsGetCurrentContext()
         
-        context?.setAlpha(alpha)
         context?.setFillColor(color.cgColor)
         context?.fill(rect)
         

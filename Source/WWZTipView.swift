@@ -139,7 +139,7 @@ extension WWZTipView {
         
         btn.setTitle(title, for: .normal)
         btn.setTitleColor(self.buttonTitleColor, for: .normal)
-        btn.setBackgroundImage(UIImage.wwz_image(color: TIP_LINE_COLOR, size: frame.size, alpha: 1), for: .highlighted)
+        btn.setBackgroundImage(UIImage.wwz_image(color: TIP_LINE_COLOR, size: frame.size), for: .highlighted)
         btn.titleLabel?.font = self.buttonTitleFont
         btn.tag = TIP_BUTTON_TAG + tag
         btn.addTarget(self, action: #selector(self.clickButtonAtIndex), for: .touchUpInside)

@@ -16,6 +16,10 @@ open class WWZViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         
         self.automaticallyAdjustsScrollViewInsets = false
+        
+        self.edgesForExtendedLayout = .all
+        
+        self.extendedLayoutIncludesOpaqueBars = true
     }
 
     

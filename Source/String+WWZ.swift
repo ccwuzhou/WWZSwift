@@ -131,7 +131,7 @@ public extension String {
             if range.lowerBound >= self.characters.count { return "" }
             
             let startIndex = range.lowerBound <= 0 ? self.startIndex : self.index(self.startIndex, offsetBy: range.lowerBound)
-            let endIndex = range.upperBound < self.characters.count ? self.index(self.startIndex, offsetBy: range.upperBound+1) : self.endIndex
+            let endIndex = range.upperBound < self.characters.count ? self.index(self.startIndex, offsetBy: range.upperBound) : self.endIndex
             
             return self.substring(with: startIndex..<endIndex)
         }

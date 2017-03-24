@@ -101,7 +101,7 @@ extension WWZInputView {
         
         let btn = UIButton(frame: frame, nTitle: title, titleFont: UIFont.systemFont(ofSize: 16), nColor: UIColor.black)
 
-        btn.setBackgroundImage(UIImage.wwz_image(color: INPUT_LINE_COLOR, size: frame.size, alpha: 1), for: .highlighted)
+        btn.setBackgroundImage(UIImage.wwz_image(color: INPUT_LINE_COLOR, size: frame.size), for: .highlighted)
 
         btn.tag = INPUT_BUTTON_TAG + tag
         btn.addTarget(self, action: #selector(self.clickButtonAtIndex), for: .touchUpInside)

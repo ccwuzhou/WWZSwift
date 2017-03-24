@@ -10,6 +10,9 @@
 		61E2EE4868129C4FBD4AF3A1 /* Pods_WWZSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB66A0F66827586D656DE14 /* Pods_WWZSwift.framework */; };
 		B05CAB7A1E7228C60030A965 /* UIAlertController+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05CAB791E7228C60030A965 /* UIAlertController+WWZ.swift */; };
 		B05CABB31E7251600030A965 /* WWZCaptureTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05CABB21E7251600030A965 /* WWZCaptureTool.swift */; };
+		B08C3F9F1E8206DB000258C0 /* WWZArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C3F9E1E8206DB000258C0 /* WWZArchiver.swift */; };
+		B08C3FA71E820760000258C0 /* WWZSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C3FA61E820760000258C0 /* WWZSwiftTests.swift */; };
+		B08C3FA91E820760000258C0 /* WWZSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B094F2651E6E8CD900D5380E /* WWZSwift.framework */; };
 		B0A75B221E714B820020CE71 /* WWZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B141E714B820020CE71 /* WWZButton.swift */; };
 		B0A75B231E714B820020CE71 /* WWZInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B151E714B820020CE71 /* WWZInputView.swift */; };
 		B0A75B241E714B820020CE71 /* WWZMenuPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B161E714B820020CE71 /* WWZMenuPopover.swift */; };
@@ -41,10 +44,24 @@
 		B0B3A1AB1E728C1300FBE255 /* CAAnimation+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B3A1AA1E728C1300FBE255 /* CAAnimation+WWZ.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B08C3FAA1E820760000258C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B094F25C1E6E8CD900D5380E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B094F2641E6E8CD900D5380E;
+			remoteInfo = WWZSwift;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4BB66A0F66827586D656DE14 /* Pods_WWZSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWZSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05CAB791E7228C60030A965 /* UIAlertController+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+WWZ.swift"; sourceTree = "<group>"; };
 		B05CABB21E7251600030A965 /* WWZCaptureTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZCaptureTool.swift; sourceTree = "<group>"; };
+		B08C3F9E1E8206DB000258C0 /* WWZArchiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZArchiver.swift; sourceTree = "<group>"; };
+		B08C3FA41E820760000258C0 /* WWZSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWZSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08C3FA61E820760000258C0 /* WWZSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWZSwiftTests.swift; sourceTree = "<group>"; };
+		B08C3FA81E820760000258C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B094F2651E6E8CD900D5380E /* WWZSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WWZSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A75B131E714B820020CE71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
 		B0A75B141E714B820020CE71 /* WWZButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZButton.swift; sourceTree = "<group>"; };
@@ -79,6 +96,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B08C3FA11E820760000258C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08C3FA91E820760000258C0 /* WWZSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B094F2611E6E8CD900D5380E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,10 +123,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B08C3FA51E820760000258C0 /* WWZSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B08C3FA61E820760000258C0 /* WWZSwiftTests.swift */,
+				B08C3FA81E820760000258C0 /* Info.plist */,
+			);
+			path = WWZSwiftTests;
+			sourceTree = "<group>";
+		};
 		B094F25B1E6E8CD900D5380E = {
 			isa = PBXGroup;
 			children = (
 				B0A75B121E714B820020CE71 /* Source */,
+				B08C3FA51E820760000258C0 /* WWZSwiftTests */,
 				B094F2661E6E8CD900D5380E /* Products */,
 				B0A75B551E714C030020CE71 /* Supporting Files */,
 				10D4335721CDDD5D6AA4C560 /* Frameworks */,
@@ -112,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				B094F2651E6E8CD900D5380E /* WWZSwift.framework */,
+				B08C3FA41E820760000258C0 /* WWZSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +217,7 @@
 		B0A75B581E714C5C0020CE71 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B08C3F9E1E8206DB000258C0 /* WWZArchiver.swift */,
 				B05CABB21E7251600030A965 /* WWZCaptureTool.swift */,
 			);
 			name = Tools;
@@ -199,6 +236,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B08C3FA31E820760000258C0 /* WWZSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B08C3FAE1E820760000258C0 /* Build configuration list for PBXNativeTarget "WWZSwiftTests" */;
+			buildPhases = (
+				B08C3FA01E820760000258C0 /* Sources */,
+				B08C3FA11E820760000258C0 /* Frameworks */,
+				B08C3FA21E820760000258C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B08C3FAB1E820760000258C0 /* PBXTargetDependency */,
+			);
+			name = WWZSwiftTests;
+			productName = WWZSwiftTests;
+			productReference = B08C3FA41E820760000258C0 /* WWZSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B094F2641E6E8CD900D5380E /* WWZSwift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B094F26D1E6E8CD900D5380E /* Build configuration list for PBXNativeTarget "WWZSwift" */;
@@ -227,6 +282,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = tijio;
 				TargetAttributes = {
+					B08C3FA31E820760000258C0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J46LC7KBX4;
+						ProvisioningStyle = Automatic;
+					};
 					B094F2641E6E8CD900D5380E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = J46LC7KBX4;
@@ -247,11 +307,19 @@
 			projectRoot = "";
 			targets = (
 				B094F2641E6E8CD900D5380E /* WWZSwift */,
+				B08C3FA31E820760000258C0 /* WWZSwiftTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B08C3FA21E820760000258C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B094F2631E6E8CD900D5380E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +330,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B08C3FA01E820760000258C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08C3FA71E820760000258C0 /* WWZSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B094F2601E6E8CD900D5380E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +350,7 @@
 				B0A75B221E714B820020CE71 /* WWZButton.swift in Sources */,
 				B0A75B471E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift in Sources */,
 				B0A75B521E714BBC0020CE71 /* UITextField+WWZ.swift in Sources */,
+				B08C3F9F1E8206DB000258C0 /* WWZArchiver.swift in Sources */,
 				B0A75B461E714BBC0020CE71 /* UIAlertView+WWZ.swift in Sources */,
 				B0A75B4B1E714BBC0020CE71 /* UIImage+WWZ.swift in Sources */,
 				B0A75B2B1E714B820020CE71 /* WWZTimePickerView.swift in Sources */,
@@ -302,7 +379,39 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B08C3FAB1E820760000258C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B094F2641E6E8CD900D5380E /* WWZSwift */;
+			targetProxy = B08C3FAA1E820760000258C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B08C3FAC1E820760000258C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = J46LC7KBX4;
+				INFOPLIST_FILE = WWZSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.tijio.WWZSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B08C3FAD1E820760000258C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = J46LC7KBX4;
+				INFOPLIST_FILE = WWZSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.tijio.WWZSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		B094F26B1E6E8CD900D5380E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -449,6 +558,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B08C3FAE1E820760000258C0 /* Build configuration list for PBXNativeTarget "WWZSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B08C3FAC1E820760000258C0 /* Debug */,
+				B08C3FAD1E820760000258C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B094F25F1E6E8CD900D5380E /* Build configuration list for PBXProject "WWZSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
