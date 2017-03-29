@@ -137,3 +137,99 @@ public extension String {
         }
     }
 }
+
+extension String {
+    
+    public func wwz_jsonFormat() -> String {
+        
+        let spacing = "\t"
+        let enterKey = "\n"
+        
+        var number = 0
+        
+        let addSpaceBlock : (Int)-> String = { num in
+            
+            var mString = String()
+            
+            for _ in 0..<num {
+                mString.append(spacing)
+            }
+            return mString
+        }
+        
+        let firstCharacter = self[0...1]
+        
+        var mString = "\n" + firstCharacter
+        
+        if firstCharacter == "[" || firstCharacter == "{" {
+            
+            mString.append(enterKey)
+            
+            number += 1
+            
+            mString.append(addSpaceBlock(number))
+        }
+        
+        var isInQuotation = false
+        
+        for i in 0...self.characters.count {
+            
+            let subC = self[i...i+1]
+            
+            if subC == "\"" && self[i-1...i] != "\\" {
+                
+                isInQuotation = !isInQuotation
+            }
+            
+            if isInQuotation {
+                
+                mString.append(subC)
+                continue
+            }
+            
+            if subC == "[" || subC == "{" {
+                
+                if self[i-1...i] == ":" {
+                    
+                    mString.append(enterKey)
+                    mString.append(addSpaceBlock(number))
+                }
+                
+                mString.append(subC+enterKey)
+                
+                number += 1
+                
+                mString.append(addSpaceBlock(number))
+                
+            }else if subC == "]" || subC == "}" {
+                
+                mString.append(enterKey)
+                
+                number -= 1
+                
+                mString.append(addSpaceBlock(number))
+                
+                mString.append(subC)
+                
+                if i+1 < self.characters.count && self[i+1...i+2] != "," {
+                    mString.append(enterKey)
+                }
+            }else if subC == "," {
+                
+                mString.append(subC)
+                
+                mString.append(enterKey)
+                
+                mString.append(addSpaceBlock(number))
+                
+            }else {
+                
+                mString.append(subC)
+                
+            }
+        }
+        
+        return mString
+    }
+}
+

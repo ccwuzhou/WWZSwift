@@ -28,7 +28,7 @@ open class WWZShowView: UIView {
     // 点击空白区域消失
     public var isTapEnabled : Bool = true
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         
         super.init(frame: frame)
         
@@ -48,7 +48,7 @@ open class WWZShowView: UIView {
         containButton.backgroundColor = UIColor.colorFromRGBA(0, 0, 0, 0.1)
         
         if self.isTapEnabled {
-            containButton.addTarget(self, action: #selector(self.wwz_dismiss), for: .touchUpInside)
+            containButton.addTarget(self, action: #selector(self.dismiss), for: .touchUpInside)
         }
         containButton.addSubview(self)
         
@@ -116,6 +116,11 @@ extension WWZShowView {
         case .fromTop, .fromLeft, .fromBottom, .fromRight:
             self.transform = CGAffineTransform.identity
         }
+    }
+    
+    @objc fileprivate func dismiss() {
+        
+        self.wwz_dismiss(completion: nil)
     }
 }
 

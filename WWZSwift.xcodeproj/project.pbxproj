@@ -6,8 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		B04855101E88BB6000B81283 /* WWZAggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B04855131E88BB6000B81283 /* Build configuration list for PBXAggregateTarget "WWZAggregate" */;
+			buildPhases = (
+				B04855161E88BB8B00B81283 /* ShellScript */,
+			);
+			dependencies = (
+				B04855151E88BB8700B81283 /* PBXTargetDependency */,
+			);
+			name = WWZAggregate;
+			productName = WWZAggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		61E2EE4868129C4FBD4AF3A1 /* Pods_WWZSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB66A0F66827586D656DE14 /* Pods_WWZSwift.framework */; };
 		B05CAB7A1E7228C60030A965 /* UIAlertController+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05CAB791E7228C60030A965 /* UIAlertController+WWZ.swift */; };
 		B05CABB31E7251600030A965 /* WWZCaptureTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05CABB21E7251600030A965 /* WWZCaptureTool.swift */; };
 		B08C3F9F1E8206DB000258C0 /* WWZArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C3F9E1E8206DB000258C0 /* WWZArchiver.swift */; };
@@ -45,6 +59,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B04855141E88BB8700B81283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B094F25C1E6E8CD900D5380E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B094F2641E6E8CD900D5380E;
+			remoteInfo = WWZSwift;
+		};
 		B08C3FAA1E820760000258C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B094F25C1E6E8CD900D5380E /* Project object */;
@@ -55,7 +76,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4BB66A0F66827586D656DE14 /* Pods_WWZSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWZSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05CAB791E7228C60030A965 /* UIAlertController+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+WWZ.swift"; sourceTree = "<group>"; };
 		B05CABB21E7251600030A965 /* WWZCaptureTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZCaptureTool.swift; sourceTree = "<group>"; };
 		B08C3F9E1E8206DB000258C0 /* WWZArchiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZArchiver.swift; sourceTree = "<group>"; };
@@ -108,7 +128,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61E2EE4868129C4FBD4AF3A1 /* Pods_WWZSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +137,6 @@
 		10D4335721CDDD5D6AA4C560 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4BB66A0F66827586D656DE14 /* Pods_WWZSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -282,6 +300,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = tijio;
 				TargetAttributes = {
+					B04855101E88BB6000B81283 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J46LC7KBX4;
+						ProvisioningStyle = Automatic;
+					};
 					B08C3FA31E820760000258C0 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = J46LC7KBX4;
@@ -308,6 +331,7 @@
 			targets = (
 				B094F2641E6E8CD900D5380E /* WWZSwift */,
 				B08C3FA31E820760000258C0 /* WWZSwiftTests */,
+				B04855101E88BB6000B81283 /* WWZAggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -328,6 +352,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B04855161E88BB8B00B81283 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n\n# 例如: FMK_NAME = \"MyFramework\"\n\nFMK_NAME=${PROJECT_NAME}\n\n# Install dir will be the final output to the framework.\n\n# The following line create it in the root folder of the current project.\n\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\n\nWRK_DIR=build\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n\n# Clean and Building both architectures.\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\n\nif [ -d \"${INSTALL_DIR}\" ]\n\nthen\n\nrm -rf \"${INSTALL_DIR}\"\n\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B08C3FA01E820760000258C0 /* Sources */ = {
@@ -380,6 +420,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B04855151E88BB8700B81283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B094F2641E6E8CD900D5380E /* WWZSwift */;
+			targetProxy = B04855141E88BB8700B81283 /* PBXContainerItemProxy */;
+		};
 		B08C3FAB1E820760000258C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B094F2641E6E8CD900D5380E /* WWZSwift */;
@@ -388,6 +433,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B04855111E88BB6000B81283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = J46LC7KBX4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B04855121E88BB6000B81283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = J46LC7KBX4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B08C3FAC1E820760000258C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -558,6 +619,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B04855131E88BB6000B81283 /* Build configuration list for PBXAggregateTarget "WWZAggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04855111E88BB6000B81283 /* Debug */,
+				B04855121E88BB6000B81283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B08C3FAE1E820760000258C0 /* Build configuration list for PBXNativeTarget "WWZSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
