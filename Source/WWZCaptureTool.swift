@@ -9,46 +9,57 @@
 import UIKit
 import AVFoundation
 
-public protocol WWZCaptureToolDelegate: NSObjectProtocol {
-    
-    func captureTool(captureTool: WWZCaptureTool, captureStringValue value: String);
-}
-
+public typealias WWZScanResultBlock = (_ result: [String]) -> ()
 
 open class WWZCaptureTool: NSObject {
     
-    public var delegate : WWZCaptureToolDelegate?
+    /// 是否绘制扫描到的二维码边框
+    public var isDrawCodeFrameFlag : Bool = false
     
-    /**
-     *  显示视频预览层
-     *
-     *  @param layer super layer
-     */
-    public func showPreviewLayer(inLayer: CALayer) {
-        
-        if WWZCaptureTool.isCaptureDenyAuthorizationed() { return }
-        
-        self.previewLayer.frame = inLayer.bounds
-        
-        inLayer.insertSublayer(self.previewLayer, at: 0)
-    }
-    /**
-     *  开始扫描
-     */
-    public func startRunning() {
+    /// 开始扫描
+    public func startRunning(inView: UIView, result: @escaping WWZScanResultBlock) {
         
         if WWZCaptureTool.isCaptureDenyAuthorizationed() {return}
+        
+        self.resultBlock = result
+        
+        // 使用会话, 添加输入和输出
+        if self.captureSession.canAddInput(self.captureInput) && self.captureSession.canAddOutput(self.captureOutput) {
+            
+            self.captureSession.addInput(self.captureInput)
+            self.captureSession.addOutput(self.captureOutput)
+        }
+        // 此项设置, 只能设置到session添加输出之后, 否则扫描无效
+        self.captureOutput.metadataObjectTypes = [AVMetadataObjectTypeQRCode]
+        
+        // 添加视频预览图层
+        self.previewLayer.frame = inView.bounds
+        inView.layer.insertSublayer(self.previewLayer, at: 0)
+        
+        // 启动会话, 监听元数据处理后的结果
         self.captureSession.startRunning()
     }
-    /**
-     *  停止扫描
-     */
+    
+    /// 停止扫描
     public func stopRunning() {
         
         if WWZCaptureTool.isCaptureDenyAuthorizationed() {return}
         self.captureSession.stopRunning()
     }
+    /// 设置兴趣点
+    public func setOriginRectOfInterest(originRect: CGRect) {
     
+        // 注意: 每个参数的取值都是对应的比例
+        // 注意: 坐标系, 是横屏状态下的坐标系
+        let screenBounds = UIScreen.main.bounds
+        let x = originRect.origin.y / screenBounds.size.height
+        let y = originRect.origin.x / screenBounds.size.width
+        let width = originRect.size.height / screenBounds.size.height
+        let height = originRect.size.width / screenBounds.size.width
+        
+        self.captureOutput.rectOfInterest = CGRect(x: x, y: y, width: width, height: height)
+    }
+
     /**
      *  手电简开关
      */
@@ -75,60 +86,40 @@ open class WWZCaptureTool: NSObject {
         return AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) == .denied
     }
     
+    // MARK: -内部属性
+    // 会话
     fileprivate lazy var captureSession : AVCaptureSession! = {
         
         let session = AVCaptureSession()
         session.sessionPreset = AVCaptureSessionPresetHigh
-        
-        if session.canAddInput(self.captureInput) {
-            
-            session.addInput(self.captureInput)
-        }
-        if session.canAddOutput(self.captureOutput) {
-            
-            session.addOutput(self.captureOutput)
-        }
-        
-        self.captureOutput.metadataObjectTypes = [AVMetadataObjectTypeQRCode]
         return session
-        
     }()
     
+    // 输入设备
     fileprivate lazy var captureInput : AVCaptureDeviceInput? = {
         
-        var captureDevice : AVCaptureDevice?
+        var captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         
-        guard let devices = (AVCaptureDevice.devices(withMediaType: AVMediaTypeVideo) as? [AVCaptureDevice]) else { return nil }
-        
-        for device in devices {
+        guard let input = try? AVCaptureDeviceInput(device: captureDevice) else {
             
-            if device.position == .back {
-                
-                captureDevice = device
-                break
-            }
-        }
-        
-        guard let captureInputDevice = captureDevice else {
             print("取得后置摄像头时出现问题.");
             return nil
         }
-        
-        guard let input = try? AVCaptureDeviceInput(device: captureInputDevice) else { return nil }
         
         return input
         
         
     }()
-    
-    fileprivate lazy var captureOutput : AVCaptureMetadataOutput! = {
+    // 元数据输出处理
+    fileprivate lazy var captureOutput : AVCaptureMetadataOutput = {
         
         let output = AVCaptureMetadataOutput()
+        // 设置元数据输出处理代理
         output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
         
         return output
     }()
-    
+    // 预览图层
     fileprivate lazy var previewLayer : AVCaptureVideoPreviewLayer! = {
         
         let layer = AVCaptureVideoPreviewLayer(session: self.captureSession)
@@ -136,28 +127,92 @@ open class WWZCaptureTool: NSObject {
         
         return layer
     }()
+    
+    // 记录需要执行的代码块
+    fileprivate var resultBlock : WWZScanResultBlock?
 }
 
+// MARK: -扫描框
+extension WWZCaptureTool {
 
-extension WWZCaptureTool : AVCaptureMetadataOutputObjectsDelegate{
-    /**
-     *  扫描成功调用
-     */
-    public func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
+    // 添加扫描框
+    fileprivate func addShowLayer(resultCodeObject: AVMetadataMachineReadableCodeObject) {
         
-        guard metadataObjects.count > 0 else {
-            return
+        if resultCodeObject.corners == nil || resultCodeObject.corners.count == 0{ return }
+        
+        // 创建图层
+        let showLayer: CAShapeLayer = CAShapeLayer()
+        showLayer.lineWidth = 2.0
+        showLayer.strokeColor = UIColor.red.cgColor
+        showLayer.fillColor = UIColor.clear.cgColor
+        
+        // 创建图层路径, 并根据四角绘制线
+        let path = UIBezierPath()
+        // 解析点
+        var resultPointArray = [CGPoint]()
+        for pointDic in resultCodeObject.corners{
+            // 将点字典转换成为点
+            let point = CGPoint(dictionaryRepresentation: pointDic as! CFDictionary)
+            resultPointArray.append(point!)
         }
         
-        self.captureSession.stopRunning()
+        // 移动到第一个点
+        path.move(to: resultPointArray[0])
         
-        guard let metadataObj = metadataObjects[0] as? AVMetadataMachineReadableCodeObject else { return }
+        // 添加剩下的三个点
+        for i in (1...3)
+        {
+            path.addLine(to: resultPointArray[i])
+        }
         
-        guard let stringValue = metadataObj.stringValue else { return }
+        // 关闭路径
+        path.close()
         
-        if let delegate = self.delegate {
+        showLayer.path = path.cgPath
+        
+        // 将layer, 添加到图层上
+        self.previewLayer.addSublayer(showLayer)
+    }
+    
+    // 移除扫描框
+    fileprivate func removeShowLayer() {
+        
+        guard let subLayers = self.previewLayer.sublayers else { return }
+        
+        for layer in subLayers {
             
-            delegate.captureTool(captureTool: self, captureStringValue: stringValue)
+            if layer.isKind(of: CAShapeLayer.self) {
+                layer.removeFromSuperlayer()
+            }
+        }
+    }
+}
+// MARK: -AVCaptureMetadataOutputObjectsDelegate
+extension WWZCaptureTool : AVCaptureMetadataOutputObjectsDelegate{
+ 
+    public func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
+        
+        self.removeShowLayer()
+        
+        var tempArray = [String]()
+        
+        for metadataObj in metadataObjects {
+            
+            guard let obj = metadataObj as? AVMetadataObject else { continue }
+            
+            guard let codeObject = self.previewLayer.transformedMetadataObject(for: obj) as? AVMetadataMachineReadableCodeObject else { continue }
+            
+            guard let stringValue = codeObject.stringValue else { continue }
+            tempArray.append(stringValue)
+            
+            if self.isDrawCodeFrameFlag {
+                self.addShowLayer(resultCodeObject: codeObject)
+            }
+        }
+        
+        if let block = self.resultBlock {
+        
+            block(tempArray)
         }
     }
 }

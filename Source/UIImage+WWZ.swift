@@ -231,13 +231,17 @@ public extension UIImage {
     /// 由二维码生成图片
     public class func wwz_image(qrcode: String, size: CGSize) -> UIImage? {
         
+        // 创建滤镜
         guard let filter = CIFilter(name: "CIQRCodeGenerator") else { return nil }
+        // 恢复滤镜默认设置
         filter.setDefaults()
         
+        // 设置输入数据
         let infoData = qrcode.data(using: .utf8)
         
         filter.setValue(infoData, forKeyPath: "inputMessage")
         
+        // 获取图片
         guard let outputImage = filter.outputImage else { return nil }
         
         return self.wwz_image(ciimage: outputImage, size: size)
