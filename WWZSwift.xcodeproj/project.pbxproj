@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		B030F6091E96404600CC2334 /* WWZLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B030F6081E96404600CC2334 /* WWZLanguage.swift */; };
 		B07B320C1E95BF3C00F4E6D8 /* CAAnimation+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31EA1E95BF3C00F4E6D8 /* CAAnimation+WWZ.swift */; };
 		B07B320D1E95BF3C00F4E6D8 /* CALayer+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31EB1E95BF3C00F4E6D8 /* CALayer+WWZ.swift */; };
 		B07B320E1E95BF3C00F4E6D8 /* Date+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31EC1E95BF3C00F4E6D8 /* Date+WWZ.swift */; };
@@ -90,6 +91,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B030F6081E96404600CC2334 /* WWZLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZLanguage.swift; sourceTree = "<group>"; };
 		B07B31EA1E95BF3C00F4E6D8 /* CAAnimation+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+WWZ.swift"; sourceTree = "<group>"; };
 		B07B31EB1E95BF3C00F4E6D8 /* CALayer+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+WWZ.swift"; sourceTree = "<group>"; };
 		B07B31EC1E95BF3C00F4E6D8 /* Date+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WWZ.swift"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			children = (
 				B07B31FF1E95BF3C00F4E6D8 /* WWZArchiver.swift */,
 				B07B32001E95BF3C00F4E6D8 /* WWZCaptureTool.swift */,
+				B030F6081E96404600CC2334 /* WWZLanguage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B030F6091E96404600CC2334 /* WWZLanguage.swift in Sources */,
 				B08A501F1E8CC74900ADE997 /* Emoticon.swift in Sources */,
 				B07B32261E95BF3C00F4E6D8 /* WWZSiriWaveView.swift in Sources */,
 				B07B32281E95BF3C00F4E6D8 /* WWZTimePickerView.swift in Sources */,

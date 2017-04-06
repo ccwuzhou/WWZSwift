@@ -27,6 +27,10 @@ class WWZSwiftTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let str = "wwz"[0...2]
         WWZ_DEBUG_ENABLED = true
+        
+        WWZLog(WWZLanguage.shared.currentLanguageValue)
+        
+        
         WWZLog(str)
     }
     
