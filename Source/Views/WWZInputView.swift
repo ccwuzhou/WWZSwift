@@ -120,4 +120,14 @@ extension WWZInputView {
         }
         self.wwz_dismiss(completion: nil)
     }
+    
+    public override func wwz_show(completion: ((Bool) -> ())?) {
+        self.inputTextField.becomeFirstResponder()
+        super.wwz_show(completion: completion)
+    }
+    
+    public override func wwz_dismiss(completion: ((Bool) -> ())?) {
+        self.inputTextField.resignFirstResponder()
+        super.wwz_dismiss(completion: completion)
+    }
 }

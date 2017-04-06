@@ -22,8 +22,39 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		B05CAB7A1E7228C60030A965 /* UIAlertController+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05CAB791E7228C60030A965 /* UIAlertController+WWZ.swift */; };
-		B05CABB31E7251600030A965 /* WWZCaptureTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05CABB21E7251600030A965 /* WWZCaptureTool.swift */; };
+		B07B320C1E95BF3C00F4E6D8 /* CAAnimation+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31EA1E95BF3C00F4E6D8 /* CAAnimation+WWZ.swift */; };
+		B07B320D1E95BF3C00F4E6D8 /* CALayer+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31EB1E95BF3C00F4E6D8 /* CALayer+WWZ.swift */; };
+		B07B320E1E95BF3C00F4E6D8 /* Date+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31EC1E95BF3C00F4E6D8 /* Date+WWZ.swift */; };
+		B07B320F1E95BF3C00F4E6D8 /* NotificationCenter+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31ED1E95BF3C00F4E6D8 /* NotificationCenter+WWZ.swift */; };
+		B07B32101E95BF3C00F4E6D8 /* String+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31EE1E95BF3C00F4E6D8 /* String+WWZ.swift */; };
+		B07B32111E95BF3C00F4E6D8 /* UIAlertController+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31EF1E95BF3C00F4E6D8 /* UIAlertController+WWZ.swift */; };
+		B07B32121E95BF3C00F4E6D8 /* UIAlertView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31F01E95BF3C00F4E6D8 /* UIAlertView+WWZ.swift */; };
+		B07B32131E95BF3C00F4E6D8 /* UIBarButtonItem+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31F11E95BF3C00F4E6D8 /* UIBarButtonItem+WWZ.swift */; };
+		B07B32141E95BF3C00F4E6D8 /* UIButton+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31F21E95BF3C00F4E6D8 /* UIButton+WWZ.swift */; };
+		B07B32151E95BF3C00F4E6D8 /* UICollectionView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31F31E95BF3C00F4E6D8 /* UICollectionView+WWZ.swift */; };
+		B07B32161E95BF3C00F4E6D8 /* UIColor+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31F41E95BF3C00F4E6D8 /* UIColor+WWZ.swift */; };
+		B07B32171E95BF3C00F4E6D8 /* UIImage+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31F51E95BF3C00F4E6D8 /* UIImage+WWZ.swift */; };
+		B07B32181E95BF3C00F4E6D8 /* UIImageView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31F61E95BF3C00F4E6D8 /* UIImageView+WWZ.swift */; };
+		B07B32191E95BF3C00F4E6D8 /* UILabel+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31F71E95BF3C00F4E6D8 /* UILabel+WWZ.swift */; };
+		B07B321A1E95BF3C00F4E6D8 /* UINavigationBar+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31F81E95BF3C00F4E6D8 /* UINavigationBar+WWZ.swift */; };
+		B07B321B1E95BF3C00F4E6D8 /* UISlider+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31F91E95BF3C00F4E6D8 /* UISlider+WWZ.swift */; };
+		B07B321C1E95BF3C00F4E6D8 /* UISwitch+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31FA1E95BF3C00F4E6D8 /* UISwitch+WWZ.swift */; };
+		B07B321D1E95BF3C00F4E6D8 /* UITableView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31FB1E95BF3C00F4E6D8 /* UITableView+WWZ.swift */; };
+		B07B321E1E95BF3C00F4E6D8 /* UITextField+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31FC1E95BF3C00F4E6D8 /* UITextField+WWZ.swift */; };
+		B07B321F1E95BF3C00F4E6D8 /* UIView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31FD1E95BF3C00F4E6D8 /* UIView+WWZ.swift */; };
+		B07B32201E95BF3C00F4E6D8 /* WWZArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B31FF1E95BF3C00F4E6D8 /* WWZArchiver.swift */; };
+		B07B32211E95BF3C00F4E6D8 /* WWZCaptureTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32001E95BF3C00F4E6D8 /* WWZCaptureTool.swift */; };
+		B07B32221E95BF3C00F4E6D8 /* WWZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32021E95BF3C00F4E6D8 /* WWZButton.swift */; };
+		B07B32231E95BF3C00F4E6D8 /* WWZInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32031E95BF3C00F4E6D8 /* WWZInputView.swift */; };
+		B07B32241E95BF3C00F4E6D8 /* WWZMenuPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32041E95BF3C00F4E6D8 /* WWZMenuPopover.swift */; };
+		B07B32251E95BF3C00F4E6D8 /* WWZShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32051E95BF3C00F4E6D8 /* WWZShowView.swift */; };
+		B07B32261E95BF3C00F4E6D8 /* WWZSiriWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32061E95BF3C00F4E6D8 /* WWZSiriWaveView.swift */; };
+		B07B32271E95BF3C00F4E6D8 /* WWZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32071E95BF3C00F4E6D8 /* WWZTableViewCell.swift */; };
+		B07B32281E95BF3C00F4E6D8 /* WWZTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32081E95BF3C00F4E6D8 /* WWZTimePickerView.swift */; };
+		B07B32291E95BF3C00F4E6D8 /* WWZTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B32091E95BF3C00F4E6D8 /* WWZTipView.swift */; };
+		B07B322A1E95BF3C00F4E6D8 /* WWZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B320A1E95BF3C00F4E6D8 /* WWZViewController.swift */; };
+		B07B322B1E95BF3C00F4E6D8 /* WWZHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07B320B1E95BF3C00F4E6D8 /* WWZHeader.swift */; };
+		B07B322D1E95C14100F4E6D8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B07B322C1E95C14100F4E6D8 /* Info.plist */; };
 		B08A501A1E8CC74900ADE997 /* EmioticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08A50101E8CC74900ADE997 /* EmioticonViewCell.swift */; };
 		B08A501B1E8CC74900ADE997 /* EmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08A50111E8CC74900ADE997 /* EmoticonAttachment.swift */; };
 		B08A501C1E8CC74900ADE997 /* EmoticonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08A50121E8CC74900ADE997 /* EmoticonController.swift */; };
@@ -37,38 +68,8 @@
 		B08A50291E8CD7D900ADE997 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08A50251E8CD7D900ADE997 /* PopoverViewController.swift */; };
 		B08A502A1E8CD7D900ADE997 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08A50261E8CD7D900ADE997 /* PopoverViewController.xib */; };
 		B08A502B1E8CD7D900ADE997 /* XMGPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08A50271E8CD7D900ADE997 /* XMGPresentationController.swift */; };
-		B08C3F9F1E8206DB000258C0 /* WWZArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C3F9E1E8206DB000258C0 /* WWZArchiver.swift */; };
 		B08C3FA71E820760000258C0 /* WWZSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C3FA61E820760000258C0 /* WWZSwiftTests.swift */; };
 		B08C3FA91E820760000258C0 /* WWZSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B094F2651E6E8CD900D5380E /* WWZSwift.framework */; };
-		B0A75B221E714B820020CE71 /* WWZButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B141E714B820020CE71 /* WWZButton.swift */; };
-		B0A75B231E714B820020CE71 /* WWZInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B151E714B820020CE71 /* WWZInputView.swift */; };
-		B0A75B241E714B820020CE71 /* WWZMenuPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B161E714B820020CE71 /* WWZMenuPopover.swift */; };
-		B0A75B261E714B820020CE71 /* WWZShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B181E714B820020CE71 /* WWZShowView.swift */; };
-		B0A75B271E714B820020CE71 /* WWZSiriWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B191E714B820020CE71 /* WWZSiriWaveView.swift */; };
-		B0A75B291E714B820020CE71 /* WWZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1B1E714B820020CE71 /* WWZTableViewCell.swift */; };
-		B0A75B2B1E714B820020CE71 /* WWZTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1D1E714B820020CE71 /* WWZTimePickerView.swift */; };
-		B0A75B2C1E714B820020CE71 /* WWZTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B1E1E714B820020CE71 /* WWZTipView.swift */; };
-		B0A75B2E1E714B820020CE71 /* WWZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B201E714B820020CE71 /* WWZViewController.swift */; };
-		B0A75B421E714BBC0020CE71 /* CALayer+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B2F1E714BBB0020CE71 /* CALayer+WWZ.swift */; };
-		B0A75B431E714BBC0020CE71 /* Date+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B301E714BBB0020CE71 /* Date+WWZ.swift */; };
-		B0A75B441E714BBC0020CE71 /* NotificationCenter+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B311E714BBB0020CE71 /* NotificationCenter+WWZ.swift */; };
-		B0A75B451E714BBC0020CE71 /* String+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B321E714BBC0020CE71 /* String+WWZ.swift */; };
-		B0A75B461E714BBC0020CE71 /* UIAlertView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B331E714BBC0020CE71 /* UIAlertView+WWZ.swift */; };
-		B0A75B471E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B341E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift */; };
-		B0A75B481E714BBC0020CE71 /* UIButton+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B351E714BBC0020CE71 /* UIButton+WWZ.swift */; };
-		B0A75B491E714BBC0020CE71 /* UICollectionView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B361E714BBC0020CE71 /* UICollectionView+WWZ.swift */; };
-		B0A75B4A1E714BBC0020CE71 /* UIColor+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B371E714BBC0020CE71 /* UIColor+WWZ.swift */; };
-		B0A75B4B1E714BBC0020CE71 /* UIImage+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B381E714BBC0020CE71 /* UIImage+WWZ.swift */; };
-		B0A75B4C1E714BBC0020CE71 /* UIImageView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B391E714BBC0020CE71 /* UIImageView+WWZ.swift */; };
-		B0A75B4D1E714BBC0020CE71 /* UILabel+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3A1E714BBC0020CE71 /* UILabel+WWZ.swift */; };
-		B0A75B4E1E714BBC0020CE71 /* UINavigationBar+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3B1E714BBC0020CE71 /* UINavigationBar+WWZ.swift */; };
-		B0A75B4F1E714BBC0020CE71 /* UISlider+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3C1E714BBC0020CE71 /* UISlider+WWZ.swift */; };
-		B0A75B501E714BBC0020CE71 /* UISwitch+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3D1E714BBC0020CE71 /* UISwitch+WWZ.swift */; };
-		B0A75B511E714BBC0020CE71 /* UITableView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3E1E714BBC0020CE71 /* UITableView+WWZ.swift */; };
-		B0A75B521E714BBC0020CE71 /* UITextField+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B3F1E714BBC0020CE71 /* UITextField+WWZ.swift */; };
-		B0A75B531E714BBC0020CE71 /* UIView+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B401E714BBC0020CE71 /* UIView+WWZ.swift */; };
-		B0A75B541E714BBC0020CE71 /* WWZHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A75B411E714BBC0020CE71 /* WWZHeader.swift */; };
-		B0B3A1AB1E728C1300FBE255 /* CAAnimation+WWZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B3A1AA1E728C1300FBE255 /* CAAnimation+WWZ.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +90,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B05CAB791E7228C60030A965 /* UIAlertController+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+WWZ.swift"; sourceTree = "<group>"; };
-		B05CABB21E7251600030A965 /* WWZCaptureTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZCaptureTool.swift; sourceTree = "<group>"; };
+		B07B31EA1E95BF3C00F4E6D8 /* CAAnimation+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31EB1E95BF3C00F4E6D8 /* CALayer+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31EC1E95BF3C00F4E6D8 /* Date+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31ED1E95BF3C00F4E6D8 /* NotificationCenter+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31EE1E95BF3C00F4E6D8 /* String+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31EF1E95BF3C00F4E6D8 /* UIAlertController+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31F01E95BF3C00F4E6D8 /* UIAlertView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertView+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31F11E95BF3C00F4E6D8 /* UIBarButtonItem+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31F21E95BF3C00F4E6D8 /* UIButton+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31F31E95BF3C00F4E6D8 /* UICollectionView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31F41E95BF3C00F4E6D8 /* UIColor+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31F51E95BF3C00F4E6D8 /* UIImage+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31F61E95BF3C00F4E6D8 /* UIImageView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31F71E95BF3C00F4E6D8 /* UILabel+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31F81E95BF3C00F4E6D8 /* UINavigationBar+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31F91E95BF3C00F4E6D8 /* UISlider+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31FA1E95BF3C00F4E6D8 /* UISwitch+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31FB1E95BF3C00F4E6D8 /* UITableView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31FC1E95BF3C00F4E6D8 /* UITextField+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31FD1E95BF3C00F4E6D8 /* UIView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+WWZ.swift"; sourceTree = "<group>"; };
+		B07B31FF1E95BF3C00F4E6D8 /* WWZArchiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZArchiver.swift; sourceTree = "<group>"; };
+		B07B32001E95BF3C00F4E6D8 /* WWZCaptureTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZCaptureTool.swift; sourceTree = "<group>"; };
+		B07B32021E95BF3C00F4E6D8 /* WWZButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZButton.swift; sourceTree = "<group>"; };
+		B07B32031E95BF3C00F4E6D8 /* WWZInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZInputView.swift; sourceTree = "<group>"; };
+		B07B32041E95BF3C00F4E6D8 /* WWZMenuPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZMenuPopover.swift; sourceTree = "<group>"; };
+		B07B32051E95BF3C00F4E6D8 /* WWZShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZShowView.swift; sourceTree = "<group>"; };
+		B07B32061E95BF3C00F4E6D8 /* WWZSiriWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZSiriWaveView.swift; sourceTree = "<group>"; };
+		B07B32071E95BF3C00F4E6D8 /* WWZTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTableViewCell.swift; sourceTree = "<group>"; };
+		B07B32081E95BF3C00F4E6D8 /* WWZTimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTimePickerView.swift; sourceTree = "<group>"; };
+		B07B32091E95BF3C00F4E6D8 /* WWZTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTipView.swift; sourceTree = "<group>"; };
+		B07B320A1E95BF3C00F4E6D8 /* WWZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZViewController.swift; sourceTree = "<group>"; };
+		B07B320B1E95BF3C00F4E6D8 /* WWZHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZHeader.swift; sourceTree = "<group>"; };
+		B07B322C1E95C14100F4E6D8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08A50101E8CC74900ADE997 /* EmioticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmioticonViewCell.swift; sourceTree = "<group>"; };
 		B08A50111E8CC74900ADE997 /* EmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonAttachment.swift; sourceTree = "<group>"; };
 		B08A50121E8CC74900ADE997 /* EmoticonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonController.swift; sourceTree = "<group>"; };
@@ -104,41 +136,10 @@
 		B08A50251E8CD7D900ADE997 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		B08A50261E8CD7D900ADE997 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		B08A50271E8CD7D900ADE997 /* XMGPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMGPresentationController.swift; sourceTree = "<group>"; };
-		B08C3F9E1E8206DB000258C0 /* WWZArchiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZArchiver.swift; sourceTree = "<group>"; };
 		B08C3FA41E820760000258C0 /* WWZSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWZSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08C3FA61E820760000258C0 /* WWZSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWZSwiftTests.swift; sourceTree = "<group>"; };
 		B08C3FA81E820760000258C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B094F2651E6E8CD900D5380E /* WWZSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WWZSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0A75B131E714B820020CE71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
-		B0A75B141E714B820020CE71 /* WWZButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZButton.swift; sourceTree = "<group>"; };
-		B0A75B151E714B820020CE71 /* WWZInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZInputView.swift; sourceTree = "<group>"; };
-		B0A75B161E714B820020CE71 /* WWZMenuPopover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZMenuPopover.swift; sourceTree = "<group>"; };
-		B0A75B181E714B820020CE71 /* WWZShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZShowView.swift; sourceTree = "<group>"; };
-		B0A75B191E714B820020CE71 /* WWZSiriWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZSiriWaveView.swift; sourceTree = "<group>"; };
-		B0A75B1B1E714B820020CE71 /* WWZTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTableViewCell.swift; sourceTree = "<group>"; };
-		B0A75B1D1E714B820020CE71 /* WWZTimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTimePickerView.swift; sourceTree = "<group>"; };
-		B0A75B1E1E714B820020CE71 /* WWZTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZTipView.swift; sourceTree = "<group>"; };
-		B0A75B201E714B820020CE71 /* WWZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZViewController.swift; sourceTree = "<group>"; };
-		B0A75B2F1E714BBB0020CE71 /* CALayer+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B301E714BBB0020CE71 /* Date+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B311E714BBB0020CE71 /* NotificationCenter+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B321E714BBC0020CE71 /* String+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B331E714BBC0020CE71 /* UIAlertView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertView+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B341E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B351E714BBC0020CE71 /* UIButton+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B361E714BBC0020CE71 /* UICollectionView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B371E714BBC0020CE71 /* UIColor+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B381E714BBC0020CE71 /* UIImage+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B391E714BBC0020CE71 /* UIImageView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B3A1E714BBC0020CE71 /* UILabel+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B3B1E714BBC0020CE71 /* UINavigationBar+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B3C1E714BBC0020CE71 /* UISlider+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B3D1E714BBC0020CE71 /* UISwitch+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B3E1E714BBC0020CE71 /* UITableView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B3F1E714BBC0020CE71 /* UITextField+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B401E714BBC0020CE71 /* UIView+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+WWZ.swift"; sourceTree = "<group>"; };
-		B0A75B411E714BBC0020CE71 /* WWZHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWZHeader.swift; sourceTree = "<group>"; };
-		B0B3A1AA1E728C1300FBE255 /* CAAnimation+WWZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+WWZ.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +166,69 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B07B31E81E95BF3C00F4E6D8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B07B320B1E95BF3C00F4E6D8 /* WWZHeader.swift */,
+				B07B31E91E95BF3C00F4E6D8 /* Extensions */,
+				B07B31FE1E95BF3C00F4E6D8 /* Models */,
+				B07B32011E95BF3C00F4E6D8 /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B07B31E91E95BF3C00F4E6D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B07B31EA1E95BF3C00F4E6D8 /* CAAnimation+WWZ.swift */,
+				B07B31EB1E95BF3C00F4E6D8 /* CALayer+WWZ.swift */,
+				B07B31EC1E95BF3C00F4E6D8 /* Date+WWZ.swift */,
+				B07B31ED1E95BF3C00F4E6D8 /* NotificationCenter+WWZ.swift */,
+				B07B31EE1E95BF3C00F4E6D8 /* String+WWZ.swift */,
+				B07B31EF1E95BF3C00F4E6D8 /* UIAlertController+WWZ.swift */,
+				B07B31F01E95BF3C00F4E6D8 /* UIAlertView+WWZ.swift */,
+				B07B31F11E95BF3C00F4E6D8 /* UIBarButtonItem+WWZ.swift */,
+				B07B31F21E95BF3C00F4E6D8 /* UIButton+WWZ.swift */,
+				B07B31F31E95BF3C00F4E6D8 /* UICollectionView+WWZ.swift */,
+				B07B31F41E95BF3C00F4E6D8 /* UIColor+WWZ.swift */,
+				B07B31F51E95BF3C00F4E6D8 /* UIImage+WWZ.swift */,
+				B07B31F61E95BF3C00F4E6D8 /* UIImageView+WWZ.swift */,
+				B07B31F71E95BF3C00F4E6D8 /* UILabel+WWZ.swift */,
+				B07B31F81E95BF3C00F4E6D8 /* UINavigationBar+WWZ.swift */,
+				B07B31F91E95BF3C00F4E6D8 /* UISlider+WWZ.swift */,
+				B07B31FA1E95BF3C00F4E6D8 /* UISwitch+WWZ.swift */,
+				B07B31FB1E95BF3C00F4E6D8 /* UITableView+WWZ.swift */,
+				B07B31FC1E95BF3C00F4E6D8 /* UITextField+WWZ.swift */,
+				B07B31FD1E95BF3C00F4E6D8 /* UIView+WWZ.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B07B31FE1E95BF3C00F4E6D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B07B31FF1E95BF3C00F4E6D8 /* WWZArchiver.swift */,
+				B07B32001E95BF3C00F4E6D8 /* WWZCaptureTool.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B07B32011E95BF3C00F4E6D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B07B32021E95BF3C00F4E6D8 /* WWZButton.swift */,
+				B07B32031E95BF3C00F4E6D8 /* WWZInputView.swift */,
+				B07B32041E95BF3C00F4E6D8 /* WWZMenuPopover.swift */,
+				B07B32051E95BF3C00F4E6D8 /* WWZShowView.swift */,
+				B07B32061E95BF3C00F4E6D8 /* WWZSiriWaveView.swift */,
+				B07B32071E95BF3C00F4E6D8 /* WWZTableViewCell.swift */,
+				B07B32081E95BF3C00F4E6D8 /* WWZTimePickerView.swift */,
+				B07B32091E95BF3C00F4E6D8 /* WWZTipView.swift */,
+				B07B320A1E95BF3C00F4E6D8 /* WWZViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B08A500E1E8CC71D00ADE997 /* Main */ = {
@@ -224,7 +288,7 @@
 				B08A50231E8CD7D900ADE997 /* UIPopover */,
 				B08A500F1E8CC74900ADE997 /* Emoticon */,
 				B08A500E1E8CC71D00ADE997 /* Main */,
-				B0A75B121E714B820020CE71 /* Source */,
+				B07B31E81E95BF3C00F4E6D8 /* Source */,
 				B08C3FA51E820760000258C0 /* WWZSwiftTests */,
 				B094F2661E6E8CD900D5380E /* Products */,
 				B0A75B551E714C030020CE71 /* Supporting Files */,
@@ -241,75 +305,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0A75B121E714B820020CE71 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				B0A75B411E714BBC0020CE71 /* WWZHeader.swift */,
-				B0A75B561E714C210020CE71 /* Extensions */,
-				B0A75B571E714C350020CE71 /* Views */,
-				B0A75B581E714C5C0020CE71 /* Tools */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		B0A75B551E714C030020CE71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B0A75B131E714B820020CE71 /* Info.plist */,
+				B07B322C1E95C14100F4E6D8 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B0A75B561E714C210020CE71 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				B0A75B321E714BBC0020CE71 /* String+WWZ.swift */,
-				B0A75B301E714BBB0020CE71 /* Date+WWZ.swift */,
-				B0A75B311E714BBB0020CE71 /* NotificationCenter+WWZ.swift */,
-				B0B3A1AA1E728C1300FBE255 /* CAAnimation+WWZ.swift */,
-				B0A75B401E714BBC0020CE71 /* UIView+WWZ.swift */,
-				B0A75B351E714BBC0020CE71 /* UIButton+WWZ.swift */,
-				B0A75B3A1E714BBC0020CE71 /* UILabel+WWZ.swift */,
-				B0A75B371E714BBC0020CE71 /* UIColor+WWZ.swift */,
-				B0A75B381E714BBC0020CE71 /* UIImage+WWZ.swift */,
-				B0A75B3C1E714BBC0020CE71 /* UISlider+WWZ.swift */,
-				B0A75B3D1E714BBC0020CE71 /* UISwitch+WWZ.swift */,
-				B0A75B2F1E714BBB0020CE71 /* CALayer+WWZ.swift */,
-				B0A75B391E714BBC0020CE71 /* UIImageView+WWZ.swift */,
-				B0A75B3B1E714BBC0020CE71 /* UINavigationBar+WWZ.swift */,
-				B0A75B341E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift */,
-				B0A75B3E1E714BBC0020CE71 /* UITableView+WWZ.swift */,
-				B0A75B361E714BBC0020CE71 /* UICollectionView+WWZ.swift */,
-				B0A75B3F1E714BBC0020CE71 /* UITextField+WWZ.swift */,
-				B0A75B331E714BBC0020CE71 /* UIAlertView+WWZ.swift */,
-				B05CAB791E7228C60030A965 /* UIAlertController+WWZ.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
-		B0A75B571E714C350020CE71 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B0A75B141E714B820020CE71 /* WWZButton.swift */,
-				B0A75B151E714B820020CE71 /* WWZInputView.swift */,
-				B0A75B161E714B820020CE71 /* WWZMenuPopover.swift */,
-				B0A75B181E714B820020CE71 /* WWZShowView.swift */,
-				B0A75B191E714B820020CE71 /* WWZSiriWaveView.swift */,
-				B0A75B1B1E714B820020CE71 /* WWZTableViewCell.swift */,
-				B0A75B1D1E714B820020CE71 /* WWZTimePickerView.swift */,
-				B0A75B1E1E714B820020CE71 /* WWZTipView.swift */,
-				B0A75B201E714B820020CE71 /* WWZViewController.swift */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		B0A75B581E714C5C0020CE71 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				B08C3F9E1E8206DB000258C0 /* WWZArchiver.swift */,
-				B05CABB21E7251600030A965 /* WWZCaptureTool.swift */,
-			);
-			name = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +422,7 @@
 			files = (
 				B08A502A1E8CD7D900ADE997 /* PopoverViewController.xib in Resources */,
 				B08A501D1E8CC74900ADE997 /* Emoticons.bundle in Resources */,
+				B07B322D1E95C14100F4E6D8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,49 +457,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0A75B421E714BBC0020CE71 /* CALayer+WWZ.swift in Sources */,
-				B0A75B451E714BBC0020CE71 /* String+WWZ.swift in Sources */,
 				B08A501F1E8CC74900ADE997 /* Emoticon.swift in Sources */,
-				B0A75B4C1E714BBC0020CE71 /* UIImageView+WWZ.swift in Sources */,
-				B05CAB7A1E7228C60030A965 /* UIAlertController+WWZ.swift in Sources */,
-				B0A75B531E714BBC0020CE71 /* UIView+WWZ.swift in Sources */,
-				B0A75B221E714B820020CE71 /* WWZButton.swift in Sources */,
-				B0A75B471E714BBC0020CE71 /* UIBarButtonItem+WWZ.swift in Sources */,
-				B0A75B521E714BBC0020CE71 /* UITextField+WWZ.swift in Sources */,
+				B07B32261E95BF3C00F4E6D8 /* WWZSiriWaveView.swift in Sources */,
+				B07B32281E95BF3C00F4E6D8 /* WWZTimePickerView.swift in Sources */,
+				B07B321D1E95BF3C00F4E6D8 /* UITableView+WWZ.swift in Sources */,
+				B07B32151E95BF3C00F4E6D8 /* UICollectionView+WWZ.swift in Sources */,
+				B07B32241E95BF3C00F4E6D8 /* WWZMenuPopover.swift in Sources */,
 				B08A50201E8CC74900ADE997 /* EmoticonManager.swift in Sources */,
+				B07B321E1E95BF3C00F4E6D8 /* UITextField+WWZ.swift in Sources */,
+				B07B32141E95BF3C00F4E6D8 /* UIButton+WWZ.swift in Sources */,
+				B07B32161E95BF3C00F4E6D8 /* UIColor+WWZ.swift in Sources */,
+				B07B320E1E95BF3C00F4E6D8 /* Date+WWZ.swift in Sources */,
+				B07B32271E95BF3C00F4E6D8 /* WWZTableViewCell.swift in Sources */,
+				B07B32201E95BF3C00F4E6D8 /* WWZArchiver.swift in Sources */,
+				B07B32251E95BF3C00F4E6D8 /* WWZShowView.swift in Sources */,
+				B07B320F1E95BF3C00F4E6D8 /* NotificationCenter+WWZ.swift in Sources */,
+				B07B320D1E95BF3C00F4E6D8 /* CALayer+WWZ.swift in Sources */,
+				B07B32211E95BF3C00F4E6D8 /* WWZCaptureTool.swift in Sources */,
+				B07B32291E95BF3C00F4E6D8 /* WWZTipView.swift in Sources */,
+				B07B32171E95BF3C00F4E6D8 /* UIImage+WWZ.swift in Sources */,
+				B07B32101E95BF3C00F4E6D8 /* String+WWZ.swift in Sources */,
+				B07B321F1E95BF3C00F4E6D8 /* UIView+WWZ.swift in Sources */,
 				B08A501E1E8CC74900ADE997 /* FindEmoticon.swift in Sources */,
-				B08C3F9F1E8206DB000258C0 /* WWZArchiver.swift in Sources */,
-				B0A75B461E714BBC0020CE71 /* UIAlertView+WWZ.swift in Sources */,
-				B0A75B4B1E714BBC0020CE71 /* UIImage+WWZ.swift in Sources */,
-				B0A75B2B1E714B820020CE71 /* WWZTimePickerView.swift in Sources */,
-				B0B3A1AB1E728C1300FBE255 /* CAAnimation+WWZ.swift in Sources */,
+				B07B32221E95BF3C00F4E6D8 /* WWZButton.swift in Sources */,
 				B08A50291E8CD7D900ADE997 /* PopoverViewController.swift in Sources */,
-				B05CABB31E7251600030A965 /* WWZCaptureTool.swift in Sources */,
+				B07B32121E95BF3C00F4E6D8 /* UIAlertView+WWZ.swift in Sources */,
+				B07B32131E95BF3C00F4E6D8 /* UIBarButtonItem+WWZ.swift in Sources */,
 				B08A501C1E8CC74900ADE997 /* EmoticonController.swift in Sources */,
-				B0A75B241E714B820020CE71 /* WWZMenuPopover.swift in Sources */,
-				B0A75B261E714B820020CE71 /* WWZShowView.swift in Sources */,
-				B0A75B291E714B820020CE71 /* WWZTableViewCell.swift in Sources */,
-				B0A75B481E714BBC0020CE71 /* UIButton+WWZ.swift in Sources */,
-				B0A75B2C1E714B820020CE71 /* WWZTipView.swift in Sources */,
-				B0A75B4E1E714BBC0020CE71 /* UINavigationBar+WWZ.swift in Sources */,
-				B0A75B4F1E714BBC0020CE71 /* UISlider+WWZ.swift in Sources */,
-				B0A75B491E714BBC0020CE71 /* UICollectionView+WWZ.swift in Sources */,
-				B0A75B441E714BBC0020CE71 /* NotificationCenter+WWZ.swift in Sources */,
+				B07B322A1E95BF3C00F4E6D8 /* WWZViewController.swift in Sources */,
+				B07B32191E95BF3C00F4E6D8 /* UILabel+WWZ.swift in Sources */,
+				B07B32181E95BF3C00F4E6D8 /* UIImageView+WWZ.swift in Sources */,
 				B08A502B1E8CD7D900ADE997 /* XMGPresentationController.swift in Sources */,
-				B0A75B4A1E714BBC0020CE71 /* UIColor+WWZ.swift in Sources */,
-				B0A75B4D1E714BBC0020CE71 /* UILabel+WWZ.swift in Sources */,
+				B07B32111E95BF3C00F4E6D8 /* UIAlertController+WWZ.swift in Sources */,
 				B08A50221E8CC74900ADE997 /* UITextView-Extension.swift in Sources */,
 				B08A50211E8CC74900ADE997 /* EmoticonPackage.swift in Sources */,
-				B0A75B501E714BBC0020CE71 /* UISwitch+WWZ.swift in Sources */,
 				B08A501A1E8CC74900ADE997 /* EmioticonViewCell.swift in Sources */,
-				B0A75B541E714BBC0020CE71 /* WWZHeader.swift in Sources */,
-				B0A75B231E714B820020CE71 /* WWZInputView.swift in Sources */,
-				B0A75B431E714BBC0020CE71 /* Date+WWZ.swift in Sources */,
+				B07B321A1E95BF3C00F4E6D8 /* UINavigationBar+WWZ.swift in Sources */,
 				B08A50281E8CD7D900ADE997 /* PopoverAnimator.swift in Sources */,
-				B0A75B2E1E714B820020CE71 /* WWZViewController.swift in Sources */,
-				B0A75B511E714BBC0020CE71 /* UITableView+WWZ.swift in Sources */,
+				B07B321C1E95BF3C00F4E6D8 /* UISwitch+WWZ.swift in Sources */,
+				B07B321B1E95BF3C00F4E6D8 /* UISlider+WWZ.swift in Sources */,
+				B07B32231E95BF3C00F4E6D8 /* WWZInputView.swift in Sources */,
 				B08A501B1E8CC74900ADE997 /* EmoticonAttachment.swift in Sources */,
-				B0A75B271E714B820020CE71 /* WWZSiriWaveView.swift in Sources */,
+				B07B320C1E95BF3C00F4E6D8 /* CAAnimation+WWZ.swift in Sources */,
+				B07B322B1E95BF3C00F4E6D8 /* WWZHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,7 +668,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -688,7 +690,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

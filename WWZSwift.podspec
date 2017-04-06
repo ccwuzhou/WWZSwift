@@ -12,4 +12,17 @@ Pod::Spec.new do |s|
   s.framework  = "UIKit"
   s.source_files = "Source/*.swift"
 
+  s.subspec 'Source' do |ss|
+   ss.subspec 'Extensions' do |sss|
+      sss.source_files = "Source/Extensions/*.swift"
+    end
+    ss.subspec 'Models' do |sss|
+      sss.source_files = "Source/Models/*.swift"
+      sss.dependency "Source/Extensions"
+    end
+    ss.subspec 'Views' do |sss|
+      sss.source_files = "Source/Views/*.swift"
+      sss.dependency "Source/Extensions"
+    end
+  end
 end
