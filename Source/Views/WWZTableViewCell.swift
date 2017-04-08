@@ -25,7 +25,7 @@ public protocol WWZTableViewCellDelegate: NSObjectProtocol {
 open class WWZTableViewCell: UITableViewCell {
 
     // MARK: -属性
-    public var tableViewCellDelegate : WWZTableViewCellDelegate?
+    public weak var tableViewCellDelegate : WWZTableViewCellDelegate?
     
     /// sub label
     public var subLabel : UILabel?

@@ -54,7 +54,7 @@ open class WWZMenuPopover: UIView {
 
     // MARK: -属性
     // 代理
-    public var menuDelegate : WWZMenuPopoverDelegate?
+    public weak var menuDelegate : WWZMenuPopoverDelegate?
     
     // 动画时间
     public var animateDuration : TimeInterval = 0.3
