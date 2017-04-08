@@ -114,10 +114,8 @@ extension WWZInputView {
     
     @objc private func clickButtonAtIndex(sender: UIButton) {
         
-        if let block = self.block {
-            
-            block(self.inputTextField.text ?? "", sender.tag - INPUT_BUTTON_TAG)
-        }
+        self.block?(self.inputTextField.text ?? "", sender.tag - INPUT_BUTTON_TAG)
+        
         self.wwz_dismiss(completion: nil)
     }
     

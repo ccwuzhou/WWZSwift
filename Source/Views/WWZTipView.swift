@@ -153,10 +153,8 @@ extension WWZTipView {
     
     @objc private func clickButtonAtIndex(sender: UIButton) {
         
-        if let block = self.block {
-            
-            block(sender.tag - TIP_BUTTON_TAG)
-        }
+        self.block?(sender.tag - TIP_BUTTON_TAG)
+        
         self.wwz_dismiss(completion: nil)
     }
 }

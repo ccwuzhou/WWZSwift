@@ -71,15 +71,12 @@ open class WWZShowView: UIView {
             
             self.p_originalTransform(type: self.animateType)
             
-            }, completion: {(_ finished: Bool) -> Void in
+        }, completion: {(_ finished: Bool) -> Void in
                 
-                self.superview?.removeFromSuperview()
-                self.removeFromSuperview()
+            self.superview?.removeFromSuperview()
+            self.removeFromSuperview()
                 
-                if let completion = completion {
-                
-                    completion(finished)
-                }
+            completion?(finished)
         })
     }
 }

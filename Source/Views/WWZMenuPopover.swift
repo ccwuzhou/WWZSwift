@@ -185,10 +185,8 @@ extension WWZMenuPopover : UITableViewDelegate, UITableViewDataSource {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        if let delegate = self.menuDelegate {
-            
-            delegate.menuPopover(menuPopover: self, didSelectedItemAtIndex: indexPath.row)
-        }
+        self.menuDelegate?.menuPopover(menuPopover: self, didSelectedItemAtIndex: indexPath.row)
+        
         self.wwz_dismiss()
     }
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

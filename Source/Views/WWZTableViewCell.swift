@@ -245,10 +245,7 @@ extension WWZTableViewCell {
     // MARK: -点击事件
     @objc fileprivate func p_changeSwitch(sender: UISwitch)  {
         
-        guard let delegate = self.tableViewCellDelegate else {
-            return
-        }
-        delegate.tableViewCell(cell: self, didChangedSwitch: sender.isOn)
+        self.tableViewCellDelegate?.tableViewCell(cell: self, didChangedSwitch: sender.isOn)
     }
 }
 

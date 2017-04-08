@@ -210,9 +210,6 @@ extension WWZCaptureTool : AVCaptureMetadataOutputObjectsDelegate{
             }
         }
         
-        if let block = self.resultBlock {
-        
-            block(tempArray)
-        }
+        self.resultBlock?(tempArray)
     }
 }
