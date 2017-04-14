@@ -49,7 +49,7 @@ public func WWZLog<T>(_ message: T,file: String = #file, function: String = #fun
         return
     }
     
-    print("\(Date.wwz_stringFromDate(date: Date(), dateFormat: "yyyy-MM-dd HH:mm:ss.SSS")) \((file as NSString).lastPathComponent)【\(function)】\(message)")
+    print("\(Date().wwz_dateFormatString(dateFormat: "yyyy-MM-dd HH:mm:ss.SSS")) \((file as NSString).lastPathComponent)【\(function)】\(message)")
 }
 
 public func WWZ_MAIN_ASYNC(after deadline: TimeInterval, execute: @escaping ()->()) {

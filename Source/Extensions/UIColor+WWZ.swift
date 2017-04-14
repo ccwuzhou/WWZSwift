@@ -59,7 +59,6 @@ public struct WWZRGBType {
             break
         }
     }
-    
 }
 public struct WWZHSVType {
     
@@ -102,7 +101,6 @@ public struct WWZHSVType {
         self.v = max
         self.s = (max-min)/max
     }
-    
 }
 
 
@@ -121,7 +119,6 @@ public extension UIColor {
                          blue: ((CGFloat)((rgba & 0xFF00) >> 8))/255.0,
                          alpha: ((CGFloat)(rgba & 0xFF))/255.0)
     }
-    
 }
 
 public extension UIColor {
@@ -156,5 +153,4 @@ public extension UIColor {
     
         return WWZHSVType(rgb: self.rgbType)
     }
-    
 }

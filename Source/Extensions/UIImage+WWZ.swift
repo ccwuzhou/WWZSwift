@@ -325,19 +325,3 @@ public extension UIImage {
         return imageData
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
